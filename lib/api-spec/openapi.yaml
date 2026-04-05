@@ -3,20 +3,34 @@ info:
   # Do not change the title, if the title changes, the import paths will be broken
   title: Api
   version: 0.1.0
-  description: API specification
+  description: AutoMind Smart Car Discovery API
 servers:
   - url: /api
     description: Base API path
 tags:
   - name: health
     description: Health operations
+  - name: auth
+    description: Authentication operations
+  - name: cars
+    description: Car search and listing
+  - name: recommend
+    description: Smart recommendation engine
+  - name: compare
+    description: Car comparison
+  - name: query
+    description: Intelligent query processing
+  - name: images
+    description: Car image management
+  - name: insights
+    description: Smart insights and analytics
+
 paths:
   /healthz:
     get:
       operationId: healthCheck
       tags: [health]
       summary: Health check
-      description: Returns server health status
       responses:
         "200":
           description: Healthy
@@ -24,6 +38,308 @@ paths:
             application/json:
               schema:
                 $ref: "#/components/schemas/HealthStatus"
+
+  /auth/register:
+    post:
+      operationId: registerUser
+      tags: [auth]
+      summary: Register a new user
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/RegisterBody"
+      responses:
+        "201":
+          description: User registered
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/AuthResponse"
+        "400":
+          description: Validation error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+
+  /auth/login:
+    post:
+      operationId: loginUser
+      tags: [auth]
+      summary: Login user
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/LoginBody"
+      responses:
+        "200":
+          description: Login successful
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/AuthResponse"
+        "401":
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+
+  /auth/logout:
+    post:
+      operationId: logoutUser
+      tags: [auth]
+      summary: Logout user
+      responses:
+        "200":
+          description: Logged out
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/MessageResponse"
+
+  /auth/me:
+    get:
+      operationId: getCurrentUser
+      tags: [auth]
+      summary: Get current authenticated user
+      responses:
+        "200":
+          description: Current user
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/UserProfile"
+        "401":
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+
+  /cars:
+    get:
+      operationId: getCars
+      tags: [cars]
+      summary: Get all cars with optional filters
+      parameters:
+        - name: brand
+          in: query
+          schema:
+            type: string
+        - name: model
+          in: query
+          schema:
+            type: string
+        - name: body_type
+          in: query
+          schema:
+            type: string
+        - name: fuel_type
+          in: query
+          schema:
+            type: string
+        - name: transmission
+          in: query
+          schema:
+            type: string
+        - name: min_price
+          in: query
+          schema:
+            type: number
+        - name: max_price
+          in: query
+          schema:
+            type: number
+        - name: seating_capacity
+          in: query
+          schema:
+            type: number
+        - name: search
+          in: query
+          schema:
+            type: string
+        - name: page
+          in: query
+          schema:
+            type: integer
+            default: 1
+        - name: limit
+          in: query
+          schema:
+            type: integer
+            default: 20
+      responses:
+        "200":
+          description: List of cars
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CarsListResponse"
+
+  /cars/{carId}:
+    get:
+      operationId: getCarById
+      tags: [cars]
+      summary: Get car details by ID
+      parameters:
+        - name: carId
+          in: path
+          required: true
+          schema:
+            type: integer
+      responses:
+        "200":
+          description: Car details
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CarDetail"
+        "404":
+          description: Car not found
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+
+  /cars/brands:
+    get:
+      operationId: getCarBrands
+      tags: [cars]
+      summary: Get all unique car brands
+      responses:
+        "200":
+          description: List of brands
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/BrandsResponse"
+
+  /cars/stats:
+    get:
+      operationId: getCarStats
+      tags: [cars]
+      summary: Get car dataset statistics
+      responses:
+        "200":
+          description: Dataset statistics
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CarStats"
+
+  /recommend:
+    post:
+      operationId: getRecommendations
+      tags: [recommend]
+      summary: Get smart car recommendations
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/RecommendBody"
+      responses:
+        "200":
+          description: Top recommendations
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/RecommendResponse"
+
+  /compare:
+    post:
+      operationId: compareCars
+      tags: [compare]
+      summary: Compare multiple cars side by side
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/CompareBody"
+      responses:
+        "200":
+          description: Car comparison data
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CompareResponse"
+
+  /query-process:
+    post:
+      operationId: processQuery
+      tags: [query]
+      summary: Process natural language query intelligently
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/QueryProcessBody"
+      responses:
+        "200":
+          description: Processed query with results
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/QueryProcessResponse"
+
+  /images/{carId}:
+    get:
+      operationId: getCarImage
+      tags: [images]
+      summary: Get car image by car ID
+      parameters:
+        - name: carId
+          in: path
+          required: true
+          schema:
+            type: integer
+      responses:
+        "200":
+          description: Car image
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CarImageResponse"
+
+  /insights/{carId}:
+    get:
+      operationId: getCarInsights
+      tags: [insights]
+      summary: Get smart insights for a car
+      parameters:
+        - name: carId
+          in: path
+          required: true
+          schema:
+            type: integer
+      responses:
+        "200":
+          description: Smart insights
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/InsightsResponse"
+
+  /insights/market-overview:
+    get:
+      operationId: getMarketOverview
+      tags: [insights]
+      summary: Get market overview and trends
+      responses:
+        "200":
+          description: Market overview
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/MarketOverview"
+
 components:
   schemas:
     HealthStatus:
@@ -34,3 +350,431 @@ components:
       required:
         - status
 
+    ErrorResponse:
+      type: object
+      properties:
+        error:
+          type: string
+        message:
+          type: string
+      required:
+        - error
+
+    MessageResponse:
+      type: object
+      properties:
+        message:
+          type: string
+      required:
+        - message
+
+    RegisterBody:
+      type: object
+      properties:
+        name:
+          type: string
+        email:
+          type: string
+          format: email
+        password:
+          type: string
+          minLength: 6
+      required:
+        - name
+        - email
+        - password
+
+    LoginBody:
+      type: object
+      properties:
+        email:
+          type: string
+          format: email
+        password:
+          type: string
+      required:
+        - email
+        - password
+
+    AuthResponse:
+      type: object
+      properties:
+        token:
+          type: string
+        user:
+          $ref: "#/components/schemas/UserProfile"
+      required:
+        - token
+        - user
+
+    UserProfile:
+      type: object
+      properties:
+        id:
+          type: integer
+        name:
+          type: string
+        email:
+          type: string
+      required:
+        - id
+        - name
+        - email
+
+    Car:
+      type: object
+      properties:
+        car_id:
+          type: integer
+        brand:
+          type: string
+        model:
+          type: string
+        variant_name:
+          type: string
+        year:
+          type: integer
+        body_type:
+          type: string
+        fuel_type:
+          type: string
+        transmission:
+          type: string
+        price_lakh:
+          type: number
+        mileage_kmpl:
+          type: number
+        engine_cc:
+          type: integer
+        seating_capacity:
+          type: integer
+        service_cost_inr:
+          type: integer
+        airbags:
+          type: integer
+        abs:
+          type: string
+        rear_camera:
+          type: string
+        touchscreen:
+          type: string
+        cruise_control:
+          type: string
+        sunroof:
+          type: string
+        safety_rating:
+          type: integer
+        brand_image_score:
+          type: number
+        sentiment_score:
+          type: number
+        headlight_inr:
+          type: integer
+        backlight_inr:
+          type: integer
+        front_bumper_inr:
+          type: integer
+        rear_bumper_inr:
+          type: integer
+        side_mirror_inr:
+          type: integer
+        score:
+          type: number
+        image_url:
+          type: string
+      required:
+        - car_id
+        - brand
+        - model
+        - variant_name
+        - year
+        - body_type
+        - fuel_type
+        - transmission
+        - price_lakh
+
+    CarDetail:
+      allOf:
+        - $ref: "#/components/schemas/Car"
+
+    CarsListResponse:
+      type: object
+      properties:
+        cars:
+          type: array
+          items:
+            $ref: "#/components/schemas/Car"
+        total:
+          type: integer
+        page:
+          type: integer
+        limit:
+          type: integer
+        corrected_query:
+          type: string
+      required:
+        - cars
+        - total
+        - page
+        - limit
+
+    BrandsResponse:
+      type: object
+      properties:
+        brands:
+          type: array
+          items:
+            type: string
+      required:
+        - brands
+
+    CarStats:
+      type: object
+      properties:
+        total_cars:
+          type: integer
+        total_brands:
+          type: integer
+        avg_price_lakh:
+          type: number
+        avg_mileage:
+          type: number
+        body_type_counts:
+          type: object
+          additionalProperties:
+            type: integer
+        fuel_type_counts:
+          type: object
+          additionalProperties:
+            type: integer
+        price_range:
+          type: object
+          properties:
+            min:
+              type: number
+            max:
+              type: number
+          required:
+            - min
+            - max
+      required:
+        - total_cars
+        - total_brands
+        - avg_price_lakh
+        - avg_mileage
+        - body_type_counts
+        - fuel_type_counts
+        - price_range
+
+    RecommendBody:
+      type: object
+      properties:
+        budget_max:
+          type: number
+        budget_min:
+          type: number
+        fuel_type:
+          type: string
+        transmission:
+          type: string
+        body_type:
+          type: string
+        seating_capacity:
+          type: integer
+        priority:
+          type: string
+          enum: [mileage, safety, value, comfort]
+      required: []
+
+    RecommendResponse:
+      type: object
+      properties:
+        recommendations:
+          type: array
+          items:
+            $ref: "#/components/schemas/Car"
+        total:
+          type: integer
+      required:
+        - recommendations
+        - total
+
+    CompareBody:
+      type: object
+      properties:
+        car_ids:
+          type: array
+          items:
+            type: integer
+          minItems: 2
+          maxItems: 4
+      required:
+        - car_ids
+
+    CompareResponse:
+      type: object
+      properties:
+        cars:
+          type: array
+          items:
+            $ref: "#/components/schemas/Car"
+        winner:
+          type: object
+          properties:
+            car_id:
+              type: integer
+            reason:
+              type: string
+      required:
+        - cars
+
+    QueryProcessBody:
+      type: object
+      properties:
+        query:
+          type: string
+      required:
+        - query
+
+    QueryProcessResponse:
+      type: object
+      properties:
+        original_query:
+          type: string
+        corrected_query:
+          type: string
+        filters:
+          type: object
+          properties:
+            brand:
+              type: string
+            model:
+              type: string
+            body_type:
+              type: string
+            fuel_type:
+              type: string
+            transmission:
+              type: string
+            budget_max:
+              type: number
+            budget_min:
+              type: number
+            seating_capacity:
+              type: integer
+        cars:
+          type: array
+          items:
+            $ref: "#/components/schemas/Car"
+        total:
+          type: integer
+        message:
+          type: string
+      required:
+        - original_query
+        - corrected_query
+        - filters
+        - cars
+        - total
+
+    CarImageResponse:
+      type: object
+      properties:
+        car_id:
+          type: integer
+        image_url:
+          type: string
+        fallback:
+          type: boolean
+      required:
+        - car_id
+        - image_url
+        - fallback
+
+    InsightsResponse:
+      type: object
+      properties:
+        car_id:
+          type: integer
+        brand:
+          type: string
+        model:
+          type: string
+        why_recommended:
+          type: string
+        strengths:
+          type: array
+          items:
+            type: string
+        weaknesses:
+          type: array
+          items:
+            type: string
+        best_for:
+          type: string
+        value_score:
+          type: number
+      required:
+        - car_id
+        - brand
+        - model
+        - why_recommended
+        - strengths
+        - weaknesses
+        - best_for
+        - value_score
+
+    MarketOverview:
+      type: object
+      properties:
+        top_brands:
+          type: array
+          items:
+            type: object
+            properties:
+              brand:
+                type: string
+              count:
+                type: integer
+              avg_score:
+                type: number
+            required:
+              - brand
+              - count
+              - avg_score
+        popular_body_types:
+          type: array
+          items:
+            type: object
+            properties:
+              body_type:
+                type: string
+              count:
+                type: integer
+            required:
+              - body_type
+              - count
+        budget_segments:
+          type: array
+          items:
+            type: object
+            properties:
+              segment:
+                type: string
+              range:
+                type: string
+              count:
+                type: integer
+            required:
+              - segment
+              - range
+              - count
+        best_value_cars:
+          type: array
+          items:
+            $ref: "#/components/schemas/Car"
+      required:
+        - top_brands
+        - popular_body_types
+        - budget_segments
+        - best_value_cars

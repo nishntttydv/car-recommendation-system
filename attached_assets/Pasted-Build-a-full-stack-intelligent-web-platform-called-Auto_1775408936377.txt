@@ -1,0 +1,283 @@
+Build a full-stack intelligent web platform called:
+
+# **“AutoMind – Smart Car Discovery & Recommendation System”**
+
+---
+
+## 🎯 Objective
+
+Create a modern application where users can:
+
+* Search cars using natural language (English, Hindi, Hinglish)
+* Get smart recommendations
+* Compare cars
+* View sentiment & brand perception
+* View car images from MongoDB
+* Handle misspelled queries intelligently
+* Login and manage their session
+
+⚠️ IMPORTANT:
+Do NOT use the term “AI” anywhere in the frontend UI.
+Use terms like:
+
+* “Smart Search”
+* “Intelligent Recommendations”
+* “Smart Insights”
+
+---
+
+## 🧱 Tech Stack
+
+### Frontend:
+
+* React.js (Vite)
+* Tailwind CSS
+* Framer Motion
+
+### Theme:
+
+* Mechanical / Automotive UI
+* Dark theme with metallic textures
+* Subtle glow effects (neon blue / orange)
+
+---
+
+### Backend:
+
+* Node.js (Express.js)
+* MongoDB (users + images)
+* Python (optional for recommendation engine using pandas)
+
+---
+
+### Intelligence Layer:
+
+* Gemini API (used internally for:
+
+  * query understanding
+  * typo correction
+  * explanations
+    )
+
+⚠️ Do NOT expose this in UI.
+
+---
+
+## 📊 Data Sources
+
+### 1. CSV (Primary Source)
+
+Use provided dataset with columns:
+Car_ID, Brand, Model, Variant_Name, Year, Body_Type, Fuel_Type, Transmission, Price_Lakh, Mileage_kmpl, Engine_CC, Seating_Capacity, Service_Cost_INR, Airbags, ABS, Rear_Camera, Touchscreen, Cruise_Control, Sunroof, Safety_Rating, Brand_Image_Score, Sentiment_Score, Headlight_INR, Backlight_INR, FrontBumper_INR, RearBumper_INR, SideMirror_INR
+
+Use pandas for processing.
+
+---
+
+### 2. MongoDB (Secondary)
+
+Used for:
+
+* User authentication
+* Car images
+
+Schema:
+{
+car_id: string,
+image_url: string
+}
+
+---
+
+## 💻 Core Features
+
+---
+
+### 1. 🔐 Authentication
+
+* Signup / Login / Logout
+* JWT-based session
+
+Routes:
+
+* POST /api/auth/register
+* POST /api/auth/login
+* POST /api/auth/logout
+
+---
+
+### 2. 🏠 Homepage
+
+* Heading: “Find Your Perfect Car”
+
+* Chat-style input:
+  Placeholder: “Describe your ideal car…”
+
+* Buttons:
+
+  * “Search”
+  * “Explore Smart Recommendations”
+
+---
+
+### 3. 💬 Smart Query Processing
+
+System should:
+
+* Understand user queries
+* Correct spelling mistakes
+* Convert to structured filters
+
+Example:
+Input:
+“hyndai creta suv under 15 lakh”
+
+Processed:
+{
+"brand": "Hyundai",
+"model": "Creta",
+"body_type": "SUV",
+"budget_max": 1500000
+}
+
+---
+
+### 4. 🔍 Intelligent Search (TYPO-TOLERANT)
+
+Implement:
+
+* Fuzzy matching (Levenshtein distance)
+* Intelligent correction layer
+
+Examples:
+
+* “Toyta” → Toyota
+* “Hondaa” → Honda
+
+Show:
+
+* “Showing results for: Toyota”
+
+---
+
+### 5. 🚗 Recommendation Engine
+
+Use CSV:
+
+Filtering:
+
+* Price_Lakh
+* Fuel_Type
+* Transmission
+* Body_Type
+* Seating_Capacity
+
+Scoring:
+Final Score =
+0.2 Price +
+0.15 Mileage_kmpl +
+0.15 Safety_Rating +
+0.1 Features +
+0.1 Service_Cost_INR +
+0.2 Sentiment_Score +
+0.1 Brand_Image_Score
+
+Return Top 5 cars
+
+---
+
+### 6. 🖼️ Image Handling
+
+* Fetch images from MongoDB
+* Endpoint:
+  GET /api/images/:car_id
+
+Fallback:
+
+* Default placeholder image
+
+---
+
+### 7. 📊 Compare Cars
+
+* Select 2–4 cars
+* Side-by-side comparison
+
+Include:
+
+* Price
+* Mileage
+* Engine
+* Fuel
+* Transmission
+* Seating
+* Safety
+* Service Cost
+* Sentiment Score
+* Brand Score
+
+---
+
+### 8. 📦 Car Detail Page
+
+* Full specifications
+* Features (ABS, Sunroof, etc.)
+* Spare part costs
+* Sentiment score
+* Brand perception
+* Image
+
+---
+
+### 9. 📈 Smart Insights
+
+Generate:
+
+* “Why this car is recommended”
+* “Best option based on your needs”
+* “Strengths and weaknesses”
+
+---
+
+## 🔗 Backend APIs
+
+* GET /api/cars
+* POST /api/recommend
+* POST /api/compare
+* POST /api/query-process
+* GET /api/images/:car_id
+
+---
+
+## 🎨 UI/UX Requirements
+
+* Dark mechanical theme
+* Metallic gradients
+* Smooth animations
+* Chat bubbles
+* Card-based layout
+* Hover effects
+
+---
+
+## 🔐 Security
+
+* JWT authentication
+* API keys in environment variables
+* Protected routes
+
+---
+
+## ⚠️ Constraints
+
+* CSV is main data source
+* MongoDB only for images + users
+* Clean modular architecture
+
+---
+
+## 🎯 Final Experience
+
+The system should feel like:
+
+👉 “A smart automotive assistant that understands user needs and provides accurate car recommendations, comparisons, and insights.”

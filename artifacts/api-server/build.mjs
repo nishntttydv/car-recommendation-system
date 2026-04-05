@@ -14,6 +14,16 @@ async function buildAll() {
   const distDir = path.resolve(artifactDir, "dist");
   await rm(distDir, { recursive: true, force: true });
 
+  // Copy data files to dist
+  const { cp } = await import("node:fs/promises");
+  const dataSrc = path.resolve(artifactDir, "src/data");
+  const dataDst = path.resolve(distDir, "data");
+  try {
+    await cp(dataSrc, dataDst, { recursive: true });
+  } catch {
+    // data dir may not exist
+  }
+
   await esbuild({
     entryPoints: [path.resolve(artifactDir, "src/index.ts")],
     platform: "node",
@@ -64,7 +74,6 @@ async function buildAll() {
       "@azure/*",
       "@opentelemetry/*",
       "@google-cloud/*",
-      "@google/*",
       "googleapis",
       "firebase-admin",
       "@parcel/watcher",
