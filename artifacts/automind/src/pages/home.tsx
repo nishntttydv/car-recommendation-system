@@ -57,8 +57,8 @@ export default function Home() {
             transition={{ duration: 0.7, delay: 0.2 }}
             className="text-muted-foreground text-lg mb-10 max-w-2xl mx-auto"
           >
-            Describe what you're looking for in plain English, Hindi, or Hinglish.
-            Our system understands your needs and finds the best matches — even with typos.
+            Type "sunroo", "hyndai creta", "automatic under 15 lakh" — our search
+            understands slang, typos, partial words, Hindi, and Hinglish.
           </motion.p>
 
           <motion.form
@@ -73,7 +73,7 @@ export default function Home() {
                 type="text"
                 value={query}
                 onChange={(e) => setQuery(e.target.value)}
-                placeholder="Describe your ideal car…"
+                placeholder="Try: sunroo, hyndai, automatic SUV, family car 7 seater…"
                 className="w-full bg-card/80 border border-border rounded-lg px-5 py-4 text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-primary/60 focus:ring-1 focus:ring-primary/30 text-base"
               />
             </div>
@@ -93,7 +93,7 @@ export default function Home() {
             transition={{ delay: 0.5 }}
             className="flex flex-wrap justify-center gap-2 mb-12"
           >
-            {["SUV under 15 lakh", "fuel efficient diesel", "family MPV 7 seater", "Hyundai Creta", "electric car"].map((ex) => (
+            {["sunroo", "hyndai creta", "automatic under 15 lakh", "family 7 seater diesel", "EV with touchscreen", "safe budget car"].map((ex) => (
               <button
                 key={ex}
                 onClick={() => {
