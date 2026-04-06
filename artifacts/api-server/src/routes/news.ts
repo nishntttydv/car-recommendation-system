@@ -16,14 +16,21 @@ function cleanText(value: string) {
   return value.replace(/\s+/g, " ").trim();
 }
 
+function extractApiKey(raw: string): string {
+  // Handle cases where the env var contains extra text like "here is the Gnews API : -abc123..."
+  // Extract the last contiguous hex/alphanumeric token
+  const match = raw.match(/[a-f0-9]{20,}/i);
+  return match ? match[0] : raw.trim();
+}
+
 async function fetchGNews(query: string, max = 8): Promise<NewsItem[]> {
-  const apiKey = process.env["GNEWS_API_KEY"];
-  if (!apiKey) return [];
+  const rawKey = process.env["GNEWS_API_KEY"];
+  if (!rawKey) return [];
+  const apiKey = extractApiKey(rawKey);
 
   const url = new URL("https://gnews.io/api/v4/search");
   url.searchParams.set("q", query);
   url.searchParams.set("lang", "en");
-  url.searchParams.set("country", "in");
   url.searchParams.set("max", String(max));
   url.searchParams.set("sortby", "publishedAt");
   url.searchParams.set("apikey", apiKey);
