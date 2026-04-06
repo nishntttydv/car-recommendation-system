@@ -24,3 +24,8 @@ expertMode = true
 [postMerge]
 path = "scripts/post-merge.sh"
 timeoutMs = 20000
+
+[userenv]
+
+[userenv.shared]
+GNEWS_API_KEY = "here is the Gnews API : -babee86fc55909af2e7a46cef806c3f1"
