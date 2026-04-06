@@ -11,6 +11,7 @@ export function Navbar() {
     { href: "/recommend", label: "Smart Recommendations" },
     { href: "/compare", label: "Compare" },
     { href: "/insights", label: "Smart Insights" },
+    { href: "/news", label: "Car News" },
   ];
 
   return (

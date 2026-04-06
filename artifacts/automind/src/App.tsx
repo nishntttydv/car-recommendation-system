@@ -13,6 +13,7 @@ import CarDetail from "@/pages/car-detail";
 import Recommend from "@/pages/recommend";
 import Compare from "@/pages/compare";
 import Insights from "@/pages/insights";
+import News from "@/pages/news";
 
 const queryClient = new QueryClient({
   defaultOptions: {
@@ -36,6 +37,7 @@ function Router() {
         <Route path="/recommend" component={Recommend} />
         <Route path="/compare" component={Compare} />
         <Route path="/insights" component={Insights} />
+        <Route path="/news" component={News} />
         <Route component={NotFound} />
       </Switch>
     </>
