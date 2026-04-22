@@ -1,9 +1,31 @@
 import { Router, type IRouter } from "express";
 import { loadCars, computeScore } from "../lib/csv-loader";
 import { generateCarInsights } from "../lib/gemini";
+import { getCarImageUrl } from "../lib/image-url";
 import { GetCarInsightsParams } from "@workspace/api-zod";
 
 const router: IRouter = Router();
+
+function getModelKey(car: { brand: string; model: string }): string {
+  return `${car.brand}::${car.model}`.toLowerCase();
+}
+
+function pickDistinctModels<T extends { brand: string; model: string }>(cars: T[], limit: number): T[] {
+  const seenModels = new Set<string>();
+  const distinct: T[] = [];
+
+  for (const car of cars) {
+    const modelKey = getModelKey(car);
+    if (seenModels.has(modelKey)) continue;
+
+    seenModels.add(modelKey);
+    distinct.push(car);
+
+    if (distinct.length === limit) break;
+  }
+
+  return distinct;
+}
 
 router.get("/insights/market-overview", async (_req, res): Promise<void> => {
   const cars = loadCars();
@@ -43,10 +65,15 @@ router.get("/insights/market-overview", async (_req, res): Promise<void> => {
     { segment: "Luxury", range: "Above ₹35L", count: cars.filter((c) => c.price_lakh >= 35).length },
   ];
 
-  const best_value_cars = [...carsWithScore]
+  const best_value_cars = pickDistinctModels(
+    [...carsWithScore]
     .sort((a, b) => (b.score ?? 0) - (a.score ?? 0))
-    .slice(0, 5)
-    .map((c) => ({ ...c, image_url: `/api/images/${c.car_id}` }));
+    .map((c) => ({
+      ...c,
+      image_url: getCarImageUrl(c.brand, c.model),
+    })),
+    5,
+  );
 
   res.json({
     top_brands,

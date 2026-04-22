@@ -1,5 +1,6 @@
 import { Router, type IRouter } from "express";
 import { loadCars, computeScore } from "../lib/csv-loader";
+import { getCarImageUrl } from "../lib/image-url";
 import { GetRecommendationsBody } from "@workspace/api-zod";
 
 const router: IRouter = Router();
@@ -49,7 +50,7 @@ router.post("/recommend", async (req, res): Promise<void> => {
   const carsWithScore = cars.map((c) => ({
     ...c,
     score: computeScore(c),
-    image_url: `/api/images/${c.car_id}`,
+    image_url: getCarImageUrl(c.brand, c.model),
   }));
 
   carsWithScore.sort((a, b) => (b.score ?? 0) - (a.score ?? 0));

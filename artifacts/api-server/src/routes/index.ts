@@ -8,6 +8,7 @@ import queryRouter from "./query";
 import imagesRouter from "./images";
 import insightsRouter from "./insights";
 import newsRouter from "./news";
+import profileRouter from "./profile";
 
 const router: IRouter = Router();
 
@@ -20,5 +21,6 @@ router.use(queryRouter);
 router.use(imagesRouter);
 router.use(insightsRouter);
 router.use(newsRouter);
+router.use(profileRouter);
 
 export default router;

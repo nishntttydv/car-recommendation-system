@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Link } from "wouter";
+import { Heart } from "lucide-react";
 
 interface CarCardProps {
   car: {
@@ -20,9 +21,12 @@ interface CarCardProps {
   index?: number;
   onCompareToggle?: (id: number) => void;
   inCompare?: boolean;
+  onOpen?: (car: { car_id: number; brand: string; model: string; variant_name: string }) => void;
+  onFavoriteToggle?: (id: number) => void;
+  isFavorite?: boolean;
 }
 
-export function CarCard({ car, index = 0, onCompareToggle, inCompare }: CarCardProps) {
+export function CarCard({ car, index = 0, onCompareToggle, inCompare, onOpen, onFavoriteToggle, isFavorite }: CarCardProps) {
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
@@ -32,7 +36,15 @@ export function CarCard({ car, index = 0, onCompareToggle, inCompare }: CarCardP
       className="relative group bg-card border border-border rounded-lg overflow-hidden hover:border-primary/40 transition-colors duration-300"
     >
       <Link href={`/car/${car.car_id}`}>
-        <div className="cursor-pointer">
+        <div
+          className="cursor-pointer"
+          onClick={() => onOpen?.({
+            car_id: car.car_id,
+            brand: car.brand,
+            model: car.model,
+            variant_name: car.variant_name,
+          })}
+        >
           <div className="relative h-44 bg-gradient-to-br from-[hsl(220,20%,8%)] to-[hsl(220,20%,12%)] overflow-hidden">
             {car.image_url ? (
               <img
@@ -55,6 +67,25 @@ export function CarCard({ car, index = 0, onCompareToggle, inCompare }: CarCardP
             <div className="absolute top-2 right-2 bg-primary/90 text-white text-xs font-bold px-2 py-0.5 rounded">
               {car.fuel_type}
             </div>
+            {onFavoriteToggle && (
+              <button
+                type="button"
+                onClick={(e) => {
+                  e.preventDefault();
+                  e.stopPropagation();
+                  onFavoriteToggle(car.car_id);
+                }}
+                className={`absolute top-2 left-2 flex h-8 w-8 items-center justify-center rounded-full border backdrop-blur transition-colors ${
+                  isFavorite
+                    ? "border-rose-400/70 bg-rose-500 text-white"
+                    : "border-border bg-black/40 text-white hover:border-rose-300 hover:text-rose-200"
+                }`}
+                aria-label={isFavorite ? "Remove from wishlist" : "Add to wishlist"}
+                title={isFavorite ? "Remove from wishlist" : "Add to wishlist"}
+              >
+                <Heart className={`h-4 w-4 ${isFavorite ? "fill-current" : ""}`} />
+              </button>
+            )}
             {car.score != null && (
               <div className="absolute bottom-2 left-2 bg-black/70 text-secondary text-xs font-bold px-2 py-0.5 rounded">
                 Score {(car.score * 100).toFixed(0)}

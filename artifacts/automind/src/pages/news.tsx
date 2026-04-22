@@ -64,15 +64,15 @@ export default function News() {
           </div>
           <h1 className="text-4xl font-black text-foreground">Car News</h1>
           <p className="text-muted-foreground max-w-3xl">
-            Stay updated with the latest automobile industry developments, recalls, safety stories, and events that affect car owners.
+            Track two things in one place: what is happening across the automobile world globally, and the hardest real-world ownership stories where cars disappointed owners through failures, recalls, crashes, or poor performance.
           </p>
         </motion.div>
 
         <div className="grid gap-6">
           <section className="space-y-4">
             <div>
-              <h2 className="text-2xl font-bold">Global automotive updates</h2>
-              <p className="text-muted-foreground">Industry launches, EV trends, policy changes, and market movement across the world.</p>
+              <h2 className="text-2xl font-bold">Global automotive world</h2>
+              <p className="text-muted-foreground">Major automobile updates across the world: launches, EV movement, regulations, pricing, manufacturing, and market direction.</p>
             </div>
             {isLoading ? (
               <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-4">
@@ -91,8 +91,8 @@ export default function News() {
 
           <section className="space-y-4">
             <div>
-              <h2 className="text-2xl font-bold">User-impact stories</h2>
-              <p className="text-muted-foreground">Serious news about safety failures, crashes, recalls, and incidents that matter to owners.</p>
+              <h2 className="text-2xl font-bold">Disastrous ownership experiences</h2>
+              <p className="text-muted-foreground">Fatal crashes, recalls, defect stories, safety failures, and ownership experiences where cars underperformed badly in the real world.</p>
             </div>
             {isLoading ? (
               <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-4">

@@ -1,8 +1,11 @@
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect } from "react";
 import { useLocation } from "wouter";
 import { motion, AnimatePresence } from "framer-motion";
 import { useGetCars, getGetCarsQueryKey, useProcessQuery } from "@workspace/api-client-react";
+import { Mic, MicOff } from "lucide-react";
 import { CarCard } from "@/components/CarCard";
+import { useVoiceSearch } from "@/hooks/useVoiceSearch";
+import { trackProfileEvent } from "@/lib/profile-api";
 
 const FUEL_TYPES = ["Petrol", "Diesel", "Electric", "Hybrid", "CNG"];
 const BODY_TYPES = ["Hatchback", "Sedan", "SUV", "MPV"];
@@ -92,11 +95,24 @@ export default function Search() {
   function handleSearch(e?: React.FormEvent) {
     e?.preventDefault();
     if (localQuery.trim()) {
+      trackProfileEvent({ event_type: "search_submitted", query_text: localQuery.trim(), metadata: { source: "search_page" } });
       navigate(`/search?q=${encodeURIComponent(localQuery.trim())}`);
       setDisplayMode("nlp");
       processQuery.mutate({ data: { query: localQuery.trim() } });
     }
   }
+  const { isListening, voiceSupported, voiceMessage, toggleVoiceSearch } = useVoiceSearch({
+    value: localQuery,
+    silenceMs: 2500,
+    onTranscript: setLocalQuery,
+    onAutoSubmit: (spokenQuery) => {
+      setLocalQuery(spokenQuery);
+      trackProfileEvent({ event_type: "search_submitted", query_text: spokenQuery, metadata: { source: "search_voice" } });
+      navigate(`/search?q=${encodeURIComponent(spokenQuery)}`);
+      setDisplayMode("nlp");
+      processQuery.mutate({ data: { query: spokenQuery } });
+    },
+  });
 
   function handleCompareToggle(id: number) {
     setCompareIds((prev) => {
@@ -108,6 +124,7 @@ export default function Search() {
 
   function handleCompare() {
     if (compareIds.length >= 2) {
+      trackProfileEvent({ event_type: "compare_started", metadata: { car_ids: compareIds } });
       navigate(`/compare?ids=${compareIds.join(",")}`);
     }
   }
@@ -129,8 +146,23 @@ export default function Search() {
                 value={localQuery}
                 onChange={(e) => setLocalQuery(e.target.value)}
                 placeholder="Try: sunroo, automatic under 15 lakh, hyndai creta, 7 seater family car…"
-                className="w-full bg-card border border-border rounded-lg pl-4 pr-10 py-2.5 text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-primary/60 focus:ring-1 focus:ring-primary/30"
+                className="w-full bg-card border border-border rounded-lg pl-4 pr-20 py-2.5 text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-primary/60 focus:ring-1 focus:ring-primary/30"
               />
+              {voiceSupported && (
+                <button
+                  type="button"
+                  onClick={toggleVoiceSearch}
+                  className={`absolute right-9 top-1/2 -translate-y-1/2 flex h-7 w-7 items-center justify-center rounded-full border transition-colors ${
+                    isListening
+                      ? "border-primary bg-primary text-white"
+                      : "border-border text-muted-foreground hover:border-primary/40 hover:text-primary"
+                  }`}
+                  aria-label={isListening ? "Stop voice search" : "Start voice search"}
+                  title={isListening ? "Stop voice search" : "Start voice search"}
+                >
+                  {isListening ? <MicOff className="h-3.5 w-3.5" /> : <Mic className="h-3.5 w-3.5" />}
+                </button>
+              )}
               {localQuery && (
                 <button
                   type="button"
@@ -150,6 +182,11 @@ export default function Search() {
               Search
             </motion.button>
           </form>
+          {(voiceSupported || voiceMessage) && (
+            <div className="mt-2 min-h-5 text-xs text-muted-foreground">
+              {voiceMessage || "Tap the mic to speak your search in Hindi, Hinglish, or English."}
+            </div>
+          )}
         </div>
       </div>
 
@@ -353,6 +390,18 @@ export default function Search() {
                     index={i}
                     onCompareToggle={handleCompareToggle}
                     inCompare={compareIds.includes(car.car_id)}
+                    onOpen={(openedCar) => {
+                      trackProfileEvent({
+                        event_type: "search_result_clicked",
+                        car_id: openedCar.car_id,
+                        query_text: localQuery || undefined,
+                        metadata: {
+                          source: displayMode,
+                          brand: openedCar.brand,
+                          model: openedCar.model,
+                        },
+                      });
+                    }}
                   />
                 ))}
               </div>

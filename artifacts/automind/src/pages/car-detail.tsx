@@ -1,11 +1,14 @@
+import { useEffect, useRef } from "react";
 import { useRoute, useLocation } from "wouter";
 import { motion } from "framer-motion";
 import { useGetCarById, useGetCarInsights, getGetCarByIdQueryKey, getGetCarInsightsQueryKey } from "@workspace/api-client-react";
+import { trackProfileEvent } from "@/lib/profile-api";
 
 export default function CarDetail() {
   const [, params] = useRoute("/car/:carId");
   const carId = parseInt(params?.carId || "0", 10);
   const [, navigate] = useLocation();
+  const viewStartRef = useRef<number | null>(null);
 
   const { data: car, isLoading } = useGetCarById(carId, {
     query: { queryKey: getGetCarByIdQueryKey(carId), enabled: !!carId },
@@ -14,6 +17,32 @@ export default function CarDetail() {
   const { data: insights, isLoading: insightsLoading } = useGetCarInsights(carId, {
     query: { queryKey: getGetCarInsightsQueryKey(carId), enabled: !!carId },
   });
+
+  useEffect(() => {
+    if (!car) return;
+    viewStartRef.current = Date.now();
+    trackProfileEvent({
+      event_type: "car_viewed",
+      car_id: car.car_id,
+      metadata: { brand: car.brand, model: car.model, source: "car_detail" },
+    });
+
+    return () => {
+      if (!viewStartRef.current) return;
+      const durationMs = Date.now() - viewStartRef.current;
+      if (durationMs < 3000) return;
+      trackProfileEvent({
+        event_type: "car_detail_time_spent",
+        car_id: car.car_id,
+        metadata: {
+          source: "car_detail",
+          duration_ms: durationMs,
+          brand: car.brand,
+          model: car.model,
+        },
+      });
+    };
+  }, [car]);
 
   if (isLoading) {
     return (

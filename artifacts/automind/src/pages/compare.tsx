@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { useLocation } from "wouter";
 import { motion } from "framer-motion";
 import { useCompareCars, useGetCars, getGetCarsQueryKey } from "@workspace/api-client-react";
+import { trackProfileEvent } from "@/lib/profile-api";
 
 export default function Compare() {
   const [location] = useLocation();
@@ -38,6 +39,7 @@ export default function Compare() {
 
   function handleCompare() {
     if (selectedIds.length >= 2) {
+      trackProfileEvent({ event_type: "compare_started", metadata: { car_ids: selectedIds, source: "compare_page" } });
       mutation.mutate({ data: { car_ids: selectedIds } });
     }
   }
@@ -49,6 +51,7 @@ export default function Compare() {
 
   function addCar(id: number) {
     if (!selectedIds.includes(id) && selectedIds.length < 4) {
+      trackProfileEvent({ event_type: "compare_candidate_added", car_id: id, metadata: { source: "compare_search" } });
       setSelectedIds((prev) => [...prev, id]);
       setSearchQuery("");
     }
@@ -175,6 +178,24 @@ export default function Compare() {
                     <th className="text-left text-xs text-muted-foreground uppercase tracking-wider py-3 pr-4 font-medium w-32">Spec</th>
                     {cars.map((car) => (
                       <th key={car.car_id} className={`text-center py-3 px-4 ${winner?.car_id === car.car_id ? "border-t-2 border-secondary" : ""}`}>
+                        <div className="mb-3">
+                          <div className="relative h-40 rounded-xl overflow-hidden bg-gradient-to-br from-[hsl(220,20%,8%)] to-[hsl(220,20%,12%)] border border-border">
+                            {car.image_url ? (
+                              <img
+                                src={car.image_url}
+                                alt={`${car.brand} ${car.model}`}
+                                className="w-full h-full object-contain"
+                                onError={(e) => {
+                                  (e.target as HTMLImageElement).style.display = "none";
+                                  (e.target as HTMLImageElement).nextElementSibling?.classList.remove("hidden");
+                                }}
+                              />
+                            ) : null}
+                            <div className={`${car.image_url ? "hidden" : ""} absolute inset-0 flex items-center justify-center`}>
+                              <span className="text-3xl font-black text-primary/20">{car.brand.slice(0, 2).toUpperCase()}</span>
+                            </div>
+                          </div>
+                        </div>
                         <div className="text-xs text-muted-foreground">{car.brand}</div>
                         <div className={`font-bold text-sm ${winner?.car_id === car.car_id ? "text-secondary" : "text-foreground"}`}>{car.model}</div>
                         <div className="text-xs text-muted-foreground">{car.variant_name}</div>

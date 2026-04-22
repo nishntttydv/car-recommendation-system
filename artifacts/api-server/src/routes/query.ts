@@ -1,10 +1,100 @@
 import { Router, type IRouter } from "express";
 import { loadCars, computeScore, fuzzyMatchBrand, fuzzyMatchModel } from "../lib/csv-loader";
+import { getCarImageUrl } from "../lib/image-url";
 import { processCarQuery } from "../lib/gemini";
-import { buildSmartFilters, applySmartFilters, fuzzyTextSearch } from "../lib/smart-search";
+import { buildSmartFilters, fuzzyTextSearch, scoreSmartMatch } from "../lib/smart-search";
 import { ProcessQueryBody } from "@workspace/api-zod";
 
 const router: IRouter = Router();
+
+const VALID_BODY_TYPES = new Set(["Hatchback", "Sedan", "SUV", "MPV", "Coupe", "Convertible", "Pickup", "Wagon"]);
+const VALID_FUEL_TYPES = new Set(["Petrol", "Diesel", "Electric", "CNG", "Hybrid"]);
+const VALID_TRANSMISSIONS = new Set(["Manual", "Automatic"]);
+const SEARCH_RESULT_LIMIT = 30;
+
+type SearchResultCar = Record<string, unknown> & {
+  car_id: number;
+  brand: string;
+  model: string;
+  variant_name: string;
+  relevance_score: number;
+};
+
+function isSearchReadyCar(car: Record<string, unknown>): boolean {
+  const price = Number(car.price_lakh ?? 0);
+  const seating = Number(car.seating_capacity ?? 0);
+  const safety = Number(car.safety_rating ?? 0);
+  const sentiment = Number(car.sentiment_score ?? 0);
+  const model = String(car.model ?? "").trim();
+  const variant = String(car.variant_name ?? "").trim();
+
+  return (
+    String(car.brand ?? "").trim().length > 0 &&
+    model.length > 0 &&
+    !/^\d{4}$/.test(model) &&
+    !/^\d{4}$/.test(variant) &&
+    VALID_BODY_TYPES.has(String(car.body_type ?? "")) &&
+    VALID_FUEL_TYPES.has(String(car.fuel_type ?? "")) &&
+    VALID_TRANSMISSIONS.has(String(car.transmission ?? "")) &&
+    Number.isFinite(price) &&
+    price >= 2 &&
+    price <= 100 &&
+    Number.isFinite(seating) &&
+    seating >= 2 &&
+    seating <= 9 &&
+    Number.isFinite(safety) &&
+    safety >= 0 &&
+    safety <= 5 &&
+    Number.isFinite(sentiment) &&
+    sentiment >= 0 &&
+    sentiment <= 1
+  );
+}
+
+function getModelKey(car: Pick<SearchResultCar, "brand" | "model">): string {
+  return `${car.brand}::${car.model}`.toLowerCase();
+}
+
+function diversifySearchResults(scoredCars: SearchResultCar[], limit: number): SearchResultCar[] {
+  const perModelCount = new Map<string, number>();
+  const diversified: SearchResultCar[] = [];
+  const leftovers: SearchResultCar[] = [];
+
+  for (const car of scoredCars) {
+    const modelKey = getModelKey(car);
+    if (!perModelCount.has(modelKey)) {
+      diversified.push(car);
+      perModelCount.set(modelKey, 1);
+      if (diversified.length === limit) return diversified;
+    } else {
+      leftovers.push(car);
+    }
+  }
+
+  for (const car of leftovers) {
+    const modelKey = getModelKey(car);
+    const currentCount = perModelCount.get(modelKey) ?? 0;
+    if (currentCount >= 2) continue;
+
+    diversified.push(car);
+    perModelCount.set(modelKey, currentCount + 1);
+    if (diversified.length === limit) break;
+  }
+
+  return diversified;
+}
+
+function selectSearchResults(
+  scoredCars: SearchResultCar[],
+  limit: number,
+  opts: { preserveVariantsForModelSearch: boolean },
+): SearchResultCar[] {
+  if (opts.preserveVariantsForModelSearch) {
+    return scoredCars.slice(0, limit);
+  }
+
+  return diversifySearchResults(scoredCars, limit);
+}
 
 router.post("/query-process", async (req, res): Promise<void> => {
   const parsed = ProcessQueryBody.safeParse(req.body);
@@ -14,7 +104,7 @@ router.post("/query-process", async (req, res): Promise<void> => {
   }
 
   const { query } = parsed.data;
-  let allCars = loadCars();
+  let allCars = loadCars().filter((car) => isSearchReadyCar(car as unknown as Record<string, unknown>));
   const brands = [...new Set(allCars.map((c) => c.brand))];
   const models = [...new Set(allCars.map((c) => c.model))];
 
@@ -91,7 +181,12 @@ router.post("/query-process", async (req, res): Promise<void> => {
     mergedSeating != null || featuresToApply.length > 0 ||
     localFilters.feature_sunroof || localFilters.feature_abs ||
     localFilters.feature_touchscreen || localFilters.feature_cruise_control ||
-    localFilters.feature_rear_camera || localFilters.safety_min != null;
+    localFilters.feature_rear_camera || localFilters.safety_min != null ||
+    localFilters.family_friendly || localFilters.comfort_priority ||
+    localFilters.fun_to_drive || localFilters.city_friendly ||
+    localFilters.highway_friendly || localFilters.low_maintenance ||
+    localFilters.rough_road_ready || localFilters.premium_preference ||
+    localFilters.mileage_priority || localFilters.first_car;
 
   if (!hasAnyFilter) {
     // Full fuzzy text search across all cars
@@ -103,14 +198,24 @@ router.post("/query-process", async (req, res): Promise<void> => {
   const scored = cars
     .map((c) => {
       const original = rawCars.find((r) => r.car_id === c.car_id);
+      const baseCar = (original ?? c) as Record<string, unknown>;
+      const overallScore = computeScore(baseCar as Parameters<typeof computeScore>[0]);
+      const intentBoost = scoreSmartMatch(baseCar, localFilters, query);
       return {
-        ...(original ?? c),
-        score: computeScore(original as Parameters<typeof computeScore>[0] ?? (c as Parameters<typeof computeScore>[0])),
-        image_url: `/api/images/${c.car_id}`,
+        ...baseCar,
+        score: overallScore,
+        relevance_score: overallScore * 100 + intentBoost,
+        image_url: getCarImageUrl(String(c.brand ?? ""), String(c.model ?? "")),
       };
     })
-    .sort((a, b) => ((b.score as number) ?? 0) - ((a.score as number) ?? 0))
-    .slice(0, 30);
+    .sort((a, b) => ((b.relevance_score as number) ?? 0) - ((a.relevance_score as number) ?? 0));
+
+  const diversifiedResults = selectSearchResults(
+    scored as SearchResultCar[],
+    SEARCH_RESULT_LIMIT,
+    { preserveVariantsForModelSearch: Boolean(modelToUse) },
+  );
+  const uniqueModelsShown = new Set(diversifiedResults.map((car) => getModelKey(car))).size;
 
   const filtersReturned: Record<string, unknown> = {};
   if (brandToUse) filtersReturned.brand = brandToUse;
@@ -121,6 +226,16 @@ router.post("/query-process", async (req, res): Promise<void> => {
   if (mergedBudgetMax != null) filtersReturned.budget_max = mergedBudgetMax;
   if (mergedBudgetMin != null) filtersReturned.budget_min = mergedBudgetMin;
   if (mergedSeating != null) filtersReturned.seating_capacity = mergedSeating;
+  if (localFilters.family_friendly) filtersReturned.intent_family = true;
+  if (localFilters.comfort_priority) filtersReturned.intent_comfort = true;
+  if (localFilters.fun_to_drive) filtersReturned.intent_fun = true;
+  if (localFilters.city_friendly) filtersReturned.intent_city = true;
+  if (localFilters.highway_friendly) filtersReturned.intent_highway = true;
+  if (localFilters.low_maintenance) filtersReturned.intent_low_maintenance = true;
+  if (localFilters.rough_road_ready) filtersReturned.intent_rough_road = true;
+  if (localFilters.premium_preference) filtersReturned.intent_premium = true;
+  if (localFilters.mileage_priority) filtersReturned.intent_mileage = true;
+  if (localFilters.first_car) filtersReturned.intent_first_car = true;
   // Feature filters
   const activeFeatures: string[] = [];
   if (featuresToApply.includes("sunroof") || localFilters.feature_sunroof) activeFeatures.push("sunroof");
@@ -135,9 +250,11 @@ router.post("/query-process", async (req, res): Promise<void> => {
     corrected_query: correctedQuery,
     intent,
     filters: filtersReturned,
-    cars: scored,
+    cars: diversifiedResults,
     total: cars.length,
-    message: `Found ${cars.length} cars matching your search.`,
+    shown: diversifiedResults.length,
+    unique_models_shown: uniqueModelsShown,
+    message: `Found ${cars.length} cars matching your search. Showing ${diversifiedResults.length} results across ${uniqueModelsShown} models.`,
     source: geminiOk ? "gemini+local" : "local",
   });
 });

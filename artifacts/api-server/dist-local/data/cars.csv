@@ -1,0 +1,1002 @@
+Car_ID,Brand,Model,Variant_Name,Year,Body_Type,Fuel_Type,Transmission,Price_Lakh,Mileage_kmpl,Engine_CC,Seating_Capacity,Service_Cost_INR,Airbags,ABS,Rear_Camera,Touchscreen,Cruise_Control,Sunroof,Safety_Rating,Brand_Image_Score,Sentiment_Score,Headlight_INR,Backlight_INR,FrontBumper_INR,RearBumper_INR,SideMirror_INR
+1,Maruti Suzuki,Swift,LXi Petrol MT,2024,Hatchback,Petrol,Manual,6.2,22.4,1197,5,4500,2,Yes,No,Yes,No,No,3,7,0.6,6000,4000,8500,7500,3000
+2,Maruti Suzuki,Swift,VXi Petrol AT,2024,Hatchback,Petrol,Automatic,7.8,22.0,1197,5,4800,2,Yes,Yes,Yes,No,No,3,7,0.6,6000,4000,9000,8000,3200
+3,Maruti Suzuki,Swift,VXi CNG MT,2024,Hatchback,CNG,Manual,8.1,30.5,1197,5,4700,2,Yes,No,Yes,No,No,3,7,0.6,6500,4200,9000,8000,3200
+4,Hyundai,i20,Sportz Petrol MT,2024,Hatchback,Petrol,Manual,7.9,20.3,1197,5,6000,2,Yes,Yes,Yes,No,No,3,8,0.65,7000,4500,10000,9000,3500
+5,Hyundai,i20,Asta Diesel MT,2024,Hatchback,Diesel,Manual,9.9,25.2,1493,5,6500,6,Yes,Yes,Yes,No,Yes,4,8,0.65,9000,6000,14000,13000,5000
+6,Hyundai,i20,Asta Petrol AT,2024,Hatchback,Petrol,Automatic,10.1,20.0,1197,5,6200,6,Yes,Yes,Yes,No,Yes,4,8,0.65,9000,6000,15000,14000,5200
+7,Tata Motors,Altroz,XE Petrol MT,2024,Hatchback,Petrol,Manual,6.6,19.3,1199,5,5200,2,Yes,No,Yes,No,No,4,7,0.55,6500,4200,9000,8000,3200
+8,Tata Motors,Altroz,XZ Diesel MT,2024,Hatchback,Diesel,Manual,9.6,23.6,1497,5,5800,4,Yes,Yes,Yes,No,Yes,5,7,0.55,9000,6000,15000,14000,5200
+9,Tata Motors,Nexon,Smart Petrol MT,2024,SUV,Petrol,Manual,8.2,17.0,1199,5,6000,2,Yes,Yes,Yes,No,No,5,7,0.6,9000,6000,15000,14000,5200
+10,Tata Motors,Nexon,Fearless EV LR,2024,SUV,Electric,Automatic,17.5,0.0,0,5,8000,6,Yes,Yes,Yes,Yes,Yes,5,7,0.6,18000,12000,26000,24000,9000
+11,Maruti Suzuki,Baleno,Delta Petrol MT,2024,Hatchback,Petrol,Manual,6.8,22.3,1197,5,4700,2,Yes,Yes,Yes,No,No,3,7,0.6,6000,4000,8500,7500,3000
+12,Maruti Suzuki,Baleno,Alpha Petrol AT,2024,Hatchback,Petrol,Automatic,9.3,22.0,1197,5,5000,6,Yes,Yes,Yes,No,Yes,4,7,0.6,9000,6000,14000,13000,5000
+13,Honda,City,V Petrol MT,2024,Sedan,Petrol,Manual,11.6,17.8,1498,5,7500,4,Yes,Yes,Yes,Yes,No,5,8,0.7,12000,8000,18000,16000,6500
+14,Honda,City,ZX Petrol AT,2024,Sedan,Petrol,Automatic,14.2,17.4,1498,5,8000,6,Yes,Yes,Yes,Yes,Yes,5,8,0.7,15000,10000,22000,20000,8500
+15,Hyundai,Verna,SX Petrol MT,2024,Sedan,Petrol,Manual,11.0,18.6,1497,5,7200,6,Yes,Yes,Yes,Yes,Yes,5,8,0.65,12000,8000,18000,16000,6500
+16,Hyundai,Verna,SX Turbo AT,2024,Sedan,Petrol,Automatic,15.1,20.6,1482,5,7800,6,Yes,Yes,Yes,Yes,Yes,5,8,0.65,15000,10000,22000,20000,8500
+17,Skoda,Slavia,Active Petrol MT,2024,Sedan,Petrol,Manual,11.4,20.3,999,5,9000,2,Yes,Yes,Yes,Yes,No,5,7,0.5,13000,9000,20000,18000,7500
+18,Skoda,Slavia,Style Petrol AT,2024,Sedan,Petrol,Automatic,15.2,19.0,1498,5,9500,6,Yes,Yes,Yes,Yes,Yes,5,7,0.5,16000,11000,24000,22000,9000
+19,Volkswagen,Virtus,Highline Petrol MT,2024,Sedan,Petrol,Manual,11.5,20.8,999,5,9200,2,Yes,Yes,Yes,Yes,No,5,7,0.5,13000,9000,20000,18000,7500
+20,Volkswagen,Virtus,GT Petrol AT,2024,Sedan,Petrol,Automatic,16.0,18.9,1498,5,9800,6,Yes,Yes,Yes,Yes,Yes,5,7,0.5,16000,11000,24000,22000,9000
+21,Maruti Suzuki,Brezza,LXi Petrol MT,2024,SUV,Petrol,Manual,8.3,20.1,1462,5,5200,2,Yes,Yes,Yes,No,No,4,7,0.6,9000,6000,14000,13000,5000
+22,Maruti Suzuki,Brezza,ZXi CNG MT,2024,SUV,CNG,Manual,11.0,25.5,1462,5,5400,4,Yes,Yes,Yes,No,Yes,4,7,0.6,9500,6500,15000,14000,5200
+23,Kia,Seltos,HTK Petrol MT,2024,SUV,Petrol,Manual,10.9,17.0,1497,5,8000,2,Yes,Yes,Yes,Yes,No,4,8,0.65,10000,7000,16000,15000,5500
+24,Kia,Seltos,GTX Plus Diesel AT,2024,SUV,Diesel,Automatic,18.5,19.1,1493,5,9000,6,Yes,Yes,Yes,Yes,Yes,5,8,0.65,18000,12000,26000,24000,9000
+25,Hyundai,Creta,E Petrol MT,2024,SUV,Petrol,Manual,11.0,17.4,1497,5,7800,2,Yes,Yes,Yes,Yes,No,4,8,0.65,10000,7000,16000,15000,5500
+26,Hyundai,Creta,SX Diesel AT,2024,SUV,Diesel,Automatic,19.2,19.1,1493,5,8800,6,Yes,Yes,Yes,Yes,Yes,5,8,0.65,18000,12000,26000,24000,9000
+27,Mahindra,XUV700,AX3 Petrol MT,2024,SUV,Petrol,Manual,14.0,13.0,1999,5,9000,2,Yes,Yes,Yes,Yes,No,5,8,0.6,14000,9000,20000,18000,7000
+28,Mahindra,XUV700,AX7 Diesel AT,2024,SUV,Diesel,Automatic,22.5,16.5,2198,7,10000,7,Yes,Yes,Yes,Yes,Yes,5,8,0.6,20000,14000,30000,28000,11000
+29,Toyota,Innova Crysta,GX Diesel MT,2024,MPV,Diesel,Manual,19.9,15.6,2393,7,9500,3,Yes,Yes,Yes,Yes,No,5,9,0.75,18000,12000,26000,24000,9000
+30,Toyota,Innova Crysta,ZX Diesel AT,2024,MPV,Diesel,Automatic,25.4,14.5,2393,7,10500,7,Yes,Yes,Yes,Yes,Yes,5,9,0.75,22000,15000,32000,30000,12000
+31,Kia,Carens,Premium Petrol MT,2024,MPV,Petrol,Manual,10.5,16.2,1497,7,7500,2,Yes,Yes,Yes,Yes,No,4,8,0.65,10000,7000,16000,15000,5500
+32,Kia,Carens,Luxury Plus Diesel AT,2024,MPV,Diesel,Automatic,18.3,18.4,1493,7,8800,6,Yes,Yes,Yes,Yes,Yes,5,8,0.65,16000,11000,24000,22000,9000
+33,Maruti Suzuki,Ertiga,LXi Petrol MT,2024,MPV,Petrol,Manual,8.6,20.5,1462,7,5000,2,Yes,Yes,Yes,No,No,3,7,0.6,9000,6000,14000,13000,5000
+34,Maruti Suzuki,Ertiga,ZXi CNG MT,2024,MPV,CNG,Manual,11.5,26.1,1462,7,5200,4,Yes,Yes,Yes,No,No,3,7,0.6,9500,6500,15000,14000,5200
+35,Renault,Kiger,RXE Petrol MT,2024,SUV,Petrol,Manual,6.5,20.5,999,5,4800,2,Yes,No,Yes,No,No,3,6,0.4,7000,4500,10000,9000,3500
+36,Renault,Kiger,RXT Turbo AT,2024,SUV,Petrol,Automatic,9.8,19.0,999,5,5500,4,Yes,Yes,Yes,No,No,4,6,0.4,9000,6000,14000,13000,5000
+37,Nissan,Magnite,XL Petrol MT,2024,SUV,Petrol,Manual,6.0,20.0,999,5,4700,2,Yes,No,Yes,No,No,4,6,0.45,7000,4500,10000,9000,3500
+38,Nissan,Magnite,XV Turbo CVT,2024,SUV,Petrol,Automatic,10.0,17.7,999,5,5600,4,Yes,Yes,Yes,Yes,No,4,6,0.45,9000,6000,14000,13000,5000
+39,Tata Motors,Tiago,XE Petrol MT,2024,Hatchback,Petrol,Manual,5.6,20.1,1199,5,4500,2,Yes,No,Yes,No,No,4,7,0.55,6000,4000,8500,7500,3000
+40,Tata Motors,Tiago,EV XZ Plus,2024,Hatchback,Electric,Automatic,9.9,0.0,0,5,6000,4,Yes,Yes,Yes,No,No,4,7,0.55,12000,8000,18000,16000,6500
+41,Maruti Suzuki,Alto K10,Std Petrol MT,2024,Hatchback,Petrol,Manual,3.9,24.9,998,5,4000,2,Yes,No,No,No,No,2,7,0.55,4500,3000,6500,5500,2200
+42,Maruti Suzuki,Alto K10,VXi Petrol AT,2024,Hatchback,Petrol,Automatic,5.2,24.4,998,5,4200,2,Yes,No,Yes,No,No,2,7,0.55,5000,3200,7000,6000,2500
+43,Maruti Suzuki,Alto K10,VXi CNG MT,2024,Hatchback,CNG,Manual,5.8,33.8,998,5,4100,2,Yes,No,Yes,No,No,2,7,0.55,5200,3500,7200,6200,2600
+44,Maruti Suzuki,WagonR,LXi Petrol MT,2024,Hatchback,Petrol,Manual,5.6,23.6,998,5,4500,2,Yes,No,Yes,No,No,3,7,0.6,6000,4000,8500,7500,3000
+45,Maruti Suzuki,WagonR,ZXi Petrol AT,2024,Hatchback,Petrol,Automatic,7.1,23.1,1197,5,4800,2,Yes,Yes,Yes,No,No,3,7,0.6,7000,4500,10000,9000,3500
+46,Maruti Suzuki,WagonR,ZXi CNG MT,2024,Hatchback,CNG,Manual,7.4,34.0,1197,5,4700,2,Yes,No,Yes,No,No,3,7,0.6,7200,4800,10500,9500,3600
+47,Hyundai,Grand i10 Nios,Era Petrol MT,2024,Hatchback,Petrol,Manual,5.9,20.7,1197,5,5200,2,Yes,No,Yes,No,No,3,8,0.65,6500,4200,9000,8000,3200
+48,Hyundai,Grand i10 Nios,Sportz Petrol AT,2024,Hatchback,Petrol,Automatic,7.5,20.1,1197,5,5500,2,Yes,Yes,Yes,No,No,3,8,0.65,7500,4800,11000,10000,3800
+49,Hyundai,Grand i10 Nios,Sportz CNG MT,2024,Hatchback,CNG,Manual,7.8,27.0,1197,5,5400,2,Yes,No,Yes,No,No,3,8,0.65,7800,5000,11500,10500,3900
+50,Tata Motors,Punch,Pure Petrol MT,2024,SUV,Petrol,Manual,6.0,20.1,1199,5,5000,2,Yes,No,Yes,No,No,5,7,0.6,9000,6000,14000,13000,5000
+51,Tata Motors,Punch,Creative Petrol AMT,2024,SUV,Petrol,Automatic,7.4,20.1,1199,5,5300,2,Yes,Yes,Yes,No,No,5,7,0.6,9500,6500,15000,14000,5200
+52,Tata Motors,Punch,Adventure CNG MT,2024,SUV,CNG,Manual,7.3,26.9,1199,5,5200,2,Yes,No,Yes,No,No,5,7,0.6,9500,6500,15000,14000,5200
+53,Renault,Kwid,Std Petrol MT,2024,Hatchback,Petrol,Manual,4.7,22.3,999,5,4200,2,Yes,No,No,No,No,2,6,0.4,4500,3000,6500,5500,2200
+54,Renault,Kwid,Climber Petrol AMT,2024,Hatchback,Petrol,Automatic,5.6,22.0,999,5,4500,2,Yes,Yes,Yes,No,No,2,6,0.4,5000,3200,7000,6000,2500
+55,Renault,Kwid,Climber CNG MT,2024,Hatchback,CNG,Manual,6.0,32.0,999,5,4400,2,Yes,No,Yes,No,No,2,6,0.4,5200,3500,7200,6200,2600
+56,Nissan,Magnite,Base CNG MT,2024,SUV,CNG,Manual,7.2,24.0,999,5,5000,2,Yes,No,Yes,No,No,4,6,0.45,9000,6000,14000,13000,5000
+57,Volkswagen,Taigun,Comfortline Petrol MT,2024,SUV,Petrol,Manual,11.7,19.2,999,5,9500,2,Yes,Yes,Yes,Yes,No,5,7,0.5,13000,9000,20000,18000,7500
+58,Volkswagen,Taigun,GT Plus Petrol AT,2024,SUV,Petrol,Automatic,18.0,17.8,1498,5,10500,6,Yes,Yes,Yes,Yes,Yes,5,7,0.5,20000,14000,30000,28000,11000
+59,Skoda,Kushaq,Active Petrol MT,2024,SUV,Petrol,Manual,11.6,19.8,999,5,9300,2,Yes,Yes,Yes,Yes,No,5,7,0.5,13000,9000,20000,18000,7500
+60,Skoda,Kushaq,Style Petrol AT,2024,SUV,Petrol,Automatic,17.6,18.6,1498,5,10200,6,Yes,Yes,Yes,Yes,Yes,5,7,0.5,20000,14000,30000,28000,11000
+61,Mahindra,Thar,AX Petrol MT,2024,SUV,Petrol,Manual,11.4,15.2,1997,4,9000,2,Yes,No,Yes,No,No,4,8,0.6,12000,8000,18000,16000,6500
+62,Mahindra,Thar,LX Diesel AT,2024,SUV,Diesel,Automatic,16.8,13.0,2184,4,10000,4,Yes,Yes,Yes,No,No,4,8,0.6,16000,11000,24000,22000,9000
+63,Mahindra,Scorpio N,Z2 Petrol MT,2024,SUV,Petrol,Manual,13.6,14.4,1997,7,9200,2,Yes,Yes,Yes,Yes,No,5,8,0.6,14000,9000,20000,18000,7000
+64,Mahindra,Scorpio N,Z8 Diesel AT,2024,SUV,Diesel,Automatic,22.0,15.4,2198,7,10500,6,Yes,Yes,Yes,Yes,Yes,5,8,0.6,20000,14000,30000,28000,11000
+65,Toyota,Glanza,G Petrol MT,2024,Hatchback,Petrol,Manual,6.7,22.3,1197,5,5200,2,Yes,Yes,Yes,No,No,3,9,0.7,6000,4000,8500,7500,3000
+66,Toyota,Glanza,V Petrol AT,2024,Hatchback,Petrol,Automatic,9.2,22.0,1197,5,5600,6,Yes,Yes,Yes,No,Yes,4,9,0.7,9000,6000,14000,13000,5000
+67,Toyota,Glanza,G CNG MT,2024,Hatchback,CNG,Manual,8.4,30.6,1197,5,5400,2,Yes,No,Yes,No,No,3,9,0.7,7200,4800,10500,9500,3600
+68,Toyota,Urban Cruiser Hyryder,S Petrol MT,2024,SUV,Petrol,Manual,11.1,21.1,1462,5,7500,2,Yes,Yes,Yes,Yes,No,4,9,0.75,10000,7000,16000,15000,5500
+69,Toyota,Urban Cruiser Hyryder,Hybrid AT,2024,SUV,Petrol,Automatic,18.8,27.9,1490,5,9000,6,Yes,Yes,Yes,Yes,Yes,5,9,0.75,18000,12000,26000,24000,9000
+70,Honda,Amaze,E Petrol MT,2024,Sedan,Petrol,Manual,7.3,18.6,1199,5,6500,2,Yes,No,Yes,No,No,4,8,0.7,9000,6000,14000,13000,5000
+71,Honda,Amaze,ZX Petrol AT,2024,Sedan,Petrol,Automatic,9.1,18.3,1199,5,7000,4,Yes,Yes,Yes,No,No,4,8,0.7,10000,7000,16000,15000,5500
+72,Honda,Amaze,ZX Diesel MT,2024,Sedan,Diesel,Manual,9.6,24.7,1498,5,7200,4,Yes,Yes,Yes,No,No,4,8,0.7,10000,7000,16000,15000,5500
+73,Kia,Sonet,HTE Petrol MT,2024,SUV,Petrol,Manual,8.0,18.4,1197,5,7000,2,Yes,Yes,Yes,No,No,3,8,0.65,9000,6000,14000,13000,5000
+74,Kia,Sonet,GTX Plus Diesel AT,2024,SUV,Diesel,Automatic,14.5,19.0,1493,5,8200,6,Yes,Yes,Yes,Yes,Yes,4,8,0.65,16000,11000,24000,22000,9000
+75,Kia,Sonet,HTK CNG MT,2024,SUV,CNG,Manual,9.2,24.1,1197,5,7400,2,Yes,No,Yes,No,No,3,8,0.65,9500,6500,15000,14000,5200
+76,Hyundai,Venue,E Petrol MT,2024,SUV,Petrol,Manual,7.9,17.5,1197,5,7200,2,Yes,Yes,Yes,No,No,4,8,0.65,9000,6000,14000,13000,5000
+77,Hyundai,Venue,SX Diesel AT,2024,SUV,Diesel,Automatic,13.6,23.4,1493,5,8500,6,Yes,Yes,Yes,Yes,Yes,4,8,0.65,15000,10000,22000,20000,8500
+78,Hyundai,Venue,SX CNG MT,2024,SUV,CNG,Manual,10.1,24.2,1197,5,7600,2,Yes,No,Yes,No,No,4,8,0.65,9500,6500,15000,14000,5200
+79,Tata Motors,Harrier,Smart Diesel MT,2024,SUV,Diesel,Manual,15.2,16.8,1956,5,9000,4,Yes,Yes,Yes,Yes,No,5,7,0.6,15000,10000,22000,20000,8500
+80,Tata Motors,Harrier,Fearless Diesel AT,2024,SUV,Diesel,Automatic,24.0,14.6,1956,5,10500,6,Yes,Yes,Yes,Yes,Yes,5,7,0.6,22000,15000,32000,30000,12000
+81,Tata Motors,Safari,Smart Diesel MT,2024,SUV,Diesel,Manual,16.2,16.3,1956,7,9200,4,Yes,Yes,Yes,Yes,No,5,7,0.6,15000,10000,22000,20000,8500
+82,Tata Motors,Safari,Accomplished Diesel AT,2024,SUV,Diesel,Automatic,26.0,14.5,1956,7,11000,6,Yes,Yes,Yes,Yes,Yes,5,7,0.6,24000,16000,35000,33000,13000
+83,Renault,Triber,RXE Petrol MT,2024,MPV,Petrol,Manual,6.0,19.0,999,7,5000,2,Yes,No,Yes,No,No,4,6,0.45,9000,6000,14000,13000,5000
+84,Renault,Triber,RXZ Petrol AMT,2024,MPV,Petrol,Automatic,7.5,18.8,999,7,5500,4,Yes,Yes,Yes,No,No,4,6,0.45,10000,7000,16000,15000,5500
+85,Renault,Triber,RXT CNG MT,2024,MPV,CNG,Manual,7.9,26.5,999,7,5400,2,Yes,No,Yes,No,No,4,6,0.45,9500,6500,15000,14000,5200
+86,Nissan,Kicks,XL Petrol MT,2024,SUV,Petrol,Manual,9.5,14.2,1498,5,8000,2,Yes,Yes,Yes,No,No,4,6,0.45,10000,7000,16000,15000,5500
+87,Nissan,Kicks,XV Diesel MT,2024,SUV,Diesel,Manual,11.8,19.3,1461,5,8500,4,Yes,Yes,Yes,No,No,4,6,0.45,12000,8000,18000,16000,6500
+88,Skoda,Octavia,L&K Petrol AT,2024,Sedan,Petrol,Automatic,27.0,15.8,1984,5,12000,8,Yes,Yes,Yes,Yes,Yes,5,8,0.6,28000,18000,42000,40000,16000
+89,Volkswagen,Tiguan,Allspace Petrol AT,2024,SUV,Petrol,Automatic,35.0,12.6,1984,5,13000,8,Yes,Yes,Yes,Yes,Yes,5,8,0.6,32000,22000,48000,45000,19000
+90,Toyota,Fortuner,4x2 Diesel MT,2024,SUV,Diesel,Manual,33.5,14.2,2755,7,12000,7,Yes,Yes,Yes,Yes,Yes,5,9,0.8,42000,28000,55000,50000,22000
+91,Toyota,Fortuner,4x4 Diesel AT,2024,SUV,Diesel,Automatic,41.0,13.5,2755,7,13500,7,Yes,Yes,Yes,Yes,Yes,5,9,0.8,45000,30000,60000,55000,25000
+92,Honda,Elevate,SV Petrol MT,2024,SUV,Petrol,Manual,11.6,15.3,1498,5,7500,2,Yes,Yes,Yes,Yes,No,4,8,0.7,12000,8000,18000,16000,6500
+93,Honda,Elevate,ZX Petrol CVT,2024,SUV,Petrol,Automatic,16.2,14.9,1498,5,8200,6,Yes,Yes,Yes,Yes,Yes,4,8,0.7,16000,11000,24000,22000,9000
+94,Maruti Suzuki,Grand Vitara,Delta Petrol MT,2024,SUV,Petrol,Manual,10.8,21.1,1462,5,7200,2,Yes,Yes,Yes,Yes,No,4,7,0.6,10000,7000,16000,15000,5500
+95,Maruti Suzuki,Grand Vitara,Strong Hybrid AT,2024,SUV,Petrol,Automatic,19.9,27.9,1490,5,8800,6,Yes,Yes,Yes,Yes,Yes,5,7,0.6,18000,12000,26000,24000,9000
+96,Hyundai,Alcazar,Prestige Petrol MT,2024,SUV,Petrol,Manual,16.8,14.2,1999,6,9000,6,Yes,Yes,Yes,Yes,Yes,4,8,0.65,16000,11000,24000,22000,9000
+97,Hyundai,Alcazar,Signature Diesel AT,2024,SUV,Diesel,Automatic,21.5,18.1,1493,6,10000,6,Yes,Yes,Yes,Yes,Yes,4,8,0.65,18000,12000,26000,24000,9000
+98,Kia,Carnival,Prestige Diesel AT,2024,MPV,Diesel,Automatic,30.0,13.9,2199,7,12000,6,Yes,Yes,Yes,Yes,Yes,5,8,0.7,26000,18000,38000,36000,15000
+99,Mahindra,Marazzo,M4 Diesel MT,2024,MPV,Diesel,Manual,14.6,17.3,1497,7,8000,4,Yes,Yes,Yes,No,No,4,7,0.55,14000,9000,20000,18000,7000
+100,Mahindra,Marazzo,M6 Diesel MT,2024,MPV,Diesel,Manual,15.8,17.3,1497,7,8200,4,Yes,Yes,Yes,No,No,4,7,0.55,15000,10000,22000,20000,8500
+101,Maruti Suzuki,Celerio,LXi Petrol MT,2024,Hatchback,Petrol,Manual,5.4,26.7,998,5,4300,2,Yes,No,Yes,No,No,3,7,0.6,6000,4000,8500,7500,3000
+102,Maruti Suzuki,Celerio,ZXi Petrol AMT,2024,Hatchback,Petrol,Automatic,6.9,26.0,998,5,4600,2,Yes,Yes,Yes,No,No,3,7,0.6,7000,4500,10000,9000,3500
+103,Maruti Suzuki,Celerio,ZXi CNG MT,2024,Hatchback,CNG,Manual,7.5,34.4,998,5,4500,2,Yes,No,Yes,No,No,3,8,0.6,7200,4800,10500,9500,3600
+104,Maruti Suzuki,Ignis,Sigma Petrol MT,2024,Hatchback,Petrol,Manual,5.9,20.9,1197,5,4700,2,Yes,No,Yes,No,No,3,7,0.6,6500,4200,9000,8000,3200
+105,Maruti Suzuki,Ignis,Alpha Petrol AMT,2024,Hatchback,Petrol,Automatic,7.4,20.0,1197,5,5000,2,Yes,Yes,Yes,No,No,3,7,0.6,7500,4800,11000,10000,3800
+106,Hyundai,Aura,E Petrol MT,2024,Sedan,Petrol,Manual,6.4,20.5,1197,5,5800,2,Yes,No,Yes,No,No,3,8,0.65,6500,4200,9000,8000,3200
+107,Hyundai,Aura,SX Petrol AMT,2024,Sedan,Petrol,Automatic,8.1,20.1,1197,5,6200,4,Yes,Yes,Yes,No,No,3,8,0.65,8000,5200,12000,11000,4200
+108,Hyundai,Aura,SX CNG MT,2024,Sedan,CNG,Manual,8.7,27.1,1197,5,6000,2,Yes,No,Yes,No,No,3,8,0.65,7800,5000,11500,10500,3900
+109,Tata Motors,Tigor,XE Petrol MT,2024,Sedan,Petrol,Manual,6.3,20.3,1199,5,5000,2,Yes,No,Yes,No,No,4,7,0.55,6500,4200,9000,8000,3200
+110,Tata Motors,Tigor,XZ Plus Petrol AMT,2024,Sedan,Petrol,Automatic,8.2,19.6,1199,5,5400,4,Yes,Yes,Yes,No,No,4,7,0.55,8000,5200,12000,11000,4200
+111,Tata Motors,Tigor,EV XZ Plus,2024,Sedan,Electric,Automatic,12.5,0.0,0,5,6500,4,Yes,Yes,Yes,No,No,4,7,0.55,12000,8000,18000,16000,6500
+112,Honda,WR-V,S Petrol MT,2024,SUV,Petrol,Manual,9.1,16.5,1199,5,7000,2,Yes,Yes,Yes,No,No,4,8,0.7,9000,6000,14000,13000,5000
+113,Honda,WR-V,ZX Petrol MT,2024,SUV,Petrol,Manual,10.2,16.5,1199,5,7400,4,Yes,Yes,Yes,No,No,4,8,0.7,10000,7000,16000,15000,5500
+114,Volkswagen,Polo,Comfortline Petrol MT,2023,Hatchback,Petrol,Manual,7.1,18.2,999,5,9000,2,Yes,Yes,Yes,No,No,4,7,0.5,7000,4500,10000,9000,3500
+115,Volkswagen,Polo,GT Petrol AT,2023,Hatchback,Petrol,Automatic,9.9,16.5,999,5,9500,4,Yes,Yes,Yes,No,No,4,7,0.5,9000,6000,14000,13000,5000
+116,Skoda,Rapid,Active Petrol MT,2023,Sedan,Petrol,Manual,8.2,16.2,999,5,8800,2,Yes,Yes,Yes,No,No,4,7,0.5,8000,5200,12000,11000,4200
+117,Skoda,Rapid,Style Petrol AT,2023,Sedan,Petrol,Automatic,11.5,16.0,999,5,9200,4,Yes,Yes,Yes,No,No,4,7,0.5,10000,7000,16000,15000,5500
+118,Renault,Duster,RXS Petrol MT,2024,SUV,Petrol,Manual,10.5,14.2,1498,5,7500,2,Yes,Yes,Yes,No,No,4,6,0.45,10000,7000,16000,15000,5500
+119,Renault,Duster,Turbo Petrol CVT,2024,SUV,Petrol,Automatic,13.2,13.8,1330,5,8200,4,Yes,Yes,Yes,No,No,4,6,0.45,13000,9000,20000,18000,7500
+120,Nissan,Sunny,XL Petrol MT,2023,Sedan,Petrol,Manual,8.5,16.9,1498,5,7200,2,Yes,Yes,Yes,No,No,3,6,0.45,9000,6000,14000,13000,5000
+121,Nissan,Sunny,XV Petrol CVT,2023,Sedan,Petrol,Automatic,9.9,16.5,1498,5,7600,4,Yes,Yes,Yes,No,No,3,6,0.45,10000,7000,16000,15000,5500
+122,Toyota,Rumion,S Petrol MT,2024,MPV,Petrol,Manual,10.3,20.5,1462,7,6000,2,Yes,Yes,Yes,No,No,3,9,0.75,9000,6000,14000,13000,5000
+123,Toyota,Rumion,V Petrol AT,2024,MPV,Petrol,Automatic,13.1,20.0,1462,7,6500,4,Yes,Yes,Yes,No,No,3,9,0.75,11000,7500,17000,16000,6000
+124,Maruti Suzuki,XL6,Zeta Petrol MT,2024,MPV,Petrol,Manual,11.6,20.3,1462,6,6200,4,Yes,Yes,Yes,No,No,3,7,0.6,10000,7000,16000,15000,5500
+125,Maruti Suzuki,XL6,Alpha Petrol AT,2024,MPV,Petrol,Automatic,13.9,20.0,1462,6,6800,4,Yes,Yes,Yes,No,No,3,7,0.6,12000,8000,18000,16000,6500
+126,Hyundai,Kona Electric,Premium EV,2024,SUV,Electric,Automatic,23.8,0.0,0,5,9000,6,Yes,Yes,Yes,Yes,Yes,5,8,0.65,20000,14000,30000,28000,11000
+127,Tata Motors,Tigor,CNG XZ MT,2024,Sedan,CNG,Manual,8.5,26.4,1199,5,5200,4,Yes,Yes,Yes,No,No,4,7,0.55,8000,5200,12000,11000,4200
+128,Tata Motors,Altroz,Racer Petrol MT,2024,Hatchback,Petrol,Manual,9.8,18.5,1199,5,6000,6,Yes,Yes,Yes,No,No,5,7,0.6,10000,7000,16000,15000,5500
+129,Mahindra,Bolero,B4 Diesel MT,2024,SUV,Diesel,Manual,9.8,16.7,1493,7,7000,2,Yes,No,No,No,No,3,7,0.55,9000,6000,14000,13000,5000
+130,Mahindra,Bolero Neo,N10 Diesel MT,2024,SUV,Diesel,Manual,11.4,17.3,1493,7,7600,2,Yes,Yes,Yes,No,No,4,7,0.55,10000,7000,16000,15000,5500
+131,Mahindra,XUV300,W4 Petrol MT,2024,SUV,Petrol,Manual,8.4,18.1,1197,5,6500,2,Yes,Yes,Yes,No,No,5,7,0.6,9000,6000,14000,13000,5000
+132,Mahindra,XUV300,W8 Diesel AMT,2024,SUV,Diesel,Automatic,12.9,20.0,1497,5,7200,4,Yes,Yes,Yes,No,Yes,5,7,0.6,11000,7500,17000,16000,6000
+133,Mahindra,XUV400 EV,EC Pro,2024,SUV,Electric,Automatic,15.5,0.0,0,5,8000,6,Yes,Yes,Yes,Yes,No,5,7,0.6,16000,11000,24000,22000,9000
+134,Tata Motors,Tiago,EV XT LR,2024,Hatchback,Electric,Automatic,11.4,0.0,0,5,6500,4,Yes,Yes,Yes,No,No,4,7,0.55,13000,9000,20000,18000,7500
+135,Tata Motors,Tigor,EV XT,2024,Sedan,Electric,Automatic,12.0,0.0,0,5,6400,4,Yes,Yes,Yes,No,No,4,7,0.55,13000,9000,20000,18000,7500
+136,Toyota,Camry,Hybrid AT,2024,Sedan,Petrol,Automatic,46.0,19.1,2487,5,15000,9,Yes,Yes,Yes,Yes,Yes,5,9,0.8,28000,18000,42000,40000,16000
+137,Toyota,Hilux,4x4 Diesel MT,2024,Pickup,Diesel,Manual,30.4,10.0,2755,5,14000,7,Yes,Yes,Yes,Yes,No,5,9,0.75,32000,22000,48000,45000,19000
+138,Toyota,Vellfire,Hybrid AT,2024,MPV,Petrol,Automatic,95.0,16.4,2487,7,20000,10,Yes,Yes,Yes,Yes,Yes,5,9,0.85,45000,30000,60000,55000,25000
+139,Skoda,Superb,L&K Petrol AT,2024,Sedan,Petrol,Automatic,54.0,15.1,1984,5,15000,9,Yes,Yes,Yes,Yes,Yes,5,8,0.65,30000,20000,45000,42000,17000
+140,Volkswagen,Vento,Highline Petrol MT,2023,Sedan,Petrol,Manual,11.0,17.7,999,5,9000,2,Yes,Yes,Yes,No,No,4,7,0.5,10000,7000,16000,15000,5500
+141,Honda,Civic,ZX Petrol CVT,2023,Sedan,Petrol,Automatic,21.5,16.5,1799,5,10000,6,Yes,Yes,Yes,Yes,Yes,5,8,0.7,15000,10000,22000,20000,8500
+142,Hyundai,Ioniq 5,EV AWD,2024,SUV,Electric,Automatic,46.0,0.0,0,5,14000,6,Yes,Yes,Yes,Yes,Yes,5,9,0.75,26000,18000,38000,36000,15000
+143,Kia,EV6,GT Line AWD,2024,SUV,Electric,Automatic,60.9,0.0,0,5,15000,8,Yes,Yes,Yes,Yes,Yes,5,9,0.75,28000,19000,42000,40000,16000
+144,Nissan,X-Trail,Petrol CVT,2024,SUV,Petrol,Automatic,40.0,13.7,1497,5,13000,6,Yes,Yes,Yes,Yes,Yes,4,6,0.45,30000,20000,45000,42000,17000
+145,Maruti Suzuki,S-Presso,Std Petrol MT,2024,Hatchback,Petrol,Manual,4.3,24.8,998,5,4100,2,Yes,No,Yes,No,No,2,8,0.55,5000,3200,7000,6000,2500
+146,Maruti Suzuki,S-Presso,VXi Petrol AMT,2024,Hatchback,Petrol,Automatic,5.8,24.1,998,5,4400,2,Yes,Yes,Yes,No,No,2,8,0.55,5500,3500,7500,6500,2700
+147,Maruti Suzuki,S-Presso,VXi CNG MT,2024,Hatchback,CNG,Manual,6.3,32.7,998,5,4300,2,Yes,No,Yes,No,No,2,8,0.55,5800,3800,7800,6800,2800
+148,Hyundai,Exter,EX Petrol MT,2024,SUV,Petrol,Manual,6.1,19.4,1197,5,6000,2,Yes,Yes,Yes,No,No,4,8,0.65,9000,6000,14000,13000,5000
+149,Hyundai,Exter,SX Petrol AMT,2024,SUV,Petrol,Automatic,8.0,19.2,1197,5,6400,4,Yes,Yes,Yes,No,No,4,8,0.65,10000,7000,16000,15000,5500
+150,Hyundai,Exter,SX CNG MT,2024,SUV,CNG,Manual,8.6,27.1,1197,5,6200,2,Yes,No,Yes,No,No,4,8,0.65,9500,6500,15000,14000,5200
+151,Tata Motors,Yodha Pickup,4x2 Diesel MT,2024,Pickup,Diesel,Manual,8.0,13.0,2956,2,7000,2,Yes,No,No,No,No,3,6,0.45,10000,7000,16000,15000,5500
+152,Tata Motors,Xenon,XT Diesel MT,2024,Pickup,Diesel,Manual,11.2,12.5,2179,5,8200,2,Yes,Yes,Yes,No,No,3,6,0.45,12000,8000,18000,16000,6500
+153,Mahindra,Jeeto,Diesel MT,2024,Pickup,Diesel,Manual,5.6,33.0,625,2,4500,0,No,No,No,No,No,1,6,0.4,4500,3000,6500,5500,2200
+154,Mahindra,KUV100 NXT,K2 Plus Petrol MT,2024,Hatchback,Petrol,Manual,6.3,18.1,1198,5,5200,2,Yes,No,Yes,No,No,3,6,0.45,7000,4500,10000,9000,3500
+155,Mahindra,KUV100 NXT,K6 Plus Petrol AMT,2024,Hatchback,Petrol,Automatic,7.4,18.0,1198,5,5500,2,Yes,Yes,Yes,No,No,3,6,0.45,8000,5200,12000,11000,4200
+156,Toyota,Land Cruiser 300,ZX Diesel AT,2024,SUV,Diesel,Automatic,210.0,11.0,3346,5,25000,10,Yes,Yes,Yes,Yes,Yes,5,9,0.85,45000,30000,60000,55000,25000
+157,Honda,City Hybrid,e:HEV ZX AT,2024,Sedan,Petrol,Automatic,20.7,26.5,1498,5,9000,6,Yes,Yes,Yes,Yes,Yes,5,8,0.75,16000,11000,24000,22000,9000
+158,Volkswagen,Passat,GT Petrol AT,2023,Sedan,Petrol,Automatic,34.0,16.0,1984,5,13000,8,Yes,Yes,Yes,Yes,Yes,5,8,0.6,30000,20000,45000,42000,17000
+159,Skoda,Kodiaq,L&K Petrol AT,2024,SUV,Petrol,Automatic,39.9,12.8,1984,7,14000,9,Yes,Yes,Yes,Yes,Yes,5,8,0.65,32000,22000,48000,45000,19000
+160,Renault,Lodgy,Stepway Diesel MT,2023,MPV,Diesel,Manual,11.5,19.0,1461,7,7000,2,Yes,Yes,Yes,No,No,3,6,0.4,12000,8000,18000,16000,6500
+161,Nissan,GT-R,Premium AWD AT,2024,Sports,Petrol,Automatic,212.0,8.0,3799,4,30000,8,Yes,Yes,Yes,Yes,Yes,5,9,0.8,50000,35000,70000,65000,28000
+162,Kia,Stinger,GT Petrol AT,2023,Sedan,Petrol,Automatic,55.0,10.4,3342,5,18000,8,Yes,Yes,Yes,Yes,Yes,5,8,0.7,35000,24000,52000,48000,20000
+163,Hyundai,Tucson,Platinum Diesel AT,2024,SUV,Diesel,Automatic,34.0,16.4,1999,5,12000,6,Yes,Yes,Yes,Yes,Yes,5,8,0.7,26000,18000,38000,36000,15000
+164,Maruti Suzuki,Jimny,Zeta Petrol MT,2024,SUV,Petrol,Manual,12.7,16.9,1462,4,6500,6,Yes,Yes,Yes,Yes,No,4,8,0.6,12000,8000,18000,16000,6500
+165,Maruti Suzuki,Jimny,Alpha Petrol AT,2024,SUV,Petrol,Automatic,15.0,16.4,1462,4,7000,6,Yes,Yes,Yes,Yes,No,4,8,0.6,14000,9000,20000,18000,7500
+166,Maruti Suzuki,Eeco,5STR Petrol MT,2024,MPV,Petrol,Manual,5.4,19.7,1197,5,4200,2,Yes,No,No,No,No,2,7,0.45,4500,3000,6500,5500,2200
+167,Maruti Suzuki,Eeco,Cargo CNG MT,2024,MPV,CNG,Manual,6.8,26.8,1197,2,4300,2,Yes,No,No,No,No,2,7,0.45,5000,3200,7000,6000,2500
+168,Hyundai,Grand i10 Nios,Asta Petrol MT,2024,Hatchback,Petrol,Manual,8.0,20.7,1197,5,5800,4,Yes,Yes,Yes,No,No,3,8,0.65,8000,5200,12000,11000,4200
+169,Hyundai,Grand i10 Nios,Asta Petrol AT,2024,Hatchback,Petrol,Automatic,9.2,20.1,1197,5,6200,4,Yes,Yes,Yes,No,No,3,8,0.65,9000,6000,14000,13000,5000
+170,Tata Motors,Punch,EV LR,2024,SUV,Electric,Automatic,13.8,0.0,0,5,7000,4,Yes,Yes,Yes,No,No,5,7,0.6,14000,9000,20000,18000,7500
+171,Tata Motors,Altroz,CNG XZ MT,2024,Hatchback,CNG,Manual,9.2,26.2,1199,5,5600,4,Yes,Yes,Yes,No,No,5,7,0.6,9000,6000,14000,13000,5000
+172,Mahindra,Bolero Camper,Gold Diesel MT,2024,Pickup,Diesel,Manual,10.5,15.0,2523,5,7800,2,Yes,No,No,No,No,3,7,0.55,12000,8000,18000,16000,6500
+173,Mahindra,XUV500,W7 Diesel MT,2023,SUV,Diesel,Manual,15.0,15.1,2179,7,9000,6,Yes,Yes,Yes,No,No,4,7,0.55,16000,11000,24000,22000,9000
+174,Honda,Brio,S Petrol MT,2023,Hatchback,Petrol,Manual,6.5,18.2,1199,5,6200,2,Yes,No,Yes,No,No,4,8,0.65,6500,4200,9000,8000,3200
+175,Honda,Brio,EX Petrol AT,2023,Hatchback,Petrol,Automatic,7.9,17.5,1199,5,6600,2,Yes,Yes,Yes,No,No,4,8,0.65,7500,4800,11000,10000,3800
+176,Toyota,Yaris,J Petrol MT,2023,Sedan,Petrol,Manual,11.0,17.1,1496,5,8000,7,Yes,Yes,Yes,No,No,5,9,0.75,12000,8000,18000,16000,6500
+177,Toyota,Yaris,V Petrol CVT,2023,Sedan,Petrol,Automatic,14.2,16.8,1496,5,8500,7,Yes,Yes,Yes,No,No,5,9,0.75,15000,10000,22000,20000,8500
+178,Kia,Seltos,HTX Petrol IVT,2024,SUV,Petrol,Automatic,15.6,16.8,1497,5,8600,6,Yes,Yes,Yes,Yes,Yes,4,8,0.65,16000,11000,24000,22000,9000
+179,Kia,Carens,Prestige Plus Petrol AT,2024,MPV,Petrol,Automatic,14.9,15.8,1497,7,8200,4,Yes,Yes,Yes,Yes,No,4,8,0.65,14000,9000,20000,18000,7500
+180,Skoda,Octavia,Style Petrol AT,2023,Sedan,Petrol,Automatic,26.5,15.8,1984,5,12000,8,Yes,Yes,Yes,Yes,Yes,5,8,0.6,28000,18000,42000,40000,16000
+181,Volkswagen,Ameo,Comfortline Petrol MT,2023,Sedan,Petrol,Manual,8.4,19.4,999,5,8200,2,Yes,Yes,Yes,No,No,4,7,0.5,8000,5200,12000,11000,4200
+182,Volkswagen,Ameo,Highline Petrol AT,2023,Sedan,Petrol,Automatic,10.2,18.6,999,5,8600,4,Yes,Yes,Yes,No,No,4,7,0.5,10000,7000,16000,15000,5500
+183,Renault,Scala,RXZ Petrol MT,2023,Sedan,Petrol,Manual,9.2,16.0,1498,5,7200,2,Yes,Yes,Yes,No,No,3,6,0.4,9000,6000,14000,13000,5000
+184,Nissan,Terrano,XL Diesel MT,2023,SUV,Diesel,Manual,11.4,19.0,1461,5,7800,2,Yes,Yes,Yes,No,No,4,6,0.45,12000,8000,18000,16000,6500
+185,Nissan,Terrano,XV Diesel AT,2023,SUV,Diesel,Automatic,13.8,18.1,1461,5,8200,4,Yes,Yes,Yes,No,No,4,6,0.45,14000,9000,20000,18000,7500
+186,Maruti Suzuki,Ciaz,Delta Petrol MT,2024,Sedan,Petrol,Manual,9.4,20.6,1462,5,5500,2,Yes,Yes,Yes,No,No,3,8,0.6,9000,6000,14000,13000,5000
+187,Maruti Suzuki,Ciaz,Alpha Petrol AT,2024,Sedan,Petrol,Automatic,11.8,20.0,1462,5,6000,4,Yes,Yes,Yes,No,No,3,8,0.6,11000,7500,17000,16000,6000
+188,Hyundai,Elantra,SX Petrol AT,2023,Sedan,Petrol,Automatic,20.1,14.6,1999,5,10000,6,Yes,Yes,Yes,Yes,Yes,5,8,0.65,20000,14000,30000,28000,11000
+189,Hyundai,Santa Fe,GL Diesel AT,2023,SUV,Diesel,Automatic,32.0,13.5,2199,7,12500,6,Yes,Yes,Yes,Yes,Yes,5,8,0.65,26000,18000,38000,36000,15000
+190,Tata Motors,Zest,XE Diesel MT,2023,Sedan,Diesel,Manual,7.8,23.0,1248,5,5200,2,Yes,Yes,Yes,No,No,4,7,0.55,9000,6000,14000,13000,5000
+191,Mahindra,Quanto,C8 Diesel MT,2023,SUV,Diesel,Manual,8.6,17.2,1493,7,6800,2,Yes,Yes,Yes,No,No,3,6,0.45,8000,5200,12000,11000,4200
+192,Honda,Mobilio,S Petrol MT,2023,MPV,Petrol,Manual,9.0,17.4,1498,7,7000,2,Yes,Yes,Yes,No,No,4,8,0.65,9000,6000,14000,13000,5000
+193,Toyota,Etios Liva,G Petrol MT,2023,Hatchback,Petrol,Manual,6.9,17.7,1197,5,5200,2,Yes,Yes,Yes,No,No,4,9,0.7,8000,5200,12000,11000,4200
+194,Toyota,Etios,VD Diesel MT,2023,Sedan,Diesel,Manual,8.8,23.6,1364,5,5600,2,Yes,Yes,Yes,No,No,4,9,0.7,9000,6000,14000,13000,5000
+195,Kia,Rio,Base Petrol MT,2023,Hatchback,Petrol,Manual,6.8,18.5,1197,5,6000,2,Yes,No,Yes,No,No,3,7,0.5,7000,4500,10000,9000,3500
+196,Skoda,Fabia,Active Petrol MT,2023,Hatchback,Petrol,Manual,7.4,18.0,999,5,7800,2,Yes,Yes,Yes,No,No,4,7,0.5,8000,5200,12000,11000,4200
+197,Volkswagen,Jetta,Comfortline Diesel MT,2023,Sedan,Diesel,Manual,19.5,21.0,1968,5,11000,6,Yes,Yes,Yes,Yes,No,5,8,0.6,18000,12000,26000,24000,9000
+198,Renault,Captur,Platine Petrol MT,2023,SUV,Petrol,Manual,11.2,13.9,1498,5,7600,4,Yes,Yes,Yes,No,No,4,6,0.45,12000,8000,18000,16000,6500
+199,Nissan,Evalia,XL Diesel MT,2023,MPV,Diesel,Manual,10.8,19.0,1461,7,7200,2,Yes,Yes,Yes,No,No,3,6,0.45,11000,7500,17000,16000,6000
+200,Maruti Suzuki,Ritz,VXi Petrol MT,2023,Hatchback,Petrol,Manual,6.2,18.5,1197,5,4800,2,Yes,Yes,Yes,No,No,3,7,0.5,6000,4000,8500,7500,3000
+201,Hyundai,Creta,Facelift SX Petrol AT,2026,SUV,Petrol,Automatic,20.6,17.8,1497,5,9200,6,Yes,Yes,Yes,Yes,Yes,5,8,0.67,19500,13500,28000,26000,9800
+202,Hyundai,Creta,Facelift EV LR,2026,SUV,Electric,Automatic,22.8,0.0,0,5,9800,6,Yes,Yes,Yes,Yes,Yes,5,8,0.68,21000,15000,31000,29000,10500
+203,Maruti Suzuki,Brezza,2026 ZXi Petrol AT,2026,SUV,Petrol,Automatic,13.2,20.5,1462,5,6000,6,Yes,Yes,Yes,Yes,No,4,8,0.62,11500,7800,17000,16000,6000
+204,Maruti Suzuki,Grand Vitara,Hybrid Plus AT,2026,SUV,Petrol,Automatic,22.1,28.5,1490,5,9200,6,Yes,Yes,Yes,Yes,Yes,5,8,0.64,20000,14000,29000,27000,10000
+205,Tata Motors,Nexon,2026 Facelift Petrol MT,2026,SUV,Petrol,Manual,10.4,17.8,1199,5,6800,6,Yes,Yes,Yes,Yes,No,5,7,0.61,11000,7600,16500,15500,5800
+206,Tata Motors,Nexon,EV Max 2026,2026,SUV,Electric,Automatic,19.8,0.0,0,5,9000,6,Yes,Yes,Yes,Yes,Yes,5,7,0.62,18500,13000,27000,25500,9500
+207,Hyundai,Venue,2026 SX Turbo AT,2026,SUV,Petrol,Automatic,14.2,18.2,998,5,8200,6,Yes,Yes,Yes,Yes,Yes,4,8,0.66,14500,10000,21500,20000,7800
+208,Kia,Sonet,2026 GTX Diesel AT,2026,SUV,Diesel,Automatic,16.3,19.5,1493,5,8600,6,Yes,Yes,Yes,Yes,Yes,4,8,0.66,15500,10800,23000,21500,8200
+209,Mahindra,XUV3XO,AX7 Petrol AT,2026,SUV,Petrol,Automatic,14.9,18.0,1197,5,7800,6,Yes,Yes,Yes,Yes,Yes,5,7,0.61,15000,10500,22500,21000,8000
+210,Mahindra,XUV700,AX7L Hybrid AT,2026,SUV,Petrol,Automatic,25.8,17.2,1999,7,11000,7,Yes,Yes,Yes,Yes,Yes,5,8,0.62,23000,16000,34000,32000,12500
+211,Toyota,Innova Hycross,Hybrid ZX AT,2026,MPV,Petrol,Automatic,32.0,23.5,1987,7,12000,7,Yes,Yes,Yes,Yes,Yes,5,9,0.78,28000,19500,42000,39500,16500
+212,Toyota,Urban Cruiser Taisor,Turbo AT,2026,SUV,Petrol,Automatic,14.1,20.8,998,5,7200,6,Yes,Yes,Yes,Yes,No,4,9,0.74,14000,9800,21000,19500,7500
+213,Honda,City,2026 Facelift ZX CVT,2026,Sedan,Petrol,Automatic,16.8,18.5,1498,5,8600,6,Yes,Yes,Yes,Yes,Yes,5,8,0.72,15500,10800,23000,21500,8200
+214,Honda,Elevate,Hybrid AT,2026,SUV,Petrol,Automatic,18.9,22.0,1498,5,9000,6,Yes,Yes,Yes,Yes,Yes,5,8,0.73,17000,12000,25500,24000,9000
+215,Skoda,Slavia,2026 Monte Carlo AT,2026,Sedan,Petrol,Automatic,18.6,19.5,1498,5,10200,6,Yes,Yes,Yes,Yes,Yes,5,7,0.56,18500,13000,27500,26000,9800
+216,Volkswagen,Virtus,GT Plus MT 2026,2026,Sedan,Petrol,Manual,16.9,19.8,1498,5,10000,6,Yes,Yes,Yes,Yes,Yes,5,7,0.55,18000,12500,27000,25500,9500
+217,Renault,Kiger,2026 Turbo AT,2026,SUV,Petrol,Automatic,11.6,20.0,999,5,6200,4,Yes,Yes,Yes,Yes,No,4,6,0.46,11500,7800,17000,16000,6000
+218,Nissan,Magnite,2026 Facelift CVT,2026,SUV,Petrol,Automatic,11.9,19.5,999,5,6400,4,Yes,Yes,Yes,Yes,No,4,6,0.47,11800,8000,17500,16500,6200
+219,Tata Motors,Curvv,ICE Turbo AT,2026,SUV,Petrol,Automatic,17.8,18.5,1497,5,8800,6,Yes,Yes,Yes,Yes,Yes,5,7,0.63,17000,12000,26000,24500,9200
+220,Tata Motors,Curvv,EV AWD,2026,SUV,Electric,Automatic,22.5,0.0,0,5,9800,6,Yes,Yes,Yes,Yes,Yes,5,7,0.64,20000,14500,30000,28500,10500
+221,Maruti Suzuki,Fronx,Delta Plus Petrol MT,2026,SUV,Petrol,Manual,10.9,21.5,1197,5,5800,4,Yes,Yes,Yes,No,No,4,8,0.62,12000,8200,18000,17000,6500
+222,Maruti Suzuki,Baleno,2026 Zeta Petrol MT,2026,Hatchback,Petrol,Manual,8.9,22.3,1197,5,5200,4,Yes,Yes,Yes,No,No,4,8,0.61,9000,6000,14000,13000,5000
+223,Hyundai,Venue,N Line Turbo MT,2026,SUV,Petrol,Manual,13.5,18.0,998,5,8000,6,Yes,Yes,Yes,Yes,No,4,8,0.66,14500,10000,21500,20000,7800
+224,Hyundai,i20,2026 Sportz Petrol MT,2026,Hatchback,Petrol,Manual,8.6,20.3,1197,5,6400,4,Yes,Yes,Yes,No,No,3,8,0.65,9000,6000,14000,13000,5000
+225,Tata Motors,Punch,2026 Creative Petrol MT,2026,SUV,Petrol,Manual,7.4,20.1,1199,5,5600,4,Yes,Yes,Yes,No,No,5,7,0.60,9500,6500,15000,14000,5200
+226,Tata Motors,Altroz,2026 XZ Plus Diesel MT,2026,Hatchback,Diesel,Manual,10.4,23.6,1497,5,6200,4,Yes,Yes,Yes,No,No,5,7,0.61,11000,7500,16500,15500,5800
+227,Mahindra,Thar,RWD Diesel MT,2026,SUV,Diesel,Manual,14.9,15.2,2184,4,9800,4,Yes,Yes,Yes,No,No,4,8,0.60,15500,10800,23000,21500,8200
+228,Mahindra,Scorpio N,Z4 Petrol MT,2026,SUV,Petrol,Manual,15.8,14.4,1997,7,9000,4,Yes,Yes,Yes,Yes,No,5,8,0.61,17000,12000,25500,24000,9000
+229,Toyota,Urban Cruiser Hyryder,NeoDrive AT,2026,SUV,Petrol,Automatic,15.6,21.1,1462,5,8200,4,Yes,Yes,Yes,Yes,No,4,9,0.74,15500,10800,23000,21500,8200
+230,Kia,Sonet,2026 HTX Petrol AT,2026,SUV,Petrol,Automatic,12.9,18.4,1197,5,7800,6,Yes,Yes,Yes,Yes,No,4,8,0.65,15000,10500,22500,21000,8000
+231,Maruti Suzuki,Swift,2025 ZXi Petrol AT,2025,Hatchback,Petrol,Automatic,8.4,22.2,1197,5,5200,6,Yes,Yes,Yes,No,No,4,8,0.61,7200,4800,10500,9500,3600
+232,Maruti Suzuki,Baleno,2025 Alpha Petrol AT,2025,Hatchback,Petrol,Automatic,9.9,22.0,1197,5,5400,6,Yes,Yes,Yes,No,Yes,4,8,0.62,9000,6000,14000,13000,5000
+233,Maruti Suzuki,Fronx,Turbo Petrol AT,2025,SUV,Petrol,Automatic,11.8,20.5,998,5,6200,6,Yes,Yes,Yes,Yes,No,4,8,0.63,11500,7800,17000,16000,6000
+234,Maruti Suzuki,Grand Vitara,Hybrid Zeta AT,2025,SUV,Petrol,Automatic,21.0,27.8,1490,5,9000,6,Yes,Yes,Yes,Yes,Yes,5,8,0.64,19000,13500,28000,26000,9800
+235,Hyundai,i20,N Line Turbo MT,2025,Hatchback,Petrol,Manual,10.6,20.0,998,5,6800,6,Yes,Yes,Yes,Yes,No,4,8,0.66,10000,7000,16000,15000,5500
+236,Hyundai,Creta,2025 SX Diesel AT,2025,SUV,Diesel,Automatic,20.0,19.1,1493,5,9000,6,Yes,Yes,Yes,Yes,Yes,5,8,0.67,18500,13000,27000,25500,9500
+237,Hyundai,Verna,Turbo SX MT,2025,Sedan,Petrol,Manual,13.2,20.5,1482,5,7800,6,Yes,Yes,Yes,Yes,Yes,5,8,0.66,14000,10000,22000,20500,8000
+238,Tata Motors,Nexon,2025 Diesel MT,2025,SUV,Diesel,Manual,12.2,23.0,1497,5,7200,6,Yes,Yes,Yes,Yes,No,5,7,0.62,13500,9500,21000,19500,7500
+239,Tata Motors,Punch,2025 CNG MT,2025,SUV,CNG,Manual,7.8,26.9,1199,5,5600,4,Yes,Yes,Yes,No,No,5,7,0.60,9500,6500,15000,14000,5200
+240,Tata Motors,Harrier,2025 Diesel AT,2025,SUV,Diesel,Automatic,25.5,15.5,1956,5,10800,6,Yes,Yes,Yes,Yes,Yes,5,7,0.61,23000,16000,34000,32000,12500
+241,Mahindra,XUV300,TurboSport AT,2025,SUV,Petrol,Automatic,13.5,18.5,1197,5,7600,6,Yes,Yes,Yes,Yes,No,5,7,0.60,14500,10000,21500,20000,7800
+242,Mahindra,Scorpio N,Z6 Diesel MT,2025,SUV,Diesel,Manual,18.5,16.0,2198,7,9200,6,Yes,Yes,Yes,Yes,No,5,8,0.61,20000,14000,30000,28000,11000
+243,Mahindra,Thar,2025 LX Petrol AT,2025,SUV,Petrol,Automatic,17.5,14.8,1997,4,10200,4,Yes,Yes,Yes,No,No,4,8,0.60,16000,11000,24000,22000,9000
+244,Hyundai,Venue,2025 SX Diesel MT,2025,SUV,Diesel,Manual,12.8,23.4,1493,5,8200,6,Yes,Yes,Yes,Yes,No,4,8,0.65,14500,10000,21500,20000,7800
+245,Kia,Seltos,2025 HTX Petrol AT,2025,SUV,Petrol,Automatic,16.2,16.8,1497,5,8600,6,Yes,Yes,Yes,Yes,Yes,4,8,0.66,16500,11500,24500,23000,8800
+246,Kia,Sonet,2025 GTX Diesel MT,2025,SUV,Diesel,Manual,13.8,19.0,1493,5,7800,6,Yes,Yes,Yes,Yes,No,4,8,0.65,15000,10500,22500,21000,8000
+247,Skoda,Kushaq,2025 Style AT,2025,SUV,Petrol,Automatic,18.0,18.6,1498,5,10400,6,Yes,Yes,Yes,Yes,Yes,5,7,0.55,18500,13000,27500,26000,9800
+248,Skoda,Slavia,2025 Style MT,2025,Sedan,Petrol,Manual,14.8,20.3,999,5,9600,4,Yes,Yes,Yes,Yes,No,5,7,0.55,15500,10800,23000,21500,8200
+249,Volkswagen,Taigun,2025 GT Plus AT,2025,SUV,Petrol,Automatic,18.8,17.8,1498,5,10800,6,Yes,Yes,Yes,Yes,Yes,5,7,0.55,20000,14000,30000,28000,11000
+250,Volkswagen,Virtus,2025 Highline MT,2025,Sedan,Petrol,Manual,12.8,20.8,999,5,9400,4,Yes,Yes,Yes,Yes,No,5,7,0.54,14500,10000,21500,20000,7800
+251,Honda,City,2025 V MT,2025,Sedan,Petrol,Manual,12.4,17.8,1498,5,7800,4,Yes,Yes,Yes,Yes,No,5,8,0.71,13500,9500,21000,19500,7500
+252,Honda,City,Hybrid ZX AT,2025,Sedan,Petrol,Automatic,21.5,26.5,1498,5,9200,6,Yes,Yes,Yes,Yes,Yes,5,8,0.74,18000,12500,27000,25500,9500
+253,Honda,Elevate,2025 ZX MT,2025,SUV,Petrol,Manual,14.8,15.5,1498,5,8200,6,Yes,Yes,Yes,Yes,No,4,8,0.72,15500,10800,23000,21500,8200
+254,Toyota,Innova Crysta,2025 GX Diesel MT,2025,MPV,Diesel,Manual,21.8,15.6,2393,7,10200,3,Yes,Yes,Yes,Yes,No,5,9,0.76,20000,14000,30000,28000,11000
+255,Toyota,Innova Hycross,2025 Hybrid VX AT,2025,MPV,Petrol,Automatic,29.5,23.5,1987,7,11500,6,Yes,Yes,Yes,Yes,Yes,5,9,0.78,26000,18000,39000,37000,15000
+256,Toyota,Urban Cruiser Hyryder,2025 Hybrid AT,2025,SUV,Petrol,Automatic,19.5,27.9,1490,5,9000,6,Yes,Yes,Yes,Yes,Yes,5,9,0.75,18000,12500,27000,25500,9500
+257,Renault,Kiger,2025 Turbo MT,2025,SUV,Petrol,Manual,10.5,20.5,999,5,6000,4,Yes,Yes,Yes,Yes,No,4,6,0.46,11000,7500,16500,15500,5800
+258,Nissan,Magnite,2025 Turbo AT,2025,SUV,Petrol,Automatic,11.2,19.7,999,5,6200,4,Yes,Yes,Yes,Yes,No,4,6,0.47,11500,7800,17000,16000,6000
+259,Tata Motors,Tiago,2025 EV LR,2025,Hatchback,Electric,Automatic,12.8,0.0,0,5,6800,4,Yes,Yes,Yes,No,No,4,7,0.58,14000,9500,21000,19500,7500
+260,Tata Motors,Tigor,2025 EV AT,2025,Sedan,Electric,Automatic,13.5,0.0,0,5,7000,4,Yes,Yes,Yes,No,No,4,7,0.58,14500,10000,21500,20000,7800
+261,Hyundai,Exter,2025 SX AMT,2025,SUV,Petrol,Automatic,8.9,19.2,1197,5,6500,4,Yes,Yes,Yes,No,No,4,8,0.64,11000,7500,16500,15500,5800
+262,Maruti Suzuki,XL6,2025 Alpha AT,2025,MPV,Petrol,Automatic,14.8,20.0,1462,6,7000,4,Yes,Yes,Yes,No,No,3,8,0.61,14000,10000,22000,20500,8000
+263,Kia,Carens,2025 Luxury Plus AT,2025,MPV,Diesel,Automatic,19.8,18.4,1493,7,9000,6,Yes,Yes,Yes,Yes,Yes,5,8,0.66,18500,13000,27000,25500,9500
+264,Mahindra,Bolero Neo,2025 N10 MT,2025,SUV,Diesel,Manual,12.5,17.3,1493,7,8000,2,Yes,Yes,Yes,No,No,4,7,0.55,13500,9500,21000,19500,7500
+265,Skoda,Kodiaq,2025 L&K AT,2025,SUV,Petrol,Automatic,41.0,12.8,1984,7,14500,9,Yes,Yes,Yes,Yes,Yes,5,8,0.66,32000,22000,48000,45000,19000
+266,Volkswagen,Tiguan,2025 R-Line AT,2025,SUV,Petrol,Automatic,38.5,12.6,1984,5,13800,9,Yes,Yes,Yes,Yes,Yes,5,8,0.64,30000,20000,45000,42000,17000
+267,Toyota,Fortuner,2025 4x4 Diesel AT,2025,SUV,Diesel,Automatic,43.0,13.5,2755,7,14000,7,Yes,Yes,Yes,Yes,Yes,5,9,0.80,46000,31000,62000,58000,26000
+268,Hyundai,Tucson,2025 Platinum AT,2025,SUV,Diesel,Automatic,35.5,16.4,1999,5,12800,6,Yes,Yes,Yes,Yes,Yes,5,8,0.70,27000,18500,40000,38000,15500
+269,Maruti Suzuki,Jimny,2025 Alpha AT,2025,SUV,Petrol,Automatic,15.6,16.4,1462,4,7200,6,Yes,Yes,Yes,Yes,No,4,8,0.62,15000,10500,22500,21000,8000
+270,Honda,Amaze,2025 ZX AT,2025,Sedan,Petrol,Automatic,9.8,18.3,1199,5,7200,4,Yes,Yes,Yes,No,No,4,8,0.70,11000,7500,16500,15500,5800
+271,Maruti Suzuki,Alto K10,2025 VXi CNG MT,2025,Hatchback,CNG,Manual,6.1,33.8,998,5,4200,2,Yes,No,Yes,No,No,2,8,0.56,5200,3500,7200,6200,2600
+272,Maruti Suzuki,WagonR,2025 ZXi CNG MT,2025,Hatchback,CNG,Manual,7.6,34.0,1197,5,4800,2,Yes,No,Yes,No,No,3,8,0.60,7200,4800,10500,9500,3600
+273,Maruti Suzuki,Celerio,2025 ZXi CNG MT,2025,Hatchback,CNG,Manual,7.8,34.4,998,5,4600,2,Yes,No,Yes,No,No,3,8,0.60,7200,4800,10500,9500,3600
+274,Maruti Suzuki,Baleno,2025 Delta CNG MT,2025,Hatchback,CNG,Manual,9.4,30.6,1197,5,5200,2,Yes,Yes,Yes,No,No,3,8,0.61,9000,6000,14000,13000,5000
+275,Maruti Suzuki,Swift,2025 VXi CNG MT,2025,Hatchback,CNG,Manual,8.9,30.5,1197,5,5000,2,Yes,No,Yes,No,No,3,8,0.61,7200,4800,10500,9500,3600
+276,Maruti Suzuki,Brezza,2025 ZXi CNG MT,2025,SUV,CNG,Manual,12.4,25.5,1462,5,6000,4,Yes,Yes,Yes,No,No,4,8,0.62,11500,7800,17000,16000,6000
+277,Maruti Suzuki,Ertiga,2025 VXi CNG MT,2025,MPV,CNG,Manual,11.9,26.1,1462,7,5400,4,Yes,Yes,Yes,No,No,3,8,0.61,11500,7800,17000,16000,6000
+278,Maruti Suzuki,XL6,2025 Zeta CNG MT,2025,MPV,CNG,Manual,13.6,26.1,1462,6,6000,4,Yes,Yes,Yes,No,No,3,8,0.61,14000,10000,22000,20500,8000
+279,Maruti Suzuki,Eeco,2025 CNG Cargo MT,2025,MPV,CNG,Manual,7.1,26.8,1197,2,4500,2,Yes,No,No,No,No,2,7,0.45,5000,3200,7000,6000,2500
+280,Hyundai,Grand i10 Nios,2025 Sportz CNG MT,2025,Hatchback,CNG,Manual,8.6,27.0,1197,5,5600,2,Yes,No,Yes,No,No,3,8,0.65,7800,5000,11500,10500,3900
+281,Hyundai,Aura,2025 SX CNG MT,2025,Sedan,CNG,Manual,9.2,27.1,1197,5,6000,2,Yes,No,Yes,No,No,3,8,0.65,7800,5000,11500,10500,3900
+282,Hyundai,Exter,2025 SX CNG MT,2025,SUV,CNG,Manual,9.1,27.1,1197,5,6200,2,Yes,No,Yes,No,No,4,8,0.64,9500,6500,15000,14000,5200
+283,Tata Motors,Tiago,2025 CNG XZ MT,2025,Hatchback,CNG,Manual,7.9,26.4,1199,5,5200,4,Yes,Yes,Yes,No,No,4,7,0.58,9000,6000,14000,13000,5000
+284,Tata Motors,Tigor,2025 CNG XZ MT,2025,Sedan,CNG,Manual,8.8,26.4,1199,5,5400,4,Yes,Yes,Yes,No,No,4,7,0.58,9000,6000,14000,13000,5000
+285,Tata Motors,Punch,2025 CNG Adventure MT,2025,SUV,CNG,Manual,8.2,26.9,1199,5,5600,2,Yes,No,Yes,No,No,5,7,0.60,9500,6500,15000,14000,5200
+286,Tata Motors,Altroz,2025 CNG XZ MT,2025,Hatchback,CNG,Manual,9.6,26.2,1199,5,5800,4,Yes,Yes,Yes,No,No,5,7,0.60,10000,7000,16000,15000,5500
+287,Tata Motors,Nexon,2025 CNG Smart MT,2025,SUV,CNG,Manual,11.8,24.0,1199,5,6200,4,Yes,Yes,Yes,No,No,5,7,0.61,13500,9500,21000,19500,7500
+288,Toyota,Glanza,2025 G CNG MT,2025,Hatchback,CNG,Manual,8.9,30.6,1197,5,5600,2,Yes,No,Yes,No,No,3,9,0.70,9000,6000,14000,13000,5000
+289,Toyota,Rumion,2025 S CNG MT,2025,MPV,CNG,Manual,11.2,26.1,1462,7,6200,2,Yes,Yes,Yes,No,No,3,9,0.74,11500,7800,17000,16000,6000
+290,Honda,Amaze,2025 CNG MT,2025,Sedan,CNG,Manual,9.4,26.0,1199,5,7000,2,Yes,No,Yes,No,No,4,8,0.70,11000,7500,16500,15500,5800
+291,Kia,Sonet,2025 CNG HTK MT,2025,SUV,CNG,Manual,10.2,24.1,1197,5,7600,2,Yes,No,Yes,No,No,3,8,0.64,11500,7800,17000,16000,6000
+292,Kia,Carens,2025 CNG Premium MT,2025,MPV,CNG,Manual,13.9,26.0,1497,7,8200,2,Yes,Yes,Yes,No,No,4,8,0.65,14000,10000,22000,20500,8000
+293,Renault,Kwid,2025 CNG MT,2025,Hatchback,CNG,Manual,6.4,32.0,999,5,4500,2,Yes,No,Yes,No,No,2,6,0.42,5200,3500,7200,6200,2600
+294,Renault,Triber,2025 CNG MT,2025,MPV,CNG,Manual,8.4,26.5,999,7,5400,2,Yes,No,Yes,No,No,4,6,0.45,9000,6000,14000,13000,5000
+295,Nissan,Magnite,2025 CNG MT,2025,SUV,CNG,Manual,8.6,24.0,999,5,5200,2,Yes,No,Yes,No,No,4,6,0.46,9000,6000,14000,13000,5000
+296,Maruti Suzuki,Ciaz,2025 CNG MT,2025,Sedan,CNG,Manual,10.9,26.5,1462,5,5800,2,Yes,Yes,Yes,No,No,3,8,0.61,11500,7800,17000,16000,6000
+297,Maruti Suzuki,Ignis,2025 CNG MT,2025,Hatchback,CNG,Manual,7.6,26.8,1197,5,5000,2,Yes,No,Yes,No,No,3,8,0.60,7200,4800,10500,9500,3600
+298,Hyundai,Venue,2025 CNG MT,2025,SUV,CNG,Manual,10.8,24.2,1197,5,7800,2,Yes,No,Yes,No,No,4,8,0.65,11500,7800,17000,16000,6000
+299,Tata Motors,Tigor,2025 CNG XE MT,2025,Sedan,CNG,Manual,8.2,26.4,1199,5,5200,2,Yes,No,Yes,No,No,4,7,0.57,9000,6000,14000,13000,5000
+300,Maruti Suzuki,Swift Dzire,2025 CNG MT,2025,Sedan,CNG,Manual,8.7,31.1,1197,5,5200,2,Yes,No,Yes,No,No,3,8,0.61,9000,6000,14000,13000,5000
+301,Toyota,Innova Hycross,Hybrid VX AT,2025,MPV,Hybrid,Automatic,28.5,23.5,1987,7,11500,6,Yes,Yes,Yes,Yes,Yes,5,9,0.78,26000,18000,39000,37000,15000
+302,Toyota,Innova Hycross,Hybrid ZX AT,2025,MPV,Hybrid,Automatic,32.2,23.5,1987,7,12000,7,Yes,Yes,Yes,Yes,Yes,5,9,0.79,28000,19500,42000,39500,16500
+303,Toyota,Urban Cruiser Hyryder,Strong Hybrid V AT,2025,SUV,Hybrid,Automatic,18.8,27.9,1490,5,9000,6,Yes,Yes,Yes,Yes,Yes,5,9,0.75,18000,12500,27000,25500,9500
+304,Toyota,Urban Cruiser Hyryder,Strong Hybrid G AT,2025,SUV,Hybrid,Automatic,17.2,27.9,1490,5,8600,6,Yes,Yes,Yes,Yes,No,5,9,0.74,17000,12000,25500,24000,9000
+305,Maruti Suzuki,Grand Vitara,Strong Hybrid Zeta AT,2025,SUV,Hybrid,Automatic,19.6,27.9,1490,5,8800,6,Yes,Yes,Yes,Yes,Yes,5,8,0.64,18000,12500,27000,25500,9500
+306,Maruti Suzuki,Grand Vitara,Strong Hybrid Alpha AT,2025,SUV,Hybrid,Automatic,21.8,27.9,1490,5,9200,6,Yes,Yes,Yes,Yes,Yes,5,8,0.65,19500,13500,28500,27000,10000
+307,Honda,City,e:HEV V AT,2025,Sedan,Hybrid,Automatic,19.2,26.5,1498,5,8800,6,Yes,Yes,Yes,Yes,No,5,8,0.74,17000,12000,25500,24000,9000
+308,Honda,City,e:HEV ZX AT,2025,Sedan,Hybrid,Automatic,21.9,26.5,1498,5,9200,6,Yes,Yes,Yes,Yes,Yes,5,8,0.75,18000,12500,27000,25500,9500
+309,Toyota,Camry,Hybrid Elegant AT,2025,Sedan,Hybrid,Automatic,46.5,19.1,2487,5,15000,9,Yes,Yes,Yes,Yes,Yes,5,9,0.80,30000,20000,45000,42000,17000
+310,Toyota,Camry,Hybrid Premium AT,2025,Sedan,Hybrid,Automatic,48.2,19.1,2487,5,15500,9,Yes,Yes,Yes,Yes,Yes,5,9,0.81,32000,22000,48000,45000,19000
+311,Maruti Suzuki,Invicto,Strong Hybrid Zeta AT,2025,MPV,Hybrid,Automatic,25.4,23.2,1987,7,10500,6,Yes,Yes,Yes,Yes,Yes,5,8,0.66,23000,16000,34000,32000,12500
+312,Maruti Suzuki,Invicto,Strong Hybrid Alpha AT,2025,MPV,Hybrid,Automatic,28.9,23.2,1987,7,11200,6,Yes,Yes,Yes,Yes,Yes,5,8,0.67,25000,17500,37000,35000,14000
+313,Toyota,Corolla Cross,Hybrid AT,2025,SUV,Hybrid,Automatic,34.5,21.0,1798,5,13500,7,Yes,Yes,Yes,Yes,Yes,5,9,0.78,28000,19500,42000,39500,16500
+314,Hyundai,Tucson,Hybrid AT,2025,SUV,Hybrid,Automatic,36.2,18.0,1999,5,14000,6,Yes,Yes,Yes,Yes,Yes,5,8,0.71,27000,18500,40000,38000,15500
+315,Kia,Sportage,Hybrid AT,2025,SUV,Hybrid,Automatic,35.8,18.5,1598,5,13800,6,Yes,Yes,Yes,Yes,Yes,5,8,0.70,26000,18000,39000,37000,15000
+316,Hyundai,Alcazar,Hybrid AT,2025,SUV,Hybrid,Automatic,26.5,20.0,1999,6,11000,6,Yes,Yes,Yes,Yes,Yes,4,8,0.68,23000,16000,34000,32000,12500
+317,Kia,Seltos,Hybrid AT,2025,SUV,Hybrid,Automatic,23.8,21.0,1498,5,10200,6,Yes,Yes,Yes,Yes,Yes,4,8,0.67,21000,14500,30000,28500,10500
+318,Maruti Suzuki,Ciaz,Smart Hybrid AT,2025,Sedan,Hybrid,Automatic,13.6,20.6,1462,5,6200,4,Yes,Yes,Yes,No,No,3,8,0.62,14000,10000,22000,20500,8000
+319,Maruti Suzuki,Ertiga,Smart Hybrid AT,2025,MPV,Hybrid,Automatic,13.9,20.5,1462,7,6500,4,Yes,Yes,Yes,No,No,3,8,0.62,14500,10000,22000,20500,8000
+320,Maruti Suzuki,XL6,Smart Hybrid AT,2025,MPV,Hybrid,Automatic,15.2,20.3,1462,6,7000,4,Yes,Yes,Yes,No,No,3,8,0.62,15500,10800,23000,21500,8200
+321,Toyota,Yaris Cross,Hybrid AT,2025,SUV,Hybrid,Automatic,27.5,22.0,1490,5,11500,6,Yes,Yes,Yes,Yes,Yes,5,9,0.77,24000,17000,36000,34000,13500
+322,Toyota,Prius,Hybrid AT,2025,Sedan,Hybrid,Automatic,45.0,25.0,1798,5,15000,8,Yes,Yes,Yes,Yes,Yes,5,9,0.80,30000,20000,45000,42000,17000
+323,Honda,CR-V,Hybrid AT,2025,SUV,Hybrid,Automatic,38.0,19.0,1993,5,14500,6,Yes,Yes,Yes,Yes,Yes,5,8,0.73,28000,19500,42000,39500,16500
+324,Hyundai,Elantra,Hybrid AT,2025,Sedan,Hybrid,Automatic,27.8,20.0,1598,5,11800,6,Yes,Yes,Yes,Yes,Yes,5,8,0.70,22000,15000,33000,31000,12000
+325,Kia,Niro,Hybrid AT,2025,SUV,Hybrid,Automatic,32.5,22.0,1580,5,13200,6,Yes,Yes,Yes,Yes,Yes,5,8,0.72,26000,18000,39000,37000,15000
+326,Toyota,RAV4,Hybrid AT,2025,SUV,Hybrid,Automatic,42.0,20.5,2487,5,14800,7,Yes,Yes,Yes,Yes,Yes,5,9,0.79,30000,20000,45000,42000,17000
+327,Maruti Suzuki,Fronx,Smart Hybrid AT,2025,SUV,Hybrid,Automatic,13.8,22.0,1197,5,6500,4,Yes,Yes,Yes,No,No,3,8,0.63,14000,10000,22000,20500,8000
+328,Tata Motors,Harrier,Hybrid AT,2025,SUV,Hybrid,Automatic,27.2,18.0,1956,5,11200,6,Yes,Yes,Yes,Yes,Yes,5,7,0.63,24000,17000,36000,34000,13500
+329,Tata Motors,Safari,Hybrid AT,2025,SUV,Hybrid,Automatic,29.5,17.5,1956,7,11800,6,Yes,Yes,Yes,Yes,Yes,5,7,0.63,26000,18000,39000,37000,15000
+330,Mahindra,XUV700,Hybrid AT,2025,SUV,Hybrid,Automatic,27.8,18.0,1999,7,11500,7,Yes,Yes,Yes,Yes,Yes,5,8,0.63,25000,17500,37000,35000,14000
+331,Mahindra,Scorpio N,Hybrid AT,2025,SUV,Hybrid,Automatic,26.5,17.0,1999,7,11000,6,Yes,Yes,Yes,Yes,Yes,5,8,0.62,24000,17000,36000,34000,13500
+332,Toyota,Fortuner,Hybrid AT,2025,SUV,Hybrid,Automatic,45.5,15.5,2755,7,15000,7,Yes,Yes,Yes,Yes,Yes,5,9,0.80,46000,31000,62000,58000,26000
+333,Hyundai,Creta,Hybrid AT,2025,SUV,Hybrid,Automatic,22.5,21.0,1498,5,9800,6,Yes,Yes,Yes,Yes,Yes,5,8,0.68,20000,14500,30000,28500,10500
+334,Kia,Carens,Hybrid AT,2025,MPV,Hybrid,Automatic,21.8,22.0,1498,7,9500,6,Yes,Yes,Yes,Yes,Yes,5,8,0.67,21000,14500,30000,28500,10500
+335,Volkswagen,Tiguan,Hybrid AT,2025,SUV,Hybrid,Automatic,40.2,18.0,1984,5,14500,8,Yes,Yes,Yes,Yes,Yes,5,8,0.65,30000,20000,45000,42000,17000
+336,Skoda,Kodiaq,Hybrid AT,2025,SUV,Hybrid,Automatic,43.0,17.5,1984,7,15000,8,Yes,Yes,Yes,Yes,Yes,5,8,0.66,32000,22000,48000,45000,19000
+337,Honda,Accord,Hybrid AT,2025,Sedan,Hybrid,Automatic,44.0,23.0,1993,5,14800,8,Yes,Yes,Yes,Yes,Yes,5,8,0.75,30000,20000,45000,42000,17000
+338,Toyota,Vellfire,Hybrid AT,2025,MPV,Hybrid,Automatic,95.0,16.4,2487,7,20000,10,Yes,Yes,Yes,Yes,Yes,5,9,0.85,50000,35000,70000,65000,28000
+339,Lexus,ES 300h,Hybrid AT,2025,Sedan,Hybrid,Automatic,66.0,22.0,2487,5,18000,10,Yes,Yes,Yes,Yes,Yes,5,10,0.85,42000,30000,60000,56000,24000
+340,Lexus,NX 350h,Hybrid AT,2025,SUV,Hybrid,Automatic,72.0,20.0,2487,5,18500,10,Yes,Yes,Yes,Yes,Yes,5,10,0.86,45000,32000,65000,60000,26000
+341,Tata Motors,Nexon EV,Creative Plus LR,2025,SUV,Electric,Automatic,17.8,0.0,0,5,8500,6,Yes,Yes,Yes,Yes,Yes,5,7,0.62,18000,12500,27000,25500,9500
+342,Tata Motors,Nexon EV,Fearless LR,2025,SUV,Electric,Automatic,19.2,0.0,0,5,9000,6,Yes,Yes,Yes,Yes,Yes,5,7,0.63,19000,13500,28500,27000,10000
+343,Tata Motors,Tiago EV,XT LR,2025,Hatchback,Electric,Automatic,11.2,0.0,0,5,6500,4,Yes,Yes,Yes,No,No,4,7,0.58,14000,9500,21000,19500,7500
+344,Tata Motors,Tigor EV,XZ Plus,2025,Sedan,Electric,Automatic,12.9,0.0,0,5,6800,4,Yes,Yes,Yes,No,No,4,7,0.58,14500,10000,21500,20000,7800
+345,Tata Motors,Punch EV,Empowered LR,2025,SUV,Electric,Automatic,14.8,0.0,0,5,7200,4,Yes,Yes,Yes,No,No,5,7,0.60,15500,10800,23000,21500,8200
+346,Tata Motors,Curvv EV,AWD,2025,SUV,Electric,Automatic,22.5,0.0,0,5,9800,6,Yes,Yes,Yes,Yes,Yes,5,7,0.64,20000,14500,30000,28500,10500
+347,Mahindra,XUV400 EV,EL Pro,2025,SUV,Electric,Automatic,16.8,0.0,0,5,8000,6,Yes,Yes,Yes,Yes,No,5,7,0.61,16500,11500,24500,23000,8800
+348,Mahindra,BE 05,EV AWD,2025,SUV,Electric,Automatic,25.0,0.0,0,5,11000,6,Yes,Yes,Yes,Yes,Yes,5,8,0.65,22000,15500,33000,31000,12000
+349,Mahindra,XUV.e8,EV AWD,2025,SUV,Electric,Automatic,28.5,0.0,0,7,12000,7,Yes,Yes,Yes,Yes,Yes,5,8,0.66,24000,17000,36000,34000,13500
+350,MG,ZS EV,Exclusive,2025,SUV,Electric,Automatic,22.0,0.0,0,5,9500,6,Yes,Yes,Yes,Yes,Yes,5,8,0.70,20000,14500,30000,28500,10500
+351,MG,Comet EV,Play,2025,Hatchback,Electric,Automatic,8.5,0.0,0,4,5500,2,Yes,Yes,Yes,No,No,3,7,0.55,12000,8000,18000,16500,6500
+352,MG,4 EV,Long Range,2025,Hatchback,Electric,Automatic,24.0,0.0,0,5,10000,6,Yes,Yes,Yes,Yes,Yes,5,8,0.72,21000,15000,31500,29500,11000
+353,Hyundai,Kona Electric,2025 Facelift,2025,SUV,Electric,Automatic,24.5,0.0,0,5,9500,6,Yes,Yes,Yes,Yes,Yes,5,8,0.66,20500,14500,30500,29000,10800
+354,Hyundai,Ioniq 5,Premium,2025,SUV,Electric,Automatic,46.0,0.0,0,5,14000,6,Yes,Yes,Yes,Yes,Yes,5,9,0.75,28000,19000,42000,40000,16500
+355,Kia,EV6,GT Line AWD,2025,SUV,Electric,Automatic,61.0,0.0,0,5,15000,8,Yes,Yes,Yes,Yes,Yes,5,9,0.76,30000,21000,46000,44000,18000
+356,Maruti Suzuki,eVX,EV Concept Prod,2025,SUV,Electric,Automatic,22.0,0.0,0,5,9000,6,Yes,Yes,Yes,Yes,Yes,5,8,0.64,19500,13500,28500,27000,10000
+357,Toyota,bZ4X,EV AWD,2025,SUV,Electric,Automatic,48.0,0.0,0,5,14500,8,Yes,Yes,Yes,Yes,Yes,5,9,0.78,29000,20000,45000,42000,17000
+358,Tata Motors,Avinya,EV Premium,2025,SUV,Electric,Automatic,35.0,0.0,0,5,13000,8,Yes,Yes,Yes,Yes,Yes,5,8,0.68,26000,18000,39000,37000,15000
+359,Volkswagen,ID.4,EV AWD,2025,SUV,Electric,Automatic,45.0,0.0,0,5,14000,8,Yes,Yes,Yes,Yes,Yes,5,8,0.65,28000,19000,42000,40000,16500
+360,Skoda,Enyaq iV,80X,2025,SUV,Electric,Automatic,48.5,0.0,0,5,14500,8,Yes,Yes,Yes,Yes,Yes,5,8,0.66,29000,20000,45000,42000,17000
+361,BYD,Atto 3,Dynamic,2025,SUV,Electric,Automatic,33.5,0.0,0,5,12000,7,Yes,Yes,Yes,Yes,Yes,5,8,0.70,25000,17500,37500,35500,14000
+362,BYD,Seal,Performance,2025,Sedan,Electric,Automatic,41.0,0.0,0,5,13500,8,Yes,Yes,Yes,Yes,Yes,5,8,0.71,27000,18500,40500,38500,15500
+363,Citroen,eC3,Shine,2025,Hatchback,Electric,Automatic,12.3,0.0,0,5,6500,2,Yes,Yes,Yes,No,No,3,6,0.50,14000,9500,21000,19500,7500
+364,Citroen,eC3 Aircross,EV,2025,SUV,Electric,Automatic,16.5,0.0,0,5,7500,4,Yes,Yes,Yes,No,No,4,6,0.52,16000,11000,24000,22500,8500
+365,Renault,Zoe,EV,2025,Hatchback,Electric,Automatic,28.0,0.0,0,5,11000,6,Yes,Yes,Yes,Yes,Yes,5,6,0.55,22000,15500,33000,31000,12000
+366,Nissan,Leaf,EV,2025,Hatchback,Electric,Automatic,30.0,0.0,0,5,11500,6,Yes,Yes,Yes,Yes,Yes,5,6,0.56,23000,16000,34500,32500,12500
+367,Tesla,Model 3,Standard RWD,2025,Sedan,Electric,Automatic,45.0,0.0,0,5,15000,8,Yes,Yes,Yes,Yes,Yes,5,10,0.85,30000,21000,46000,44000,18000
+368,Tesla,Model Y,Long Range AWD,2025,SUV,Electric,Automatic,55.0,0.0,0,5,16000,8,Yes,Yes,Yes,Yes,Yes,5,10,0.86,33000,23000,50000,48000,20000
+369,Audi,Q8 e-tron,55 quattro,2025,SUV,Electric,Automatic,115.0,0.0,0,5,22000,10,Yes,Yes,Yes,Yes,Yes,5,10,0.88,52000,38000,75000,72000,30000
+370,BMW,iX1,xDrive30,2025,SUV,Electric,Automatic,67.0,0.0,0,5,18000,8,Yes,Yes,Yes,Yes,Yes,5,10,0.87,38000,26000,58000,55000,23000
+371,BMW,i4,eDrive40,2025,Sedan,Electric,Automatic,74.0,0.0,0,5,18500,8,Yes,Yes,Yes,Yes,Yes,5,10,0.87,40000,28000,60000,57000,24000
+372,Mercedes-Benz,EQA,250+,2025,SUV,Electric,Automatic,68.0,0.0,0,5,18500,8,Yes,Yes,Yes,Yes,Yes,5,10,0.86,39000,27000,59000,56000,23500
+373,Mercedes-Benz,EQB,350 4MATIC,2025,SUV,Electric,Automatic,77.0,0.0,0,7,19500,9,Yes,Yes,Yes,Yes,Yes,5,10,0.87,42000,30000,63000,60000,25500
+374,Mercedes-Benz,EQE,500,2025,Sedan,Electric,Automatic,92.0,0.0,0,5,21000,10,Yes,Yes,Yes,Yes,Yes,5,10,0.88,48000,35000,72000,69000,29000
+375,Mercedes-Benz,EQS,580,2025,Sedan,Electric,Automatic,155.0,0.0,0,5,26000,10,Yes,Yes,Yes,Yes,Yes,5,10,0.90,60000,45000,90000,86000,36000
+376,Maruti Suzuki,Fronx,Turbo Smart Hybrid AT,2025,SUV,Hybrid,Automatic,13.9,22.0,998,5,6500,4,Yes,Yes,Yes,No,No,3,8,0.63,14000,10000,22000,20500,8000
+377,Maruti Suzuki,Invicto,Hybrid Alpha AT,2025,MPV,Hybrid,Automatic,29.2,23.2,1987,7,11200,6,Yes,Yes,Yes,Yes,Yes,5,8,0.67,25000,17500,37000,35000,14000
+378,Hyundai,Creta N Line,Turbo AT,2025,SUV,Petrol,Automatic,18.5,16.5,1482,5,9000,6,Yes,Yes,Yes,Yes,Yes,5,8,0.68,18500,13000,27000,25500,9500
+379,Hyundai,i20,N Line AT,2025,Hatchback,Petrol,Automatic,11.8,20.0,998,5,7000,6,Yes,Yes,Yes,Yes,No,4,8,0.66,11000,7500,16500,15500,5800
+380,Tata Motors,Curvv,ICE Turbo MT,2025,SUV,Petrol,Manual,16.8,18.5,1497,5,8600,6,Yes,Yes,Yes,Yes,Yes,5,7,0.63,16500,11500,25000,23500,9000
+381,Tata Motors,Safari,Accomplished Plus AT,2025,SUV,Diesel,Automatic,27.5,14.5,1956,7,11500,6,Yes,Yes,Yes,Yes,Yes,5,7,0.62,26000,18000,39000,37000,15000
+382,Mahindra,Scorpio Classic,S Diesel MT,2025,SUV,Diesel,Manual,14.5,16.0,2184,7,9000,2,Yes,Yes,Yes,No,No,4,7,0.58,17000,12000,25500,24000,9000
+383,Mahindra,XUV3XO,AX5 Petrol MT,2025,SUV,Petrol,Manual,11.2,18.0,1197,5,7200,6,Yes,Yes,Yes,Yes,No,5,7,0.60,13500,9500,21000,19500,7500
+384,Mahindra,XUV3XO,AX7 Petrol AT,2025,SUV,Petrol,Automatic,14.6,18.0,1197,5,7800,6,Yes,Yes,Yes,Yes,Yes,5,7,0.61,15000,10500,22500,21000,8000
+385,Toyota,Urban Cruiser Taisor,Turbo AT,2025,SUV,Petrol,Automatic,13.8,20.8,998,5,7200,6,Yes,Yes,Yes,Yes,No,4,9,0.74,14000,9800,21000,19500,7500
+386,Toyota,Innova Crysta,ZX Diesel AT,2025,MPV,Diesel,Automatic,26.2,14.5,2393,7,10800,7,Yes,Yes,Yes,Yes,Yes,5,9,0.77,22000,15000,32000,30000,12000
+387,Honda,Elevate,ZX CVT,2025,SUV,Petrol,Automatic,16.4,14.9,1498,5,8400,6,Yes,Yes,Yes,Yes,Yes,4,8,0.72,17000,12000,25500,24000,9000
+388,Kia,Seltos,X-Line Diesel AT,2025,SUV,Diesel,Automatic,20.5,19.1,1493,5,9200,6,Yes,Yes,Yes,Yes,Yes,5,8,0.67,19500,13500,28500,27000,10000
+389,Kia,Sonet,X-Line Petrol AT,2025,SUV,Petrol,Automatic,13.6,18.4,1197,5,8000,6,Yes,Yes,Yes,Yes,No,4,8,0.65,15500,10800,23000,21500,8200
+390,Skoda,Slavia,Monte Carlo AT,2025,Sedan,Petrol,Automatic,17.9,19.5,1498,5,10200,6,Yes,Yes,Yes,Yes,Yes,5,7,0.56,18500,13000,27500,26000,9800
+391,Skoda,Kushaq,Onyx Edition MT,2025,SUV,Petrol,Manual,13.2,19.8,999,5,9400,4,Yes,Yes,Yes,Yes,No,5,7,0.55,14500,10000,21500,20000,7800
+392,Volkswagen,Virtus,GT Plus MT,2025,Sedan,Petrol,Manual,15.9,19.8,1498,5,9800,6,Yes,Yes,Yes,Yes,Yes,5,7,0.55,17500,12000,26000,24500,9200
+393,Volkswagen,Taigun,Highline AT,2025,SUV,Petrol,Automatic,14.8,19.2,999,5,9600,4,Yes,Yes,Yes,Yes,No,5,7,0.54,15500,10800,23000,21500,8200
+394,Renault,Kwid,Climber CNG MT,2025,Hatchback,CNG,Manual,6.5,32.0,999,5,4500,2,Yes,No,Yes,No,No,2,6,0.42,5200,3500,7200,6200,2600
+395,Renault,Kiger,RXZ Turbo AT,2025,SUV,Petrol,Automatic,11.9,19.0,999,5,6400,4,Yes,Yes,Yes,Yes,No,4,6,0.46,11800,8000,17500,16500,6200
+396,Nissan,Magnite,XV Premium Turbo AT,2025,SUV,Petrol,Automatic,12.2,19.7,999,5,6600,4,Yes,Yes,Yes,Yes,No,4,6,0.47,12000,8200,18000,17000,6400
+397,Tata Motors,Altroz,Racer Turbo MT,2025,Hatchback,Petrol,Manual,10.5,18.5,1199,5,6200,6,Yes,Yes,Yes,No,No,5,7,0.61,11000,7500,16500,15500,5800
+398,Hyundai,Alcazar,Signature Diesel AT,2025,SUV,Diesel,Automatic,22.5,18.1,1493,6,10200,6,Yes,Yes,Yes,Yes,Yes,4,8,0.69,20000,14000,30000,28000,11000
+399,Maruti Suzuki,Jimny,Alpha AT,2025,SUV,Petrol,Automatic,15.4,16.4,1462,4,7000,6,Yes,Yes,Yes,Yes,No,4,8,0.62,15000,10500,22500,21000,8000
+400,Toyota,Fortuner Legender,4x2 AT,2025,SUV,Diesel,Automatic,45.8,14.4,2755,7,14500,7,Yes,Yes,Yes,Yes,Yes,5,9,0.80,46000,31000,62000,58000,26000
+401,Maruti Suzuki,Eeco,7 STR Petrol MT,2025,MPV,Petrol,Manual,5.9,19.7,1197,7,4500,2,Yes,No,No,No,No,2,7,0.45,5000,3200,7000,6000,2500
+402,Maruti Suzuki,S-Presso,2025 VXi AMT,2025,Hatchback,Petrol,Automatic,6.1,24.1,998,5,4400,2,Yes,Yes,Yes,No,No,2,8,0.55,5500,3500,7500,6500,2700
+403,Maruti Suzuki,Celerio,2025 ZXi AMT,2025,Hatchback,Petrol,Automatic,7.2,26.0,998,5,4600,2,Yes,Yes,Yes,No,No,3,8,0.60,7200,4800,10500,9500,3600
+404,Maruti Suzuki,WagonR,2025 ZXi AMT,2025,Hatchback,Petrol,Automatic,7.8,23.6,1197,5,4800,2,Yes,Yes,Yes,No,No,3,8,0.60,7200,4800,10500,9500,3600
+405,Hyundai,Grand i10 Nios,2025 Asta AMT,2025,Hatchback,Petrol,Automatic,8.9,20.1,1197,5,6200,4,Yes,Yes,Yes,No,No,3,8,0.65,7800,5000,11500,10500,3900
+406,Hyundai,Aura,2025 SX AMT,2025,Sedan,Petrol,Automatic,8.8,20.1,1197,5,6200,4,Yes,Yes,Yes,No,No,3,8,0.65,7800,5000,11500,10500,3900
+407,Hyundai,Exter,2025 Knight AMT,2025,SUV,Petrol,Automatic,9.5,19.2,1197,5,6500,4,Yes,Yes,Yes,No,No,4,8,0.64,11000,7500,16500,15500,5800
+408,Tata Motors,Tiago,NRG Petrol MT,2025,Hatchback,Petrol,Manual,6.8,20.1,1199,5,5000,2,Yes,No,Yes,No,No,4,7,0.57,6500,4200,9000,8000,3200
+409,Tata Motors,Tigor,XZ Plus AMT,2025,Sedan,Petrol,Automatic,8.9,19.6,1199,5,5400,4,Yes,Yes,Yes,No,No,4,7,0.57,8000,5200,12000,11000,4200
+410,Tata Motors,Altroz,Dark Edition MT,2025,Hatchback,Petrol,Manual,9.2,19.3,1199,5,5800,4,Yes,Yes,Yes,No,No,5,7,0.60,10000,7000,16000,15000,5500
+411,Tata Motors,Nexon,Smart Plus Petrol AMT,2025,SUV,Petrol,Automatic,11.6,17.0,1199,5,6800,4,Yes,Yes,Yes,Yes,No,5,7,0.61,13500,9500,21000,19500,7500
+412,Mahindra,KUV100 NXT,K6 Plus MT,2025,Hatchback,Petrol,Manual,6.9,18.1,1198,5,5400,2,Yes,No,Yes,No,No,3,6,0.45,7000,4500,10000,9000,3500
+413,Mahindra,Bolero,Neo Plus MT,2025,SUV,Diesel,Manual,12.9,17.3,1493,9,8200,2,Yes,Yes,Yes,No,No,4,7,0.55,15500,10800,23000,21500,8200
+414,Mahindra,Scorpio Classic,S11 MT,2025,SUV,Diesel,Manual,16.3,16.0,2184,7,9200,2,Yes,Yes,Yes,No,No,4,7,0.58,18000,12500,27000,25500,9500
+415,Mahindra,XUV700,AX5 Petrol MT,2025,SUV,Petrol,Manual,17.2,13.0,1999,5,9000,4,Yes,Yes,Yes,Yes,No,5,8,0.61,20000,14000,30000,28000,11000
+416,Toyota,Glanza,V AMT,2025,Hatchback,Petrol,Automatic,9.6,22.0,1197,5,5600,6,Yes,Yes,Yes,No,Yes,4,9,0.70,9000,6000,14000,13000,5000
+417,Toyota,Rumion,V AT,2025,MPV,Petrol,Automatic,13.6,20.0,1462,7,6800,4,Yes,Yes,Yes,No,No,3,9,0.74,14000,10000,22000,20500,8000
+418,Toyota,Urban Cruiser Hyryder,E NeoDrive MT,2025,SUV,Petrol,Manual,11.5,21.1,1462,5,7800,2,Yes,Yes,Yes,Yes,No,4,9,0.74,14000,9800,21000,19500,7500
+419,Honda,Amaze,2025 VX MT,2025,Sedan,Petrol,Manual,8.4,18.6,1199,5,6800,4,Yes,Yes,Yes,No,No,4,8,0.70,11000,7500,16500,15500,5800
+420,Honda,City,2025 Sport MT,2025,Sedan,Petrol,Manual,13.5,17.8,1498,5,8000,4,Yes,Yes,Yes,Yes,No,5,8,0.71,13500,9500,21000,19500,7500
+421,Kia,Sonet,HTE Petrol MT,2025,SUV,Petrol,Manual,8.9,18.4,1197,5,7400,2,Yes,Yes,Yes,No,No,3,8,0.64,11500,7800,17000,16000,6000
+422,Kia,Carens,Prestige Petrol MT,2025,MPV,Petrol,Manual,11.8,16.2,1497,7,8000,2,Yes,Yes,Yes,Yes,No,4,8,0.65,14000,10000,22000,20500,8000
+423,Skoda,Slavia,Active MT,2025,Sedan,Petrol,Manual,11.9,20.3,999,5,9200,2,Yes,Yes,Yes,Yes,No,5,7,0.55,14500,10000,21500,20000,7800
+424,Skoda,Kushaq,Style MT,2025,SUV,Petrol,Manual,16.5,18.6,1498,5,10000,6,Yes,Yes,Yes,Yes,Yes,5,7,0.55,18000,12500,27000,25500,9500
+425,Volkswagen,Virtus,Comfortline MT,2025,Sedan,Petrol,Manual,11.6,20.8,999,5,9000,2,Yes,Yes,Yes,Yes,No,5,7,0.54,14000,9800,21000,19500,7500
+426,Volkswagen,Taigun,Comfortline MT,2025,SUV,Petrol,Manual,11.8,19.2,999,5,9400,2,Yes,Yes,Yes,Yes,No,5,7,0.54,14500,10000,21500,20000,7800
+427,Renault,Kwid,2025 RXT AMT,2025,Hatchback,Petrol,Automatic,5.9,22.0,999,5,4600,2,Yes,Yes,Yes,No,No,2,6,0.42,5200,3500,7200,6200,2600
+428,Renault,Triber,2025 RXZ AMT,2025,MPV,Petrol,Automatic,7.9,18.8,999,7,5600,4,Yes,Yes,Yes,No,No,4,6,0.45,9000,6000,14000,13000,5000
+429,Nissan,Magnite,XL Turbo MT,2025,SUV,Petrol,Manual,9.6,20.0,999,5,5600,2,Yes,Yes,Yes,No,No,4,6,0.46,9000,6000,14000,13000,5000
+430,Nissan,Kicks,2025 Turbo MT,2025,SUV,Petrol,Manual,11.5,14.2,1330,5,8200,4,Yes,Yes,Yes,No,No,4,6,0.45,12000,8200,18000,17000,6400
+431,Maruti Suzuki,Ciaz,2025 Delta MT,2025,Sedan,Petrol,Manual,10.1,20.6,1462,5,5800,2,Yes,Yes,Yes,No,No,3,8,0.61,11500,7800,17000,16000,6000
+432,Hyundai,Elantra,2025 SX MT,2025,Sedan,Petrol,Manual,19.5,14.6,1999,5,9800,6,Yes,Yes,Yes,Yes,Yes,5,8,0.68,20000,14000,30000,28000,11000
+433,Tata Motors,Harrier,Dark Edition MT,2025,SUV,Diesel,Manual,18.9,16.8,1956,5,9800,4,Yes,Yes,Yes,Yes,No,5,7,0.61,20000,14000,30000,28000,11000
+434,Mahindra,Marazzo,M6 Plus MT,2025,MPV,Diesel,Manual,16.4,17.3,1497,7,8600,4,Yes,Yes,Yes,No,No,4,7,0.55,15500,10800,23000,21500,8200
+435,Toyota,Yaris,2025 V CVT,2025,Sedan,Petrol,Automatic,14.8,16.8,1496,5,8600,7,Yes,Yes,Yes,No,No,5,9,0.75,15000,10500,22500,21000,8000
+436,Honda,WR-V,2025 VX MT,2025,SUV,Petrol,Manual,10.8,16.5,1199,5,7400,2,Yes,Yes,Yes,No,No,4,8,0.70,12000,8200,18000,17000,6400
+437,Kia,Carnival,2025 Prestige Diesel AT,2025,MPV,Diesel,Automatic,31.5,13.9,2199,7,12500,6,Yes,Yes,Yes,Yes,Yes,5,8,0.70,26000,18000,38000,36000,15000
+438,Skoda,Octavia,2025 L&K AT,2025,Sedan,Petrol,Automatic,29.5,15.8,1984,5,12500,8,Yes,Yes,Yes,Yes,Yes,5,8,0.60,30000,20000,45000,42000,17000
+439,Volkswagen,Jetta,2025 Highline MT,2025,Sedan,Diesel,Manual,21.5,21.0,1968,5,11500,6,Yes,Yes,Yes,Yes,No,5,8,0.60,22000,15000,32000,30000,12000
+440,Maruti Suzuki,Jimny,2025 Zeta MT,2025,SUV,Petrol,Manual,12.9,16.9,1462,4,6500,6,Yes,Yes,Yes,Yes,No,4,8,0.62,14500,10000,21500,20000,7800
+441,Hyundai,Tucson,2025 Signature MT,2025,SUV,Diesel,Manual,32.5,16.4,1999,5,12000,6,Yes,Yes,Yes,Yes,Yes,5,8,0.70,26000,18000,39000,37000,15000
+442,Toyota,Hilux,4x4 MT,2025,Pickup,Diesel,Manual,31.0,10.0,2755,5,14000,7,Yes,Yes,Yes,Yes,No,5,9,0.75,32000,22000,48000,45000,19000
+443,Tata Motors,Yodha,4x4 Diesel MT,2025,Pickup,Diesel,Manual,9.5,13.0,2956,2,7500,2,Yes,No,No,No,No,3,6,0.45,10000,7000,16000,15000,5500
+444,Mahindra,Jeeto,Plus Diesel MT,2025,Pickup,Diesel,Manual,6.2,33.0,625,2,4800,0,No,No,No,No,No,1,6,0.40,5000,3200,7000,6000,2500
+445,Isuzu,V-Cross,Z Prestige AT,2025,Pickup,Diesel,Automatic,41.0,12.4,1898,5,15000,6,Yes,Yes,Yes,Yes,Yes,4,7,0.55,30000,20000,45000,42000,17000
+446,Force Motors,Gurkha,5 Door Diesel MT,2025,SUV,Diesel,Manual,18.0,12.4,2596,7,10000,2,Yes,Yes,Yes,No,No,4,6,0.50,20000,14000,30000,28000,11000
+447,Maruti Suzuki,Invicto,Hybrid Zeta AT,2025,MPV,Hybrid,Automatic,26.8,23.2,1987,7,10800,6,Yes,Yes,Yes,Yes,Yes,5,8,0.66,24000,17000,36000,34000,13500
+448,Hyundai,Stargazer,Petrol AT,2025,MPV,Petrol,Automatic,12.5,18.5,1497,7,7800,4,Yes,Yes,Yes,Yes,No,4,7,0.60,14500,10000,22000,20500,8000
+449,Toyota,Corolla Altis,Petrol CVT,2025,Sedan,Petrol,Automatic,19.0,16.7,1798,5,9200,7,Yes,Yes,Yes,No,No,5,9,0.75,18000,12500,27000,25500,9500
+450,Honda,Civic,2025 ZX CVT,2025,Sedan,Petrol,Automatic,22.0,16.5,1799,5,10200,6,Yes,Yes,Yes,Yes,Yes,5,8,0.72,20000,14000,30000,28000,11000
+451,Maruti Suzuki,Alto K10,VXi AMT,2025,Hatchback,Petrol,Automatic,5.9,24.4,998,5,4200,2,Yes,Yes,Yes,No,No,2,8,0.55,5200,3500,7200,6200,2600
+452,Maruti Suzuki,S-Presso,VXi MT,2025,Hatchback,Petrol,Manual,5.4,24.8,998,5,4300,2,Yes,Yes,Yes,No,No,2,8,0.55,5500,3500,7500,6500,2700
+453,Hyundai,Santro,Sportz AMT,2025,Hatchback,Petrol,Automatic,6.8,20.3,1086,5,5200,2,Yes,Yes,Yes,No,No,3,8,0.64,7200,4800,10500,9500,3600
+454,Hyundai,Grand i10 Nios,Corporate MT,2025,Hatchback,Petrol,Manual,7.6,20.7,1197,5,5600,4,Yes,Yes,Yes,No,No,3,8,0.65,7800,5000,11500,10500,3900
+455,Tata Motors,Tigor,XE MT,2025,Sedan,Petrol,Manual,6.9,19.6,1199,5,5200,2,Yes,No,Yes,No,No,4,7,0.57,8000,5200,12000,11000,4200
+456,Tata Motors,Tiago,XT AMT,2025,Hatchback,Petrol,Automatic,7.2,19.0,1199,5,5400,4,Yes,Yes,Yes,No,No,4,7,0.58,6500,4200,9000,8000,3200
+457,Mahindra,KUV100 NXT,K4 Plus MT,2025,Hatchback,Petrol,Manual,6.4,18.1,1198,5,5200,2,Yes,No,Yes,No,No,3,6,0.44,7000,4500,10000,9000,3500
+458,Mahindra,TUV300,T4 Plus MT,2025,SUV,Diesel,Manual,10.8,18.5,1493,7,7800,2,Yes,Yes,Yes,No,No,4,7,0.55,13500,9500,21000,19500,7500
+459,Hyundai,Creta,E Petrol MT,2025,SUV,Petrol,Manual,12.9,16.8,1497,5,8200,2,Yes,Yes,Yes,Yes,No,5,8,0.66,16500,11500,25000,23500,9000
+460,Kia,Seltos,HTE Diesel MT,2025,SUV,Diesel,Manual,12.5,20.7,1493,5,8000,2,Yes,Yes,Yes,No,No,4,8,0.65,15500,10800,23000,21500,8200
+461,Toyota,Glanza,G MT,2025,Hatchback,Petrol,Manual,8.2,22.3,1197,5,5400,2,Yes,Yes,Yes,No,No,4,9,0.70,9000,6000,14000,13000,5000
+462,Toyota,Yaris,G MT,2025,Sedan,Petrol,Manual,11.2,17.1,1496,5,8000,7,Yes,Yes,Yes,No,No,5,9,0.75,15000,10500,22500,21000,8000
+463,Honda,Jazz,V MT,2025,Hatchback,Petrol,Manual,9.8,17.1,1199,5,7200,2,Yes,Yes,Yes,No,No,4,8,0.69,11000,7500,16500,15500,5800
+464,Honda,WR-V,SV Diesel MT,2025,SUV,Diesel,Manual,11.5,23.7,1498,5,7800,2,Yes,Yes,Yes,No,No,4,8,0.70,12000,8200,18000,17000,6400
+465,Skoda,Rapid,Rider MT,2025,Sedan,Petrol,Manual,9.8,18.9,999,5,9000,2,Yes,Yes,Yes,No,No,4,7,0.55,14000,9800,21000,19500,7500
+466,Volkswagen,Polo,Comfortline MT,2025,Hatchback,Petrol,Manual,8.9,18.2,999,5,9200,2,Yes,Yes,Yes,No,No,4,7,0.54,13500,9500,20500,19000,7200
+467,Volkswagen,Vento,Highline MT,2025,Sedan,Petrol,Manual,12.8,17.7,1598,5,9800,2,Yes,Yes,Yes,No,No,4,7,0.54,16000,11000,24000,22500,8500
+468,Renault,Scala,RXV MT,2025,Sedan,Petrol,Manual,9.5,16.0,1498,5,7200,2,Yes,Yes,Yes,No,No,3,6,0.43,12000,8200,18000,17000,6400
+469,Renault,Lodgy,Stepway Diesel MT,2025,MPV,Diesel,Manual,11.8,19.0,1461,7,7600,2,Yes,Yes,Yes,No,No,4,6,0.44,14000,10000,22000,20500,8000
+470,Nissan,Sunny,XL MT,2025,Sedan,Petrol,Manual,9.9,16.9,1498,5,7400,2,Yes,Yes,Yes,No,No,4,6,0.45,12000,8200,18000,17000,6400
+471,Maruti Suzuki,Ritz,VXi MT,2025,Hatchback,Petrol,Manual,6.5,18.5,1197,5,4800,2,Yes,Yes,Yes,No,No,3,7,0.50,6500,4200,9000,8000,3200
+472,Maruti Suzuki,Esteem,Petrol MT,2025,Sedan,Petrol,Manual,6.8,15.5,1298,5,5200,2,Yes,No,No,No,No,2,7,0.45,9000,6000,14000,13000,5000
+473,Tata Motors,Manza,Aura MT,2025,Sedan,Petrol,Manual,7.8,16.2,1396,5,5600,2,Yes,No,Yes,No,No,3,7,0.50,11000,7500,16500,15500,5800
+474,Mahindra,Logan,Diesel MT,2025,Sedan,Diesel,Manual,8.9,19.2,1461,5,6200,2,Yes,Yes,Yes,No,No,3,6,0.45,12000,8200,18000,17000,6400
+475,Toyota,Etios Liva,GD MT,2025,Hatchback,Diesel,Manual,8.4,23.6,1364,5,5600,2,Yes,Yes,Yes,No,No,4,9,0.70,9000,6000,14000,13000,5000
+476,Toyota,Etios,GD MT,2025,Sedan,Diesel,Manual,9.2,23.6,1364,5,5800,2,Yes,Yes,Yes,No,No,4,9,0.70,11500,7800,17000,16000,6000
+477,Honda,Brio,S MT,2025,Hatchback,Petrol,Manual,6.8,18.2,1199,5,6200,2,Yes,No,Yes,No,No,4,8,0.65,9000,6000,14000,13000,5000
+478,Hyundai,Accent,Petrol MT,2025,Sedan,Petrol,Manual,8.8,17.5,1495,5,6800,2,Yes,Yes,Yes,No,No,4,8,0.64,14000,10000,22000,20500,8000
+479,Skoda,Laura,Ambiente MT,2025,Sedan,Petrol,Manual,14.8,15.0,1798,5,9800,4,Yes,Yes,Yes,No,No,4,7,0.52,18000,12500,27000,25500,9500
+480,Volkswagen,Passat,Highline MT,2025,Sedan,Petrol,Manual,29.0,15.0,1984,5,12000,6,Yes,Yes,Yes,Yes,Yes,5,8,0.60,30000,20000,45000,42000,17000
+481,Maruti Suzuki,Omni,Petrol MT,2025,MPV,Petrol,Manual,5.2,15.0,796,8,4200,0,No,No,No,No,No,1,7,0.40,5000,3200,7000,6000,2500
+482,Hyundai,Xcent,Prime MT,2025,Sedan,Petrol,Manual,7.9,20.1,1197,5,6000,2,Yes,Yes,Yes,No,No,3,8,0.64,11000,7500,16500,15500,5800
+483,Tata Motors,Sumo,Gold Diesel MT,2025,SUV,Diesel,Manual,9.8,14.0,2956,9,8200,2,Yes,Yes,Yes,No,No,3,6,0.45,15500,10800,23000,21500,8200
+484,Mahindra,Verito,Diesel MT,2025,Sedan,Diesel,Manual,9.2,21.0,1461,5,7000,2,Yes,Yes,Yes,No,No,3,6,0.45,12000,8200,18000,17000,6400
+485,Renault,Fluence,Diesel MT,2025,Sedan,Diesel,Manual,13.5,20.0,1995,5,8800,4,Yes,Yes,Yes,No,No,4,6,0.44,16000,11000,24000,22500,8500
+486,Nissan,Teana,Petrol AT,2025,Sedan,Petrol,Automatic,25.0,13.5,2496,5,11000,6,Yes,Yes,Yes,Yes,Yes,4,6,0.45,26000,18000,39000,37000,15000
+487,Maruti Suzuki,Kizashi,Petrol CVT,2025,Sedan,Petrol,Automatic,18.5,12.5,2393,5,9800,6,Yes,Yes,Yes,Yes,Yes,4,7,0.55,22000,15000,32000,30000,12000
+488,Hyundai,Sonata,Petrol AT,2025,Sedan,Petrol,Automatic,30.0,13.0,2359,5,12000,6,Yes,Yes,Yes,Yes,Yes,5,8,0.60,28000,19000,42000,40000,16500
+489,Toyota,Prius,Hybrid AT,2025,Sedan,Hybrid,Automatic,45.0,25.0,1798,5,15000,8,Yes,Yes,Yes,Yes,Yes,5,9,0.80,30000,20000,45000,42000,17000
+490,Honda,Odyssey,Petrol AT,2025,MPV,Petrol,Automatic,45.0,12.0,2356,7,15000,8,Yes,Yes,Yes,Yes,Yes,4,8,0.65,32000,22000,48000,45000,19000
+491,Maruti Suzuki,XL7,Hybrid AT,2025,MPV,Hybrid,Automatic,15.8,20.0,1462,6,7000,4,Yes,Yes,Yes,No,No,3,8,0.62,15500,10800,23000,21500,8200
+492,Kia,Rio,Petrol MT,2025,Hatchback,Petrol,Manual,7.5,18.5,1197,5,6000,2,Yes,No,Yes,No,No,3,7,0.50,9000,6000,14000,13000,5000
+493,Hyundai,Bayon,Petrol MT,2025,SUV,Petrol,Manual,9.8,18.0,998,5,7000,4,Yes,Yes,Yes,No,No,4,8,0.64,13500,9500,21000,19500,7500
+494,Toyota,Raize,Turbo AT,2025,SUV,Petrol,Automatic,12.5,19.5,998,5,7600,4,Yes,Yes,Yes,Yes,No,4,9,0.74,14500,10000,22000,20500,8000
+495,Volkswagen,T-Cross,Petrol AT,2025,SUV,Petrol,Automatic,14.8,18.0,999,5,9400,4,Yes,Yes,Yes,Yes,No,4,7,0.55,15500,10800,23000,21500,8200
+496,Skoda,Roomster,Petrol MT,2025,MPV,Petrol,Manual,10.8,17.0,1598,5,7800,4,Yes,Yes,Yes,No,No,3,7,0.50,14000,10000,22000,20500,8000
+497,Mahindra,Rexton,Diesel AT,2025,SUV,Diesel,Automatic,32.0,12.0,2157,7,13500,6,Yes,Yes,Yes,Yes,Yes,4,7,0.55,30000,20000,45000,42000,17000
+498,Tata Motors,Hexa,XT Diesel MT,2025,SUV,Diesel,Manual,17.5,17.6,2179,7,9200,4,Yes,Yes,Yes,Yes,No,4,7,0.58,20000,14000,30000,28000,11000
+499,Renault,Duster,Petrol MT,2025,SUV,Petrol,Manual,11.2,14.2,1330,5,8200,4,Yes,Yes,Yes,No,No,4,6,0.46,12000,8200,18000,17000,6400
+500,Nissan,X-Trail,Petrol AT,2025,SUV,Petrol,Automatic,32.5,13.7,2488,5,14000,6,Yes,Yes,Yes,Yes,Yes,4,6,0.50,30000,20000,45000,42000,17000
+501,Hyundai,Tucson,Platinum Petrol AT,2025,SUV,Petrol,Automatic,28.5,13.0,1999,5,12500,6,Yes,Yes,Yes,Yes,Yes,5,8,0.70,26000,18000,39000,37000,15000
+502,Hyundai,Alcazar,Signature Petrol AT,2025,SUV,Petrol,Automatic,21.5,14.5,1999,6,9800,6,Yes,Yes,Yes,Yes,Yes,4,8,0.68,21000,14500,30000,28500,10500
+503,Kia,Carnival,Limousine Diesel AT,2025,MPV,Diesel,Automatic,38.5,13.9,2199,7,13500,6,Yes,Yes,Yes,Yes,Yes,5,8,0.71,28000,19000,42000,40000,16500
+504,Kia,Sportage,GT Line Petrol AT,2025,SUV,Petrol,Automatic,32.0,14.5,1598,5,12800,6,Yes,Yes,Yes,Yes,Yes,5,8,0.70,26000,18000,39000,37000,15000
+505,Toyota,Fortuner,4x2 Petrol AT,2025,SUV,Petrol,Automatic,35.5,10.0,2694,7,14000,7,Yes,Yes,Yes,Yes,Yes,5,9,0.80,42000,28000,60000,56000,24000
+506,Toyota,Innova Hycross,Hybrid ZX AT,2025,MPV,Hybrid,Automatic,32.5,23.5,1987,7,12000,7,Yes,Yes,Yes,Yes,Yes,5,9,0.79,28000,19500,42000,39500,16500
+507,Toyota,Corolla Cross,Petrol AT,2025,SUV,Petrol,Automatic,29.0,14.0,1798,5,11800,6,Yes,Yes,Yes,Yes,Yes,5,9,0.78,26000,18000,39000,37000,15000
+508,Honda,CR-V,Petrol AT,2025,SUV,Petrol,Automatic,31.5,13.0,1997,5,12500,6,Yes,Yes,Yes,Yes,Yes,5,8,0.73,28000,19500,42000,39500,16500
+509,Honda,Accord,Petrol AT,2025,Sedan,Petrol,Automatic,34.0,14.0,1997,5,13000,6,Yes,Yes,Yes,Yes,Yes,5,8,0.74,30000,20000,45000,42000,17000
+510,Skoda,Octavia,Style Petrol AT,2025,Sedan,Petrol,Automatic,28.8,15.8,1984,5,12500,8,Yes,Yes,Yes,Yes,Yes,5,8,0.60,30000,20000,45000,42000,17000
+511,Skoda,Kodiaq,Style Petrol AT,2025,SUV,Petrol,Automatic,38.5,12.8,1984,7,14000,8,Yes,Yes,Yes,Yes,Yes,5,8,0.66,32000,22000,48000,45000,19000
+512,Volkswagen,Tiguan,Allspace AT,2025,SUV,Petrol,Automatic,35.0,12.6,1984,7,13800,8,Yes,Yes,Yes,Yes,Yes,5,8,0.65,30000,20000,45000,42000,17000
+513,Volkswagen,Passat,Highline AT,2025,Sedan,Petrol,Automatic,32.5,15.0,1984,5,12500,6,Yes,Yes,Yes,Yes,Yes,5,8,0.60,30000,20000,45000,42000,17000
+514,MG,Hector Plus,Savvy Petrol AT,2025,SUV,Petrol,Automatic,22.5,14.0,1451,6,10500,6,Yes,Yes,Yes,Yes,Yes,4,7,0.68,21000,14500,30000,28500,10500
+515,MG,Gloster,Sharp Diesel AT,2025,SUV,Diesel,Automatic,38.0,12.0,1996,7,14500,6,Yes,Yes,Yes,Yes,Yes,5,7,0.69,32000,22000,48000,45000,19000
+516,Jeep,Compass,Limited Petrol AT,2025,SUV,Petrol,Automatic,30.5,14.1,1368,5,13500,6,Yes,Yes,Yes,Yes,Yes,5,8,0.72,28000,19500,42000,39500,16500
+517,Jeep,Meridian,Limited Diesel AT,2025,SUV,Diesel,Automatic,36.5,16.2,1956,7,14500,6,Yes,Yes,Yes,Yes,Yes,5,8,0.71,30000,20000,45000,42000,17000
+518,Citroen,C5 Aircross,Shine Diesel AT,2025,SUV,Diesel,Automatic,34.5,17.5,1997,5,13500,6,Yes,Yes,Yes,Yes,Yes,5,7,0.65,28000,19500,42000,39500,16500
+519,Tata Motors,Harrier,Red Dark AT,2025,SUV,Diesel,Automatic,24.5,14.6,1956,5,11000,6,Yes,Yes,Yes,Yes,Yes,5,7,0.62,23000,16000,34000,32000,12500
+520,Tata Motors,Safari,Accomplished Dark AT,2025,SUV,Diesel,Automatic,27.8,14.5,1956,7,11800,6,Yes,Yes,Yes,Yes,Yes,5,7,0.63,26000,18000,39000,37000,15000
+521,Mahindra,XUV700,AX7L Diesel AT,2025,SUV,Diesel,Automatic,26.8,16.0,2198,7,11500,7,Yes,Yes,Yes,Yes,Yes,5,8,0.63,25000,17500,37000,35000,14000
+522,Mahindra,Alturas G4,Diesel AT,2025,SUV,Diesel,Automatic,31.0,12.3,2157,7,13500,6,Yes,Yes,Yes,Yes,Yes,4,7,0.55,30000,20000,45000,42000,17000
+523,Hyundai,Ioniq 5,Premium EV,2025,SUV,Electric,Automatic,39.5,0.0,0,5,13500,6,Yes,Yes,Yes,Yes,Yes,5,9,0.75,28000,19000,42000,40000,16500
+524,Kia,EV6,GT Line RWD,2025,SUV,Electric,Automatic,44.5,0.0,0,5,14500,8,Yes,Yes,Yes,Yes,Yes,5,9,0.76,30000,21000,46000,44000,18000
+525,Toyota,Camry,Hybrid AT,2025,Sedan,Hybrid,Automatic,46.5,19.1,2487,5,15000,9,Yes,Yes,Yes,Yes,Yes,5,9,0.80,30000,20000,45000,42000,17000
+526,Skoda,Superb,Style Petrol AT,2025,Sedan,Petrol,Automatic,39.0,15.1,1984,5,13500,8,Yes,Yes,Yes,Yes,Yes,5,8,0.62,32000,22000,48000,45000,19000
+527,Volkswagen,Arteon,Petrol AT,2025,Sedan,Petrol,Automatic,41.5,14.0,1984,5,14500,8,Yes,Yes,Yes,Yes,Yes,5,8,0.63,34000,24000,51000,48000,20000
+528,MG,ZS EV,Exclusive,2025,SUV,Electric,Automatic,22.0,0.0,0,5,9500,6,Yes,Yes,Yes,Yes,Yes,5,8,0.70,20000,14500,30000,28500,10500
+529,MG,Marvel R,EV AWD,2025,SUV,Electric,Automatic,39.0,0.0,0,5,13500,8,Yes,Yes,Yes,Yes,Yes,5,8,0.72,28000,19000,42000,40000,16500
+530,Jeep,Avenger,EV,2025,SUV,Electric,Automatic,24.5,0.0,0,5,11000,6,Yes,Yes,Yes,Yes,Yes,5,8,0.71,23000,16000,34000,32000,12500
+531,Toyota,bZ4X,EV AWD,2025,SUV,Electric,Automatic,45.0,0.0,0,5,14500,8,Yes,Yes,Yes,Yes,Yes,5,9,0.78,29000,20000,45000,42000,17000
+532,Tata Motors,Curvv,EV Coupe,2025,SUV,Electric,Automatic,27.5,0.0,0,5,12000,6,Yes,Yes,Yes,Yes,Yes,5,7,0.64,24000,17000,36000,34000,13500
+533,Hyundai,Verna,Turbo SX AT,2025,Sedan,Petrol,Automatic,16.5,20.0,1482,5,8800,6,Yes,Yes,Yes,Yes,Yes,5,8,0.66,15500,10800,23000,21500,8200
+534,Honda,City,Hybrid ZX AT,2025,Sedan,Hybrid,Automatic,21.5,26.5,1498,5,9200,6,Yes,Yes,Yes,Yes,Yes,5,8,0.74,18000,12500,27000,25500,9500
+535,Tata Motors,Nexon,EV Dark Edition,2025,SUV,Electric,Automatic,19.8,0.0,0,5,9000,6,Yes,Yes,Yes,Yes,Yes,5,7,0.63,19000,13500,28500,27000,10000
+536,Mahindra,XUV.e8,EV AWD,2025,SUV,Electric,Automatic,34.0,0.0,0,7,13000,7,Yes,Yes,Yes,Yes,Yes,5,8,0.66,26000,18000,39000,37000,15000
+537,Skoda,Enyaq iV,80X EV,2025,SUV,Electric,Automatic,48.5,0.0,0,5,14500,8,Yes,Yes,Yes,Yes,Yes,5,8,0.66,29000,20000,45000,42000,17000
+538,Volkswagen,ID.4,EV AWD,2025,SUV,Electric,Automatic,45.0,0.0,0,5,14000,8,Yes,Yes,Yes,Yes,Yes,5,8,0.65,28000,19000,42000,40000,16500
+539,Hyundai,IONIQ 6,EV Sedan,2025,Sedan,Electric,Automatic,44.0,0.0,0,5,14500,8,Yes,Yes,Yes,Yes,Yes,5,9,0.76,30000,21000,46000,44000,18000
+540,Kia,EV9,EV AWD,2025,SUV,Electric,Automatic,65.0,0.0,0,7,16000,9,Yes,Yes,Yes,Yes,Yes,5,9,0.78,35000,25000,55000,52000,22000
+541,Toyota,Vellfire,Hybrid AT,2025,MPV,Hybrid,Automatic,95.0,16.4,2487,7,20000,10,Yes,Yes,Yes,Yes,Yes,5,9,0.85,50000,35000,70000,65000,28000
+542,MG,Gloster,Blackstorm AT,2025,SUV,Diesel,Automatic,39.5,12.0,1996,7,14800,6,Yes,Yes,Yes,Yes,Yes,5,7,0.70,32000,22000,48000,45000,19000
+543,Jeep,Wrangler,Unlimited AT,2025,SUV,Petrol,Automatic,62.0,11.4,1995,5,18000,8,Yes,Yes,Yes,Yes,Yes,5,8,0.74,42000,30000,65000,60000,26000
+544,Toyota,Land Cruiser Prado,Diesel AT,2025,SUV,Diesel,Automatic,95.0,11.0,2755,7,22000,10,Yes,Yes,Yes,Yes,Yes,5,9,0.88,55000,40000,80000,75000,32000
+545,Mahindra,Scorpio N,Carbon Edition AT,2025,SUV,Diesel,Automatic,22.5,15.0,2198,7,10500,6,Yes,Yes,Yes,Yes,Yes,5,8,0.62,21000,14500,30000,28500,10500
+546,Tata Motors,Harrier,Petrol AT,2025,SUV,Petrol,Automatic,23.5,13.5,1998,5,11000,6,Yes,Yes,Yes,Yes,Yes,5,7,0.61,22000,15000,32000,30000,12000
+547,Hyundai,Creta,Hybrid AT,2025,SUV,Hybrid,Automatic,21.8,21.0,1498,5,9800,6,Yes,Yes,Yes,Yes,Yes,5,8,0.68,20000,14500,30000,28500,10500
+548,Kia,Seltos,Hybrid AT,2025,SUV,Hybrid,Automatic,23.2,21.0,1498,5,10200,6,Yes,Yes,Yes,Yes,Yes,5,8,0.67,21000,14500,30000,28500,10500
+549,Volkswagen,Taigun,GT Plus AT,2025,SUV,Petrol,Automatic,19.9,17.8,1498,5,10800,6,Yes,Yes,Yes,Yes,Yes,5,7,0.55,20000,14000,30000,28000,11000
+550,Skoda,Kushaq,Monte Carlo AT,2025,SUV,Petrol,Automatic,19.8,18.6,1498,5,10400,6,Yes,Yes,Yes,Yes,Yes,5,7,0.55,19500,13500,28500,27000,10000
+551,Audi,A4,Premium Plus AT,2025,Sedan,Petrol,Automatic,45.0,17.4,1984,5,16000,8,Yes,Yes,Yes,Yes,Yes,5,9,0.82,42000,30000,65000,60000,26000
+552,Audi,A6,Technology AT,2025,Sedan,Petrol,Automatic,62.0,14.1,1984,5,18000,8,Yes,Yes,Yes,Yes,Yes,5,9,0.84,48000,35000,72000,68000,30000
+553,Audi,Q3,Technology AT,2025,SUV,Petrol,Automatic,55.0,15.3,1984,5,17500,8,Yes,Yes,Yes,Yes,Yes,5,9,0.83,46000,33000,70000,66000,28000
+554,Audi,Q5,Premium Plus AT,2025,SUV,Petrol,Automatic,72.0,13.5,1984,5,19500,8,Yes,Yes,Yes,Yes,Yes,5,9,0.85,52000,38000,80000,76000,32000
+555,BMW,3 Series,330Li M Sport,2025,Sedan,Petrol,Automatic,60.0,16.1,1998,5,18000,8,Yes,Yes,Yes,Yes,Yes,5,9,0.86,50000,36000,76000,72000,30000
+556,BMW,5 Series,530i M Sport,2025,Sedan,Petrol,Automatic,74.0,14.8,1998,5,20000,8,Yes,Yes,Yes,Yes,Yes,5,9,0.87,56000,42000,85000,80000,34000
+557,BMW,X1,sDrive18i M Sport,2025,SUV,Petrol,Automatic,50.0,16.0,1499,5,16500,8,Yes,Yes,Yes,Yes,Yes,5,9,0.84,44000,32000,68000,64000,28000
+558,BMW,X3,xDrive30i Luxury,2025,SUV,Petrol,Automatic,75.0,13.7,1998,5,20000,8,Yes,Yes,Yes,Yes,Yes,5,9,0.86,54000,40000,82000,78000,33000
+559,Mercedes-Benz,C-Class,C 200 AT,2025,Sedan,Petrol,Automatic,61.0,16.9,1496,5,18500,8,Yes,Yes,Yes,Yes,Yes,5,9,0.86,52000,38000,78000,74000,31000
+560,Mercedes-Benz,E-Class,E 220d AT,2025,Sedan,Diesel,Automatic,78.0,16.1,1950,5,21000,8,Yes,Yes,Yes,Yes,Yes,5,9,0.88,58000,44000,88000,84000,36000
+561,Mercedes-Benz,GLA,220 AT,2025,SUV,Petrol,Automatic,51.0,17.4,1991,5,17000,8,Yes,Yes,Yes,Yes,Yes,5,9,0.84,46000,33000,70000,66000,28000
+562,Mercedes-Benz,GLC,300 AT,2025,SUV,Petrol,Automatic,74.0,14.7,1999,5,20500,8,Yes,Yes,Yes,Yes,Yes,5,9,0.87,54000,40000,82000,78000,33000
+563,Volvo,S60,B5 Inscription AT,2025,Sedan,Petrol,Automatic,55.0,17.8,1969,5,17000,8,Yes,Yes,Yes,Yes,Yes,5,8,0.80,48000,35000,72000,68000,30000
+564,Volvo,S90,B6 Ultimate AT,2025,Sedan,Petrol,Automatic,68.0,17.0,1969,5,19000,8,Yes,Yes,Yes,Yes,Yes,5,8,0.82,52000,38000,80000,76000,32000
+565,Volvo,XC40,B4 Ultimate AT,2025,SUV,Petrol,Automatic,54.0,16.7,1969,5,17500,8,Yes,Yes,Yes,Yes,Yes,5,8,0.81,47000,34000,72000,68000,30000
+566,Volvo,XC60,B6 Ultimate AT,2025,SUV,Petrol,Automatic,69.0,15.2,1969,5,19500,8,Yes,Yes,Yes,Yes,Yes,5,8,0.83,53000,39000,82000,78000,33000
+567,Lexus,ES 300h,Luxury AT,2025,Sedan,Hybrid,Automatic,66.0,22.0,2487,5,18000,10,Yes,Yes,Yes,Yes,Yes,5,10,0.85,52000,38000,78000,74000,32000
+568,Lexus,NX 350h,Luxury AT,2025,SUV,Hybrid,Automatic,74.0,20.0,2487,5,19000,10,Yes,Yes,Yes,Yes,Yes,5,10,0.86,56000,42000,85000,80000,34000
+569,Lexus,RX 500h+,Performance AT,2025,SUV,Hybrid,Automatic,95.0,18.0,2393,5,22000,10,Yes,Yes,Yes,Yes,Yes,5,10,0.88,65000,50000,98000,92000,40000
+570,Jaguar,XE,R-Dynamic S AT,2025,Sedan,Petrol,Automatic,55.0,13.8,1997,5,19000,8,Yes,Yes,Yes,Yes,Yes,5,8,0.78,50000,36000,76000,72000,30000
+571,Jaguar,XF,R-Dynamic SE AT,2025,Sedan,Petrol,Automatic,72.0,14.4,1997,5,21000,8,Yes,Yes,Yes,Yes,Yes,5,8,0.80,56000,42000,85000,80000,34000
+572,Jaguar,F-Pace,R-Dynamic S AT,2025,SUV,Petrol,Automatic,78.0,14.0,1997,5,22000,8,Yes,Yes,Yes,Yes,Yes,5,8,0.81,58000,44000,88000,84000,36000
+573,Land Rover,Range Rover Evoque,Dynamic SE AT,2025,SUV,Petrol,Automatic,72.0,15.0,1997,5,23000,8,Yes,Yes,Yes,Yes,Yes,5,9,0.86,62000,48000,95000,90000,38000
+574,Land Rover,Discovery Sport,R-Dynamic AT,2025,SUV,Petrol,Automatic,70.0,14.6,1997,5,22500,8,Yes,Yes,Yes,Yes,Yes,5,9,0.85,60000,46000,92000,88000,37000
+575,Porsche,Macan,Base AT,2025,SUV,Petrol,Automatic,88.0,11.5,1984,5,26000,8,Yes,Yes,Yes,Yes,Yes,5,9,0.90,68000,52000,105000,100000,42000
+576,Porsche,Cayenne,Platinum Edition AT,2025,SUV,Petrol,Automatic,138.0,10.8,2995,5,32000,10,Yes,Yes,Yes,Yes,Yes,5,9,0.92,85000,65000,130000,125000,52000
+577,Mini,Cooper S,3-Door AT,2025,Hatchback,Petrol,Automatic,42.0,16.8,1998,4,15000,6,Yes,Yes,Yes,Yes,Yes,4,8,0.78,38000,26000,58000,54000,23000
+578,Mini,Countryman,Cooper S AT,2025,SUV,Petrol,Automatic,54.0,14.3,1998,5,17000,6,Yes,Yes,Yes,Yes,Yes,4,8,0.79,45000,32000,70000,66000,28000
+579,Skoda,Superb,L&K AT,2025,Sedan,Petrol,Automatic,39.0,15.1,1984,5,13500,8,Yes,Yes,Yes,Yes,Yes,5,8,0.62,32000,22000,48000,45000,19000
+580,Volkswagen,Touareg,Petrol AT,2025,SUV,Petrol,Automatic,85.0,11.8,2995,5,26000,8,Yes,Yes,Yes,Yes,Yes,5,8,0.82,70000,54000,108000,102000,43000
+581,Audi,A8 L,Technology AT,2025,Sedan,Petrol,Automatic,120.0,11.2,2995,5,30000,10,Yes,Yes,Yes,Yes,Yes,5,9,0.90,90000,70000,140000,135000,56000
+582,BMW,7 Series,740Li M Sport,2025,Sedan,Petrol,Automatic,130.0,12.0,2998,5,32000,10,Yes,Yes,Yes,Yes,Yes,5,9,0.92,95000,72000,150000,145000,60000
+583,Mercedes-Benz,S-Class,S 350d AT,2025,Sedan,Diesel,Automatic,165.0,12.5,2925,5,35000,10,Yes,Yes,Yes,Yes,Yes,5,9,0.94,110000,85000,170000,165000,70000
+584,Lexus,LS 500h,Luxury AT,2025,Sedan,Hybrid,Automatic,190.0,15.4,3456,5,38000,10,Yes,Yes,Yes,Yes,Yes,5,10,0.95,120000,90000,180000,175000,75000
+585,Land Rover,Range Rover Velar,R-Dynamic SE AT,2025,SUV,Petrol,Automatic,95.0,13.1,1997,5,28000,10,Yes,Yes,Yes,Yes,Yes,5,9,0.88,75000,58000,115000,110000,46000
+586,Land Rover,Range Rover Sport,Dynamic SE AT,2025,SUV,Petrol,Automatic,145.0,10.9,2997,5,33000,10,Yes,Yes,Yes,Yes,Yes,5,9,0.92,98000,76000,150000,145000,60000
+587,BMW,X5,xDrive40i M Sport,2025,SUV,Petrol,Automatic,110.0,11.2,2998,5,30000,10,Yes,Yes,Yes,Yes,Yes,5,9,0.91,85000,65000,130000,125000,52000
+588,BMW,X7,xDrive40i M Sport,2025,SUV,Petrol,Automatic,130.0,11.0,2998,7,32000,10,Yes,Yes,Yes,Yes,Yes,5,9,0.92,90000,70000,140000,135000,56000
+589,Mercedes-Benz,GLC Coupe,300 AT,2025,SUV,Petrol,Automatic,76.0,14.0,1999,5,21000,8,Yes,Yes,Yes,Yes,Yes,5,9,0.87,56000,42000,85000,80000,34000
+590,Mercedes-Benz,GLE,450 AT,2025,SUV,Petrol,Automatic,105.0,11.0,2999,5,29000,10,Yes,Yes,Yes,Yes,Yes,5,9,0.91,85000,65000,130000,125000,52000
+591,Audi,Q7,Technology AT,2025,SUV,Petrol,Automatic,95.0,11.2,2995,7,28000,10,Yes,Yes,Yes,Yes,Yes,5,9,0.89,78000,60000,120000,115000,48000
+592,Audi,Q8,55 TFSI AT,2025,SUV,Petrol,Automatic,115.0,10.5,2995,5,30000,10,Yes,Yes,Yes,Yes,Yes,5,9,0.91,85000,65000,130000,125000,52000
+593,Porsche,Panamera,4 E-Hybrid AT,2025,Sedan,Hybrid,Automatic,160.0,18.0,2894,4,35000,10,Yes,Yes,Yes,Yes,Yes,5,9,0.93,95000,72000,150000,145000,60000
+594,Porsche,Taycan,Base AT,2025,Sedan,Electric,Automatic,155.0,0.0,0,4,32000,10,Yes,Yes,Yes,Yes,Yes,5,9,0.94,100000,78000,160000,155000,65000
+595,Maserati,Ghibli,GT Hybrid AT,2025,Sedan,Hybrid,Automatic,138.0,12.0,1995,5,32000,10,Yes,Yes,Yes,Yes,Yes,5,9,0.90,90000,70000,140000,135000,56000
+596,Maserati,Levante,GT Hybrid AT,2025,SUV,Hybrid,Automatic,155.0,11.5,1995,5,35000,10,Yes,Yes,Yes,Yes,Yes,5,9,0.91,95000,72000,150000,145000,60000
+597,Bentley,Flying Spur,V8 AT,2025,Sedan,Petrol,Automatic,410.0,7.0,3996,5,65000,10,Yes,Yes,Yes,Yes,Yes,5,10,0.98,180000,140000,280000,270000,120000
+598,Bentley,Bentayga,V8 AT,2025,SUV,Petrol,Automatic,450.0,7.5,3996,5,70000,10,Yes,Yes,Yes,Yes,Yes,5,10,0.98,200000,160000,300000,290000,130000
+599,Rolls-Royce,Ghost,Series II AT,2025,Sedan,Petrol,Automatic,690.0,6.3,6750,5,90000,10,Yes,Yes,Yes,Yes,Yes,5,10,0.99,300000,240000,450000,440000,200000
+600,Lamborghini,Urus,S AT,2025,SUV,Petrol,Automatic,410.0,7.8,3996,5,80000,10,Yes,Yes,Yes,Yes,Yes,5,10,0.99,220000,180000,350000,340000,150000
+Car_ID,Brand,Model,Variant_Name,Year,Body_Type,Fuel_Type,Transmission,Price_Lakh,Mileage_kmpl,Engine_CC,Seating_Capacity,Service_Cost_INR,Airbags,ABS,Rear_Camera,Touchscreen,Cruise_Control,Sunroof,Safety_Rating,Brand_Image_Score,Sentiment_Score,Headlight_INR,Backlight_INR,FrontBumper_INR,RearBumper_INR,SideMirror_INR
+601,Maruti Suzuki,Swift,ZXi Plus AT,2025,Hatchback,Petrol,Automatic,9.8,22.5,1197,5,5600,6,Yes,Yes,Yes,No,No,3,8,0.62,9000,6000,14000,13000,5000
+602,Maruti Suzuki,Baleno,Alpha AMT,2025,Hatchback,Petrol,Automatic,9.9,22.9,1197,5,5800,6,Yes,Yes,Yes,No,No,3,8,0.63,9500,6500,15000,14000,5200
+603,Hyundai,Verna,Turbo SX MT,2025,Sedan,Petrol,Manual,15.0,20.6,1482,5,8600,6,Yes,Yes,Yes,Yes,Yes,5,8,0.67,15000,10500,22500,21000,8000
+604,Hyundai,Creta,EX Diesel MT,2025,SUV,Diesel,Manual,13.9,21.8,1493,5,9000,6,Yes,Yes,Yes,Yes,No,5,8,0.66,16500,11500,25000,23500,9000
+605,Tata Motors,Nexon,Creative Diesel MT,2025,SUV,Diesel,Manual,12.6,23.2,1497,5,7200,6,Yes,Yes,Yes,Yes,No,5,7,0.61,14500,10000,21500,20000,7800
+606,Tata Motors,Punch,Adventure AMT,2025,SUV,Petrol,Automatic,8.4,20.9,1199,5,5800,4,Yes,Yes,Yes,No,No,5,7,0.60,9500,6500,15000,14000,5200
+607,Mahindra,XUV300,TurboSport MT,2025,SUV,Petrol,Manual,12.0,18.9,1197,5,7600,6,Yes,Yes,Yes,Yes,No,5,7,0.60,13500,9500,21000,19500,7500
+608,Mahindra,Thar,Petrol AT,2025,SUV,Petrol,Automatic,15.9,13.0,1997,4,9800,4,Yes,Yes,Yes,No,No,4,8,0.61,16000,11000,23500,22000,8400
+609,Toyota,Urban Cruiser Hyryder,S Hybrid AT,2025,SUV,Hybrid,Automatic,18.4,27.9,1490,5,9000,6,Yes,Yes,Yes,Yes,Yes,5,9,0.75,18000,12500,27000,25500,9500
+610,Toyota,Innova Crysta,GX Diesel MT,2025,MPV,Diesel,Manual,21.5,14.5,2393,7,9800,7,Yes,Yes,Yes,Yes,No,5,9,0.77,20000,14000,30000,28000,11000
+611,Honda,Elevate,V MT,2025,SUV,Petrol,Manual,13.8,15.3,1498,5,8000,6,Yes,Yes,Yes,Yes,No,4,8,0.71,15000,10500,22500,21000,8000
+612,Honda,City,V CVT,2025,Sedan,Petrol,Automatic,14.8,18.4,1498,5,8200,6,Yes,Yes,Yes,Yes,No,5,8,0.72,16000,11000,23500,22000,8400
+613,Kia,Seltos,HTK Plus Diesel MT,2025,SUV,Diesel,Manual,14.5,20.7,1493,5,8600,6,Yes,Yes,Yes,Yes,No,5,8,0.66,17000,12000,25500,24000,9000
+614,Kia,Carens,Luxury Plus Diesel AT,2025,MPV,Diesel,Automatic,18.9,16.8,1493,7,9800,6,Yes,Yes,Yes,Yes,Yes,4,8,0.67,20000,14000,30000,28000,11000
+615,Skoda,Slavia,Style AT,2025,Sedan,Petrol,Automatic,16.5,19.3,1498,5,9800,6,Yes,Yes,Yes,Yes,Yes,5,7,0.56,17500,12000,26000,24500,9200
+616,Skoda,Kushaq,Ambition AT,2025,SUV,Petrol,Automatic,15.8,18.6,1498,5,9600,6,Yes,Yes,Yes,Yes,No,5,7,0.55,16500,11500,25000,23500,9000
+617,Volkswagen,Taigun,GT Plus MT,2025,SUV,Petrol,Manual,17.5,18.1,1498,5,9800,6,Yes,Yes,Yes,Yes,Yes,5,7,0.55,18500,13000,27500,26000,9800
+618,Volkswagen,Virtus,GT Line AT,2025,Sedan,Petrol,Automatic,17.8,19.4,1498,5,10000,6,Yes,Yes,Yes,Yes,Yes,5,7,0.55,19000,13500,28500,27000,10000
+619,Renault,Kiger,Turbo RXZ MT,2025,SUV,Petrol,Manual,11.4,19.0,999,5,6400,4,Yes,Yes,Yes,Yes,No,4,6,0.46,11500,8000,17500,16500,6200
+620,Nissan,Magnite,XV Turbo MT,2025,SUV,Petrol,Manual,11.2,20.0,999,5,6600,4,Yes,Yes,Yes,Yes,No,4,6,0.47,12000,8200,18000,17000,6400
+621,MG,Hector,Sharp Diesel MT,2025,SUV,Diesel,Manual,18.5,15.0,1956,5,9800,6,Yes,Yes,Yes,Yes,Yes,4,7,0.68,21000,14500,30000,28500,10500
+622,MG,Astor,Savvy Turbo AT,2025,SUV,Petrol,Automatic,17.9,15.4,1349,5,9000,6,Yes,Yes,Yes,Yes,Yes,4,7,0.67,18500,13000,27500,26000,9800
+623,Jeep,Compass,Sport Diesel MT,2025,SUV,Diesel,Manual,22.5,17.1,1956,5,11000,6,Yes,Yes,Yes,Yes,Yes,5,8,0.72,23000,16000,34000,32000,12500
+624,Citroen,C3 Turbo Shine MT,2025,Hatchback,Petrol,Manual,8.2,19.4,1199,5,5200,2,Yes,Yes,Yes,No,No,3,6,0.50,9000,6000,14000,13000,5000
+625,Citroen,C3 Aircross,Turbo AT,2025,SUV,Petrol,Automatic,12.8,18.5,1199,5,6800,4,Yes,Yes,Yes,Yes,No,4,6,0.52,14000,10000,22000,20500,8000
+626,Isuzu,Mu-X,4x4 Diesel AT,2025,SUV,Diesel,Automatic,38.0,12.3,1898,7,14500,6,Yes,Yes,Yes,Yes,Yes,4,7,0.55,32000,22000,48000,45000,19000
+627,Force Motors,Gurkha,3 Door Diesel MT,2025,SUV,Diesel,Manual,15.5,12.4,2596,4,9800,2,Yes,Yes,Yes,No,No,4,6,0.50,18000,12500,27000,25500,9500
+628,Maruti Suzuki,Jimny,Zeta AT,2025,SUV,Petrol,Automatic,14.5,16.9,1462,4,7200,6,Yes,Yes,Yes,Yes,No,4,8,0.62,15000,10500,22500,21000,8000
+629,Tata Motors,Altroz,Diesel XZ Plus MT,2025,Hatchback,Diesel,Manual,10.8,23.6,1497,5,6400,4,Yes,Yes,Yes,No,No,5,7,0.61,11500,8000,17500,16500,6200
+630,Mahindra,Bolero Neo,N10 MT,2025,SUV,Diesel,Manual,11.5,17.3,1493,7,7800,2,Yes,Yes,Yes,No,No,4,7,0.55,15500,10800,23000,21500,8200
+631,Toyota,Fortuner,4x4 Diesel MT,2025,SUV,Diesel,Manual,38.5,14.4,2755,7,14500,7,Yes,Yes,Yes,Yes,Yes,5,9,0.80,46000,31000,62000,58000,26000
+632,Hyundai,Tucson,Signature Diesel AT,2025,SUV,Diesel,Automatic,34.5,16.4,1999,5,12500,6,Yes,Yes,Yes,Yes,Yes,5,8,0.70,28000,19000,42000,40000,16500
+633,Kia,Sportage,Diesel AT,2025,SUV,Diesel,Automatic,36.0,17.0,1998,5,13500,6,Yes,Yes,Yes,Yes,Yes,5,8,0.70,30000,20000,45000,42000,17000
+634,Skoda,Kodiaq,L&K AT,2025,SUV,Petrol,Automatic,41.0,13.0,1984,7,15000,8,Yes,Yes,Yes,Yes,Yes,5,8,0.66,33000,23000,50000,47000,20000
+635,Volkswagen,Tiguan,R-Line AT,2025,SUV,Petrol,Automatic,38.5,12.6,1984,5,14500,8,Yes,Yes,Yes,Yes,Yes,5,8,0.65,32000,22000,48000,45000,19000
+636,MG,Gloster,Desert Storm AT,2025,SUV,Diesel,Automatic,39.5,12.0,1996,7,14800,6,Yes,Yes,Yes,Yes,Yes,5,7,0.70,33000,23000,50000,47000,20000
+637,Jeep,Meridian,Limited O AT,2025,SUV,Diesel,Automatic,38.0,16.2,1956,7,15000,6,Yes,Yes,Yes,Yes,Yes,5,8,0.71,32000,22000,48000,45000,19000
+638,Lexus,UX 250h,Luxury AT,2025,SUV,Hybrid,Automatic,43.0,23.0,1987,5,17000,10,Yes,Yes,Yes,Yes,Yes,5,10,0.84,42000,30000,65000,60000,26000
+639,Volvo,XC40 Recharge,EV AT,2025,SUV,Electric,Automatic,54.0,0.0,0,5,16500,8,Yes,Yes,Yes,Yes,Yes,5,8,0.82,47000,34000,72000,68000,30000
+640,BMW,iX1,xDrive30 EV,2025,SUV,Electric,Automatic,67.0,0.0,0,5,18000,8,Yes,Yes,Yes,Yes,Yes,5,9,0.87,38000,26000,58000,55000,23000
+641,Audi,Q4 e-tron,50 quattro,2025,SUV,Electric,Automatic,72.0,0.0,0,5,19000,8,Yes,Yes,Yes,Yes,Yes,5,9,0.88,42000,30000,65000,60000,26000
+642,Mercedes-Benz,EQB,300 4MATIC,2025,SUV,Electric,Automatic,77.0,0.0,0,7,19500,9,Yes,Yes,Yes,Yes,Yes,5,9,0.87,42000,30000,63000,60000,25500
+643,Porsche,Macan EV,Base AT,2025,SUV,Electric,Automatic,95.0,0.0,0,5,26000,8,Yes,Yes,Yes,Yes,Yes,5,9,0.92,70000,54000,108000,102000,43000
+644,BYD,Seal,Uprange EV,2025,Sedan,Electric,Automatic,45.0,0.0,0,5,13500,8,Yes,Yes,Yes,Yes,Yes,5,8,0.71,28000,19000,42000,40000,16500
+645,BYD,Atto 3,Premium EV,2025,SUV,Electric,Automatic,34.5,0.0,0,5,12000,7,Yes,Yes,Yes,Yes,Yes,5,8,0.70,26000,18000,39000,37000,15000
+646,Tata Motors,Avinya X,EV Concept Prod,2025,SUV,Electric,Automatic,45.0,0.0,0,5,15000,8,Yes,Yes,Yes,Yes,Yes,5,7,0.65,30000,22000,48000,45000,19000
+647,Hyundai,IONIQ 5 N,Performance EV,2025,SUV,Electric,Automatic,65.0,0.0,0,5,17000,8,Yes,Yes,Yes,Yes,Yes,5,9,0.78,35000,25000,55000,52000,22000
+648,Kia,EV6 GT,AWD EV,2025,SUV,Electric,Automatic,72.0,0.0,0,5,18000,8,Yes,Yes,Yes,Yes,Yes,5,9,0.79,38000,27000,58000,55000,23000
+649,Mercedes-Benz,GLA,200 AT,2025,SUV,Petrol,Automatic,49.0,17.0,1332,5,17000,8,Yes,Yes,Yes,Yes,Yes,5,9,0.85,45000,33000,70000,66000,28000
+650,Audi,A3,Premium Plus AT,2025,Sedan,Petrol,Automatic,46.0,16.5,1984,5,16500,8,Yes,Yes,Yes,Yes,Yes,5,9,0.83,42000,30000,65000,60000,26000
+651,Tata Motors,Sierra EV,Concept Production,2026,SUV,Electric,Automatic,28.5,0.0,0,5,10500,6,Yes,Yes,Yes,Yes,Yes,5,7,0.66,24000,17000,36000,34000,13500
+652,Tata Motors,Sierra ICE,Turbo Petrol AT,2026,SUV,Petrol,Automatic,22.5,15.5,1498,5,9200,6,Yes,Yes,Yes,Yes,Yes,5,7,0.64,21000,14500,30000,28500,10500
+653,Tata Motors,Avinya,EV Base,2026,SUV,Electric,Automatic,35.0,0.0,0,5,13000,8,Yes,Yes,Yes,Yes,Yes,5,7,0.65,26000,18000,39000,37000,15000
+654,BYD,Sealion 7,AWD EV,2026,SUV,Electric,Automatic,45.0,0.0,0,5,15000,8,Yes,Yes,Yes,Yes,Yes,5,8,0.72,30000,22000,48000,45000,19000
+655,BYD,Dolphin,Long Range EV,2026,Hatchback,Electric,Automatic,22.0,0.0,0,5,9000,6,Yes,Yes,Yes,Yes,No,5,8,0.70,18000,12500,27000,25500,9500
+656,BYD,Han,EV Performance,2026,Sedan,Electric,Automatic,55.0,0.0,0,5,17000,8,Yes,Yes,Yes,Yes,Yes,5,8,0.73,32000,23000,50000,47000,20000
+657,BYD,Tang,EV AWD,2026,SUV,Electric,Automatic,60.0,0.0,0,7,18000,8,Yes,Yes,Yes,Yes,Yes,5,8,0.74,34000,25000,52000,49000,21000
+658,VinFast,VF e34,Standard EV,2026,SUV,Electric,Automatic,25.0,0.0,0,5,10000,6,Yes,Yes,Yes,Yes,No,4,6,0.55,20000,14000,30000,28000,11000
+659,VinFast,VF 7,Plus EV,2026,SUV,Electric,Automatic,38.0,0.0,0,5,14000,8,Yes,Yes,Yes,Yes,Yes,5,6,0.58,28000,20000,45000,42000,17000
+660,VinFast,VF 8,AWD EV,2026,SUV,Electric,Automatic,48.0,0.0,0,5,16000,8,Yes,Yes,Yes,Yes,Yes,5,6,0.60,32000,23000,50000,47000,20000
+661,VinFast,VF 9,AWD EV,2026,SUV,Electric,Automatic,65.0,0.0,0,7,18000,10,Yes,Yes,Yes,Yes,Yes,5,6,0.62,38000,28000,58000,55000,23000
+662,MG,Marvel X,AWD EV,2026,SUV,Electric,Automatic,42.0,0.0,0,5,14500,8,Yes,Yes,Yes,Yes,Yes,5,7,0.70,28000,20000,45000,42000,17000
+663,MG,IM LS6,EV Coupe SUV,2026,SUV,Electric,Automatic,48.0,0.0,0,5,15500,8,Yes,Yes,Yes,Yes,Yes,5,7,0.71,30000,22000,48000,45000,19000
+664,MG,IM L7,EV Sedan,2026,Sedan,Electric,Automatic,52.0,0.0,0,5,16000,8,Yes,Yes,Yes,Yes,Yes,5,7,0.72,32000,23000,50000,47000,20000
+665,Toyota,bZ3,EV Sedan,2026,Sedan,Electric,Automatic,38.0,0.0,0,5,13500,8,Yes,Yes,Yes,Yes,Yes,5,9,0.76,28000,20000,45000,42000,17000
+666,Toyota,bZ Compact,EV SUV,2026,SUV,Electric,Automatic,32.0,0.0,0,5,12500,6,Yes,Yes,Yes,Yes,Yes,5,9,0.75,25000,18000,39000,37000,15000
+667,Hyundai,IONIQ 7,EV AWD,2026,SUV,Electric,Automatic,70.0,0.0,0,7,19000,10,Yes,Yes,Yes,Yes,Yes,5,9,0.80,38000,28000,58000,55000,23000
+668,Kia,EV5,AWD EV,2026,SUV,Electric,Automatic,55.0,0.0,0,5,17000,8,Yes,Yes,Yes,Yes,Yes,5,9,0.78,34000,25000,52000,49000,21000
+669,Kia,EV4,EV Sedan,2026,Sedan,Electric,Automatic,42.0,0.0,0,5,15000,8,Yes,Yes,Yes,Yes,Yes,5,9,0.76,30000,22000,48000,45000,19000
+670,Skoda,Vision 7S,EV SUV,2026,SUV,Electric,Automatic,55.0,0.0,0,7,16500,8,Yes,Yes,Yes,Yes,Yes,5,8,0.70,34000,25000,52000,49000,21000
+671,Volkswagen,ID.7,EV Sedan,2026,Sedan,Electric,Automatic,58.0,0.0,0,5,17000,8,Yes,Yes,Yes,Yes,Yes,5,8,0.71,35000,26000,54000,51000,22000
+672,Volkswagen,ID.Buzz,EV MPV,2026,MPV,Electric,Automatic,60.0,0.0,0,7,18000,8,Yes,Yes,Yes,Yes,Yes,5,8,0.72,36000,27000,56000,53000,23000
+673,Renault,Scenic E-Tech,EV MPV,2026,MPV,Electric,Automatic,48.0,0.0,0,5,15000,8,Yes,Yes,Yes,Yes,Yes,5,7,0.60,30000,22000,48000,45000,19000
+674,Renault,Austral,Hybrid AT,2026,SUV,Hybrid,Automatic,32.0,21.0,1332,5,11000,6,Yes,Yes,Yes,Yes,Yes,5,7,0.59,22000,15000,32000,30000,12000
+675,Nissan,Ariya,EV AWD,2026,SUV,Electric,Automatic,55.0,0.0,0,5,16500,8,Yes,Yes,Yes,Yes,Yes,5,7,0.61,34000,25000,52000,49000,21000
+676,Nissan,Chill-Out,EV Concept Prod,2026,SUV,Electric,Automatic,35.0,0.0,0,5,13000,6,Yes,Yes,Yes,Yes,Yes,5,7,0.60,26000,18000,39000,37000,15000
+677,Jeep,Recon,EV SUV,2026,SUV,Electric,Automatic,45.0,0.0,0,5,15000,8,Yes,Yes,Yes,Yes,Yes,5,8,0.72,30000,22000,48000,45000,19000
+678,Jeep,Wagoneer S,EV AWD,2026,SUV,Electric,Automatic,75.0,0.0,0,5,20000,10,Yes,Yes,Yes,Yes,Yes,5,8,0.74,42000,30000,65000,60000,26000
+679,Mahindra,BE.05,EV AWD,2026,SUV,Electric,Automatic,28.0,0.0,0,5,12000,6,Yes,Yes,Yes,Yes,Yes,5,8,0.65,24000,17000,36000,34000,13500
+680,Mahindra,BE.07,EV Coupe SUV,2026,SUV,Electric,Automatic,32.0,0.0,0,5,13000,6,Yes,Yes,Yes,Yes,Yes,5,8,0.66,26000,18000,39000,37000,15000
+681,Mahindra,XUV.e9,EV AWD,2026,SUV,Electric,Automatic,38.0,0.0,0,7,15000,8,Yes,Yes,Yes,Yes,Yes,5,8,0.67,30000,22000,48000,45000,19000
+682,Tata Motors,Harrier EV,AWD,2026,SUV,Electric,Automatic,35.0,0.0,0,5,13500,8,Yes,Yes,Yes,Yes,Yes,5,7,0.64,28000,20000,45000,42000,17000
+683,Tata Motors,Safari EV,AWD,2026,SUV,Electric,Automatic,38.0,0.0,0,7,14500,8,Yes,Yes,Yes,Yes,Yes,5,7,0.65,30000,22000,48000,45000,19000
+684,Tata Motors,Curvv ICE,Hybrid AT,2026,SUV,Hybrid,Automatic,24.5,22.0,1498,5,9800,6,Yes,Yes,Yes,Yes,Yes,5,7,0.63,21000,14500,30000,28500,10500
+685,Toyota,Crown Sport,Hybrid AT,2026,SUV,Hybrid,Automatic,45.0,21.0,2487,5,15000,8,Yes,Yes,Yes,Yes,Yes,5,9,0.78,30000,22000,48000,45000,19000
+686,Toyota,Crown Sedan,Hybrid AT,2026,Sedan,Hybrid,Automatic,48.0,22.0,2487,5,15500,8,Yes,Yes,Yes,Yes,Yes,5,9,0.79,32000,23000,50000,47000,20000
+687,Hyundai,Staria,Hybrid AT,2026,MPV,Hybrid,Automatic,38.0,18.0,1598,7,14000,8,Yes,Yes,Yes,Yes,Yes,5,8,0.70,28000,20000,45000,42000,17000
+688,Kia,Carnival,Hybrid AT,2026,MPV,Hybrid,Automatic,42.0,17.5,1598,7,14500,8,Yes,Yes,Yes,Yes,Yes,5,8,0.71,30000,22000,48000,45000,19000
+689,BYD,Song Plus,DM-i Hybrid,2026,SUV,Hybrid,Automatic,28.0,24.0,1498,5,10500,6,Yes,Yes,Yes,Yes,Yes,5,8,0.72,22000,15000,32000,30000,12000
+690,BYD,Qin Plus,DM-i Hybrid,2026,Sedan,Hybrid,Automatic,26.0,26.0,1498,5,10000,6,Yes,Yes,Yes,Yes,Yes,5,8,0.73,21000,14500,30000,28500,10500
+691,BYD,Yangwang U8,Hybrid AWD,2026,SUV,Hybrid,Automatic,95.0,15.0,1998,5,22000,10,Yes,Yes,Yes,Yes,Yes,5,9,0.85,50000,35000,70000,65000,28000
+692,BYD,Sea Lion 05,EV SUV,2026,SUV,Electric,Automatic,35.0,0.0,0,5,13000,6,Yes,Yes,Yes,Yes,Yes,5,8,0.71,26000,18000,39000,37000,15000
+693,XPeng,G6,EV AWD,2026,SUV,Electric,Automatic,45.0,0.0,0,5,15500,8,Yes,Yes,Yes,Yes,Yes,5,8,0.70,30000,22000,48000,45000,19000
+694,XPeng,P7i,EV Sedan,2026,Sedan,Electric,Automatic,48.0,0.0,0,5,16000,8,Yes,Yes,Yes,Yes,Yes,5,8,0.71,32000,23000,50000,47000,20000
+695,Chery,Omoda 5,EV,2026,SUV,Electric,Automatic,32.0,0.0,0,5,12000,6,Yes,Yes,Yes,Yes,Yes,5,7,0.60,24000,17000,36000,34000,13500
+696,Chery,Tiggo 7 Pro,Hybrid AT,2026,SUV,Hybrid,Automatic,28.0,22.0,1498,5,10500,6,Yes,Yes,Yes,Yes,Yes,5,7,0.61,22000,15000,32000,30000,12000
+697,Great Wall,Ora Funky Cat,EV,2026,Hatchback,Electric,Automatic,25.0,0.0,0,5,10000,6,Yes,Yes,Yes,Yes,No,4,7,0.58,20000,14000,30000,28000,11000
+698,Great Wall,Haval H6,Hybrid AT,2026,SUV,Hybrid,Automatic,30.0,20.0,1499,5,11000,6,Yes,Yes,Yes,Yes,Yes,5,7,0.62,24000,17000,36000,34000,13500
+699,Peugeot,3008,Hybrid AT,2026,SUV,Hybrid,Automatic,35.0,19.0,1598,5,12500,6,Yes,Yes,Yes,Yes,Yes,5,7,0.63,26000,18000,39000,37000,15000
+700,Peugeot,408,Hybrid Sedan AT,2026,Sedan,Hybrid,Automatic,32.0,20.0,1598,5,12000,6,Yes,Yes,Yes,Yes,Yes,5,7,0.64,25000,17500,37500,35500,14000
+701,Maruti Suzuki,Ignis,Alpha AMT,2025,Hatchback,Petrol,Automatic,7.9,20.9,1197,5,5200,4,Yes,Yes,Yes,No,No,3,8,0.60,7500,5000,11000,10000,3800
+702,Maruti Suzuki,Celerio,X VXi MT,2025,Hatchback,Petrol,Manual,6.8,26.5,998,5,4800,2,Yes,Yes,Yes,No,No,3,8,0.60,7200,4800,10500,9500,3600
+703,Hyundai,Exter,SX Knight MT,2025,SUV,Petrol,Manual,8.8,19.4,1197,5,6500,4,Yes,Yes,Yes,No,No,4,8,0.64,11000,7500,16500,15500,5800
+704,Hyundai,i20,Magna Diesel MT,2025,Hatchback,Diesel,Manual,9.9,25.2,1493,5,7200,6,Yes,Yes,Yes,No,No,4,8,0.66,12000,8200,18000,17000,6400
+705,Tata Motors,Tiago,XT CNG MT,2025,Hatchback,CNG,Manual,7.5,26.5,1199,5,5200,4,Yes,Yes,Yes,No,No,4,7,0.58,9000,6000,14000,13000,5000
+706,Tata Motors,Punch,Adventure Rhythm MT,2025,SUV,Petrol,Manual,8.3,20.1,1199,5,5600,4,Yes,Yes,Yes,No,No,5,7,0.60,9500,6500,15000,14000,5200
+707,Mahindra,XUV300,W6 Diesel MT,2025,SUV,Diesel,Manual,11.9,20.0,1497,5,7800,4,Yes,Yes,Yes,No,No,5,7,0.59,14500,10000,21500,20000,7800
+708,Mahindra,Thar,Earth Edition MT,2025,SUV,Diesel,Manual,16.5,15.2,2184,4,9800,4,Yes,Yes,Yes,No,No,4,8,0.61,16000,11000,23500,22000,8400
+709,Toyota,Glanza,S AMT,2025,Hatchback,Petrol,Automatic,9.1,22.9,1197,5,5600,6,Yes,Yes,Yes,No,No,4,9,0.70,9000,6000,14000,13000,5000
+710,Toyota,Urban Cruiser Hyryder,G NeoDrive MT,2025,SUV,Petrol,Manual,13.4,21.1,1462,5,8200,4,Yes,Yes,Yes,Yes,No,4,9,0.74,15500,10800,23000,21500,8200
+711,Honda,Amaze,S CVT,2025,Sedan,Petrol,Automatic,8.9,18.3,1199,5,7000,2,Yes,Yes,Yes,No,No,4,8,0.69,11000,7500,16500,15500,5800
+712,Honda,City,S MT,2025,Sedan,Petrol,Manual,12.8,17.8,1498,5,8000,4,Yes,Yes,Yes,Yes,No,5,8,0.71,13500,9500,21000,19500,7500
+713,Kia,Sonet,HTE Diesel MT,2025,SUV,Diesel,Manual,10.5,24.1,1493,5,7800,4,Yes,Yes,Yes,No,No,4,8,0.64,14000,10000,21500,20000,7800
+714,Kia,Carens,Prestige Diesel MT,2025,MPV,Diesel,Manual,14.9,20.7,1493,7,8600,4,Yes,Yes,Yes,Yes,No,4,8,0.65,18000,12500,27000,25500,9500
+715,Skoda,Slavia,Ambition MT,2025,Sedan,Petrol,Manual,13.6,20.3,999,5,9400,4,Yes,Yes,Yes,Yes,No,5,7,0.55,15500,10800,23000,21500,8200
+716,Skoda,Kushaq,Active MT,2025,SUV,Petrol,Manual,11.5,19.8,999,5,9200,4,Yes,Yes,Yes,Yes,No,5,7,0.55,14500,10000,21500,20000,7800
+717,Volkswagen,Virtus,Highline MT,2025,Sedan,Petrol,Manual,13.9,20.8,999,5,9600,4,Yes,Yes,Yes,Yes,No,5,7,0.54,16000,11000,24000,22500,8500
+718,Volkswagen,Taigun,Highline MT,2025,SUV,Petrol,Manual,13.2,19.2,999,5,9400,4,Yes,Yes,Yes,Yes,No,5,7,0.54,15500,10800,23000,21500,8200
+719,Renault,Kwid,1.0 RXT MT,2025,Hatchback,Petrol,Manual,5.6,22.3,999,5,4500,2,Yes,Yes,Yes,No,No,2,6,0.42,5200,3500,7200,6200,2600
+720,Renault,Triber,RXE MT,2025,MPV,Petrol,Manual,6.5,18.2,999,7,5200,2,Yes,Yes,Yes,No,No,4,6,0.45,9000,6000,14000,13000,5000
+721,Nissan,Magnite,XE MT,2025,SUV,Petrol,Manual,8.0,20.0,999,5,5200,2,Yes,Yes,Yes,No,No,4,6,0.46,9000,6000,14000,13000,5000
+722,MG,Astor,Style MT,2025,SUV,Petrol,Manual,10.8,14.8,1498,5,8600,4,Yes,Yes,Yes,Yes,No,4,7,0.66,16000,11000,24000,22500,8500
+723,MG,Hector,Sharp Pro Petrol MT,2025,SUV,Petrol,Manual,17.2,14.2,1451,5,9800,6,Yes,Yes,Yes,Yes,Yes,4,7,0.68,21000,14500,30000,28500,10500
+724,Jeep,Compass,Sport Petrol MT,2025,SUV,Petrol,Manual,20.7,14.9,1368,5,10500,6,Yes,Yes,Yes,Yes,Yes,5,8,0.72,22000,15000,32000,30000,12000
+725,Citroen,C3,Feel Turbo MT,2025,Hatchback,Petrol,Manual,7.5,19.4,1199,5,5200,2,Yes,Yes,Yes,No,No,3,6,0.50,9000,6000,14000,13000,5000
+726,Citroen,C3 Aircross,Feel MT,2025,SUV,Petrol,Manual,11.1,18.3,1199,5,6800,4,Yes,Yes,Yes,No,No,4,6,0.52,14000,10000,22000,20500,8000
+727,Isuzu,Mu-X,4x2 Diesel MT,2025,SUV,Diesel,Manual,34.0,13.0,1898,7,13500,6,Yes,Yes,Yes,Yes,Yes,4,7,0.55,30000,20000,45000,42000,17000
+728,Force Motors,Gurkha,5 Door MT,2025,SUV,Diesel,Manual,18.5,12.4,2596,7,10000,2,Yes,Yes,Yes,No,No,4,6,0.50,20000,14000,30000,28000,11000
+729,Maruti Suzuki,Jimny,Alpha MT,2025,SUV,Petrol,Manual,13.8,16.9,1462,4,6800,6,Yes,Yes,Yes,Yes,No,4,8,0.62,15000,10500,22500,21000,8000
+730,Tata Motors,Altroz,Rhythm Petrol MT,2025,Hatchback,Petrol,Manual,7.9,19.3,1199,5,5800,4,Yes,Yes,Yes,No,No,5,7,0.60,10000,7000,16000,15000,5500
+731,Mahindra,Bolero,Power Plus MT,2025,SUV,Diesel,Manual,10.2,16.5,2523,7,8200,2,Yes,Yes,Yes,No,No,4,7,0.55,15500,10800,23000,21500,8200
+732,Toyota,Fortuner,4x2 Diesel MT,2025,SUV,Diesel,Manual,34.5,14.4,2755,7,14500,7,Yes,Yes,Yes,Yes,Yes,5,9,0.80,46000,31000,62000,58000,26000
+733,Hyundai,Tucson,Platinum Diesel AT,2025,SUV,Diesel,Automatic,32.0,16.4,1999,5,12500,6,Yes,Yes,Yes,Yes,Yes,5,8,0.70,28000,19000,42000,40000,16500
+734,Kia,Sportage,Petrol AT,2025,SUV,Petrol,Automatic,34.0,14.5,1598,5,13500,6,Yes,Yes,Yes,Yes,Yes,5,8,0.70,30000,20000,45000,42000,17000
+735,Skoda,Kodiaq,Style AT,2025,SUV,Petrol,Automatic,39.5,12.8,1984,7,15000,8,Yes,Yes,Yes,Yes,Yes,5,8,0.66,32000,22000,48000,45000,19000
+736,Volkswagen,Tiguan,Comfortline AT,2025,SUV,Petrol,Automatic,34.5,12.6,1984,5,14500,8,Yes,Yes,Yes,Yes,Yes,5,8,0.65,30000,20000,45000,42000,17000
+737,MG,Gloster,Sharp 4x4 AT,2025,SUV,Diesel,Automatic,41.0,12.0,1996,7,15000,6,Yes,Yes,Yes,Yes,Yes,5,7,0.70,35000,25000,52000,49000,21000
+738,Jeep,Meridian,Limited Diesel MT,2025,SUV,Diesel,Manual,32.0,16.2,1956,7,14000,6,Yes,Yes,Yes,Yes,Yes,5,8,0.71,28000,19000,42000,39500,16500
+739,Lexus,UX 250h,Base AT,2025,SUV,Hybrid,Automatic,41.5,23.0,1987,5,17000,10,Yes,Yes,Yes,Yes,Yes,5,10,0.84,42000,30000,65000,60000,26000
+740,Volvo,C40 Recharge,EV AT,2025,SUV,Electric,Automatic,59.0,0.0,0,5,17500,8,Yes,Yes,Yes,Yes,Yes,5,8,0.82,48000,35000,72000,68000,30000
+741,BMW,2 Series Gran Coupe,220i AT,2025,Sedan,Petrol,Automatic,44.0,14.8,1998,5,16000,8,Yes,Yes,Yes,Yes,Yes,5,9,0.85,42000,30000,65000,60000,26000
+742,Audi,Q3 Sportback,Technology AT,2025,SUV,Petrol,Automatic,58.0,15.0,1984,5,18000,8,Yes,Yes,Yes,Yes,Yes,5,9,0.84,48000,35000,72000,68000,30000
+743,Mercedes-Benz,CLA,200 AT,2025,Sedan,Petrol,Automatic,43.0,15.0,1332,5,17000,8,Yes,Yes,Yes,Yes,Yes,5,9,0.85,45000,33000,70000,66000,28000
+744,Porsche,Cayenne Coupe,Base AT,2025,SUV,Petrol,Automatic,145.0,10.8,2995,5,32000,10,Yes,Yes,Yes,Yes,Yes,5,9,0.93,90000,70000,140000,135000,56000
+745,Mini,Countryman EV,Electric AT,2025,SUV,Electric,Automatic,54.0,0.0,0,5,17000,6,Yes,Yes,Yes,Yes,Yes,4,8,0.79,45000,32000,70000,66000,28000
+746,BYD,Seal,Dynamic EV,2025,Sedan,Electric,Automatic,38.0,0.0,0,5,12500,8,Yes,Yes,Yes,Yes,Yes,5,8,0.71,26000,18000,39000,37000,15000
+747,BYD,Atto 3,Dynamic EV,2025,SUV,Electric,Automatic,30.0,0.0,0,5,11500,7,Yes,Yes,Yes,Yes,Yes,5,8,0.70,24000,17000,36000,34000,13500
+748,Tata Motors,Nexon EV,Empowered Plus,2025,SUV,Electric,Automatic,19.5,0.0,0,5,9000,6,Yes,Yes,Yes,Yes,Yes,5,7,0.63,19000,13500,28500,27000,10000
+749,Mahindra,XUV400 EV,EC Pro,2025,SUV,Electric,Automatic,15.9,0.0,0,5,7800,6,Yes,Yes,Yes,Yes,No,5,7,0.61,16500,11500,24500,23000,8800
+750,Hyundai,Kona Electric,Base,2025,SUV,Electric,Automatic,23.8,0.0,0,5,9500,6,Yes,Yes,Yes,Yes,Yes,5,8,0.66,20500,14500,30500,29000,10800
+751,Audi,A4,Premium AT,2025,Sedan,Petrol,Automatic,42.0,17.4,1984,5,16000,8,Yes,Yes,Yes,Yes,Yes,5,9,0.82,42000,30000,65000,60000,26000
+752,Audi,Q3,Premium Plus AT,2025,SUV,Petrol,Automatic,49.5,15.3,1984,5,17500,8,Yes,Yes,Yes,Yes,Yes,5,9,0.83,46000,33000,70000,66000,28000
+753,Audi,Q5,Technology AT,2025,SUV,Petrol,Automatic,58.5,13.5,1984,5,19500,8,Yes,Yes,Yes,Yes,Yes,5,9,0.85,52000,38000,80000,76000,32000
+754,BMW,3 Series,330i Sport AT,2025,Sedan,Petrol,Automatic,47.0,16.1,1998,5,17000,8,Yes,Yes,Yes,Yes,Yes,5,9,0.86,50000,36000,76000,72000,30000
+755,BMW,3 Series,330Li M Sport,2025,Sedan,Petrol,Automatic,59.0,16.1,1998,5,18000,8,Yes,Yes,Yes,Yes,Yes,5,9,0.87,52000,38000,78000,74000,31000
+756,BMW,X1,sDrive18d AT,2025,SUV,Diesel,Automatic,50.5,20.4,1995,5,16500,8,Yes,Yes,Yes,Yes,Yes,5,9,0.84,44000,32000,68000,64000,28000
+757,BMW,X3,xDrive20d AT,2025,SUV,Diesel,Automatic,58.0,16.5,1995,5,19000,8,Yes,Yes,Yes,Yes,Yes,5,9,0.86,52000,38000,80000,76000,32000
+758,Mercedes-Benz,C-Class,C 200 Progressive AT,2025,Sedan,Petrol,Automatic,56.0,16.9,1496,5,18500,8,Yes,Yes,Yes,Yes,Yes,5,9,0.86,52000,38000,78000,74000,31000
+759,Mercedes-Benz,GLA,220d 4MATIC AT,2025,SUV,Diesel,Automatic,52.0,18.9,1993,5,17500,8,Yes,Yes,Yes,Yes,Yes,5,9,0.84,46000,33000,70000,66000,28000
+760,Mercedes-Benz,GLC,220d AT,2025,SUV,Diesel,Automatic,59.8,16.1,1950,5,20500,8,Yes,Yes,Yes,Yes,Yes,5,9,0.87,54000,40000,82000,78000,33000
+761,Volvo,XC40,B4 Ultimate AT,2025,SUV,Petrol,Automatic,54.5,16.7,1969,5,17500,8,Yes,Yes,Yes,Yes,Yes,5,8,0.81,47000,34000,72000,68000,30000
+762,Volvo,S60,B5 Ultimate AT,2025,Sedan,Petrol,Automatic,55.0,17.8,1969,5,17000,8,Yes,Yes,Yes,Yes,Yes,5,8,0.80,48000,35000,72000,68000,30000
+763,Lexus,UX 300e,EV AT,2025,SUV,Electric,Automatic,52.0,0.0,0,5,18000,10,Yes,Yes,Yes,Yes,Yes,5,10,0.85,45000,33000,70000,66000,28000
+764,Lexus,ES 300h,Exquisite AT,2025,Sedan,Hybrid,Automatic,59.5,22.0,2487,5,18000,10,Yes,Yes,Yes,Yes,Yes,5,10,0.85,52000,38000,78000,74000,32000
+765,Jaguar,XE,R-Dynamic SE AT,2025,Sedan,Petrol,Automatic,51.0,13.8,1997,5,19000,8,Yes,Yes,Yes,Yes,Yes,5,8,0.78,50000,36000,76000,72000,30000
+766,Jaguar,F-Pace,Prestige AT,2025,SUV,Petrol,Automatic,59.0,14.0,1997,5,22000,8,Yes,Yes,Yes,Yes,Yes,5,8,0.81,58000,44000,88000,84000,36000
+767,Land Rover,Range Rover Evoque,S AT,2025,SUV,Petrol,Automatic,59.8,15.0,1997,5,23000,8,Yes,Yes,Yes,Yes,Yes,5,9,0.86,62000,48000,95000,90000,38000
+768,Mini,Countryman,Cooper S AT,2025,SUV,Petrol,Automatic,54.0,14.3,1998,5,17000,6,Yes,Yes,Yes,Yes,Yes,4,8,0.79,45000,32000,70000,66000,28000
+769,Mini,Electric,SE AT,2025,Hatchback,Electric,Automatic,47.5,0.0,0,4,16000,6,Yes,Yes,Yes,Yes,No,4,8,0.78,42000,30000,65000,60000,26000
+770,Skoda,Superb,L&K AT,2025,Sedan,Petrol,Automatic,39.0,15.1,1984,5,13500,8,Yes,Yes,Yes,Yes,Yes,5,8,0.62,32000,22000,48000,45000,19000
+771,Skoda,Kodiaq,Style AT,2025,SUV,Petrol,Automatic,41.5,12.8,1984,7,15000,8,Yes,Yes,Yes,Yes,Yes,5,8,0.66,32000,22000,48000,45000,19000
+772,Volkswagen,Tiguan,Allspace AT,2025,SUV,Petrol,Automatic,44.5,12.6,1984,7,14500,8,Yes,Yes,Yes,Yes,Yes,5,8,0.65,30000,20000,45000,42000,17000
+773,Volkswagen,ID.4,Pro EV,2025,SUV,Electric,Automatic,55.0,0.0,0,5,17000,8,Yes,Yes,Yes,Yes,Yes,5,8,0.71,35000,26000,54000,51000,22000
+774,Hyundai,Ioniq 5,Premium EV,2025,SUV,Electric,Automatic,46.0,0.0,0,5,14000,6,Yes,Yes,Yes,Yes,Yes,5,9,0.75,28000,19000,42000,40000,16500
+775,Kia,EV6,GT Line RWD,2025,SUV,Electric,Automatic,44.5,0.0,0,5,14500,8,Yes,Yes,Yes,Yes,Yes,5,9,0.76,30000,21000,46000,44000,18000
+776,BYD,Seal,Premium EV,2025,Sedan,Electric,Automatic,41.0,0.0,0,5,13500,8,Yes,Yes,Yes,Yes,Yes,5,8,0.71,27000,18500,40500,38500,15500
+777,BYD,Atto 3,Extended Range EV,2025,SUV,Electric,Automatic,36.0,0.0,0,5,12000,7,Yes,Yes,Yes,Yes,Yes,5,8,0.70,25000,17500,37500,35500,14000
+778,Toyota,Camry,Hybrid AT,2025,Sedan,Hybrid,Automatic,46.5,19.1,2487,5,15000,9,Yes,Yes,Yes,Yes,Yes,5,9,0.80,30000,20000,45000,42000,17000
+779,Toyota,Fortuner,GR-S Diesel AT,2025,SUV,Diesel,Automatic,50.0,14.2,2755,7,15500,7,Yes,Yes,Yes,Yes,Yes,5,9,0.80,48000,33000,65000,61000,28000
+780,Jeep,Compass,Model S Diesel AT,2025,SUV,Diesel,Automatic,41.5,16.2,1956,5,13000,6,Yes,Yes,Yes,Yes,Yes,5,8,0.72,26000,18000,39000,37000,15000
+781,MG,Gloster,Sharp AT,2025,SUV,Diesel,Automatic,38.5,12.0,1996,7,14500,6,Yes,Yes,Yes,Yes,Yes,5,7,0.69,32000,22000,48000,45000,19000
+782,MG,ZS EV,Exclusive Plus,2025,SUV,Electric,Automatic,23.0,0.0,0,5,9500,6,Yes,Yes,Yes,Yes,Yes,5,8,0.70,20000,14500,30000,28500,10500
+783,Volvo,C40 Recharge,EV AT,2025,SUV,Electric,Automatic,59.0,0.0,0,5,17500,8,Yes,Yes,Yes,Yes,Yes,5,8,0.82,48000,35000,72000,68000,30000
+784,BMW,iX1,xDrive30 EV,2025,SUV,Electric,Automatic,67.0,0.0,0,5,18000,8,Yes,Yes,Yes,Yes,Yes,5,9,0.87,38000,26000,58000,55000,23000
+785,Audi,Q4 e-tron,50 quattro EV,2025,SUV,Electric,Automatic,72.0,0.0,0,5,19000,8,Yes,Yes,Yes,Yes,Yes,5,9,0.88,42000,30000,65000,60000,26000
+786,Mercedes-Benz,EQB,350 4MATIC EV,2025,SUV,Electric,Automatic,77.0,0.0,0,7,19500,9,Yes,Yes,Yes,Yes,Yes,5,9,0.87,42000,30000,63000,60000,25500
+787,Volvo,XC40 Recharge,EV Twin,2025,SUV,Electric,Automatic,56.9,0.0,0,5,18000,8,Yes,Yes,Yes,Yes,Yes,5,8,0.82,47000,34000,72000,68000,30000
+788,BMW,5 Series,530i M Sport,2025,Sedan,Petrol,Automatic,74.0,14.8,1998,5,20000,8,Yes,Yes,Yes,Yes,Yes,5,9,0.87,56000,42000,85000,80000,34000
+789,Mercedes-Benz,E-Class,E 220d AT,2025,Sedan,Diesel,Automatic,78.0,16.1,1950,5,21000,8,Yes,Yes,Yes,Yes,Yes,5,9,0.88,58000,44000,88000,84000,36000
+790,Jaguar,XF,R-Dynamic SE AT,2025,Sedan,Petrol,Automatic,72.0,14.4,1997,5,21000,8,Yes,Yes,Yes,Yes,Yes,5,8,0.80,56000,42000,85000,80000,34000
+791,Audi,A6,Technology AT,2025,Sedan,Petrol,Automatic,62.0,14.1,1984,5,18000,8,Yes,Yes,Yes,Yes,Yes,5,9,0.84,48000,35000,72000,68000,30000
+792,Land Rover,Discovery Sport,Dynamic SE AT,2025,SUV,Petrol,Automatic,65.0,14.6,1997,5,22500,8,Yes,Yes,Yes,Yes,Yes,5,9,0.85,60000,46000,92000,88000,37000
+793,Lexus,NX 350h,Premium AT,2025,SUV,Hybrid,Automatic,68.0,20.0,2487,5,19000,10,Yes,Yes,Yes,Yes,Yes,5,10,0.86,56000,42000,85000,80000,34000
+794,Volvo,XC60,B6 Ultimate AT,2025,SUV,Petrol,Automatic,69.0,15.2,1969,5,19500,8,Yes,Yes,Yes,Yes,Yes,5,8,0.83,53000,39000,82000,78000,33000
+795,Jeep,Grand Cherokee,Limited AT,2025,SUV,Petrol,Automatic,60.0,12.0,1995,5,22000,8,Yes,Yes,Yes,Yes,Yes,5,8,0.74,58000,44000,88000,84000,36000
+796,Mini,Countryman EV,Electric AT,2025,SUV,Electric,Automatic,54.0,0.0,0,5,17000,6,Yes,Yes,Yes,Yes,Yes,4,8,0.79,45000,32000,70000,66000,28000
+797,BYD,Sealion 7,EV AWD,2025,SUV,Electric,Automatic,55.0,0.0,0,5,15000,8,Yes,Yes,Yes,Yes,Yes,5,8,0.72,30000,22000,48000,45000,19000
+798,BYD,Han,EV AWD,2025,Sedan,Electric,Automatic,59.0,0.0,0,5,17000,8,Yes,Yes,Yes,Yes,Yes,5,8,0.73,32000,23000,50000,47000,20000
+799,Toyota,Crown,Hybrid AT,2025,Sedan,Hybrid,Automatic,58.0,22.0,2487,5,15000,8,Yes,Yes,Yes,Yes,Yes,5,9,0.78,32000,23000,50000,47000,20000
+800,Hyundai,Palisaade,Diesel AT,2025,SUV,Diesel,Automatic,49.5,14.0,2199,7,15500,8,Yes,Yes,Yes,Yes,Yes,5,8,0.70,35000,25000,52000,49000,21000
+801,Tesla,Model 3,Long Range AWD,2025,Sedan,Electric,Automatic,60.0,0.0,0,5,18000,8,Yes,Yes,Yes,Yes,Yes,5,9,0.88,52000,38000,78000,74000,32000
+802,Tesla,Model Y,Long Range AWD,2025,SUV,Electric,Automatic,65.0,0.0,0,5,19000,8,Yes,Yes,Yes,Yes,Yes,5,9,0.89,55000,40000,82000,78000,33000
+803,Tesla,Model S,Plaid,2025,Sedan,Electric,Automatic,135.0,0.0,0,5,30000,10,Yes,Yes,Yes,Yes,Yes,5,9,0.92,90000,70000,140000,135000,56000
+804,Tesla,Model X,Plaid AWD,2025,SUV,Electric,Automatic,150.0,0.0,0,6,32000,10,Yes,Yes,Yes,Yes,Yes,5,9,0.93,98000,76000,150000,145000,60000
+805,Porsche,Taycan,4S EV,2025,Sedan,Electric,Automatic,165.0,0.0,0,4,35000,10,Yes,Yes,Yes,Yes,Yes,5,9,0.94,100000,78000,160000,155000,65000
+806,Porsche,Taycan Cross Turismo,4 EV,2025,Wagon,Electric,Automatic,170.0,0.0,0,5,36000,10,Yes,Yes,Yes,Yes,Yes,5,9,0.94,105000,82000,165000,160000,68000
+807,BMW,i4,M50 EV,2025,Sedan,Electric,Automatic,80.0,0.0,0,5,22000,8,Yes,Yes,Yes,Yes,Yes,5,9,0.88,65000,48000,98000,93000,40000
+808,BMW,iX,xDrive50,2025,SUV,Electric,Automatic,125.0,0.0,0,5,30000,10,Yes,Yes,Yes,Yes,Yes,5,9,0.91,90000,70000,140000,135000,56000
+809,BMW,i7,xDrive60,2025,Sedan,Electric,Automatic,205.0,0.0,0,5,38000,10,Yes,Yes,Yes,Yes,Yes,5,9,0.94,120000,90000,180000,175000,75000
+810,Mercedes-Benz,EQS,580 4MATIC,2025,Sedan,Electric,Automatic,170.0,0.0,0,5,35000,10,Yes,Yes,Yes,Yes,Yes,5,9,0.94,110000,85000,170000,165000,70000
+811,Mercedes-Benz,EQE,500 4MATIC,2025,Sedan,Electric,Automatic,140.0,0.0,0,5,32000,10,Yes,Yes,Yes,Yes,Yes,5,9,0.93,100000,78000,160000,155000,65000
+812,Mercedes-Benz,EQS SUV,580 4MATIC,2025,SUV,Electric,Automatic,180.0,0.0,0,7,36000,10,Yes,Yes,Yes,Yes,Yes,5,9,0.95,115000,90000,175000,170000,72000
+813,Audi,e-tron GT,RS Quattro,2025,Sedan,Electric,Automatic,195.0,0.0,0,4,36000,10,Yes,Yes,Yes,Yes,Yes,5,9,0.93,120000,95000,185000,180000,76000
+814,Audi,Q8 e-tron,55 Quattro,2025,SUV,Electric,Automatic,125.0,0.0,0,5,30000,10,Yes,Yes,Yes,Yes,Yes,5,9,0.91,90000,70000,140000,135000,56000
+815,Jaguar,I-Pace,HSE EV,2025,SUV,Electric,Automatic,125.0,0.0,0,5,29000,10,Yes,Yes,Yes,Yes,Yes,5,8,0.85,85000,65000,130000,125000,52000
+816,Volvo,EX90,Ultra EV,2025,SUV,Electric,Automatic,130.0,0.0,0,7,31000,10,Yes,Yes,Yes,Yes,Yes,5,8,0.86,90000,70000,140000,135000,56000
+817,Volvo,EM90,EV MPV,2025,MPV,Electric,Automatic,150.0,0.0,0,6,33000,10,Yes,Yes,Yes,Yes,Yes,5,8,0.87,95000,75000,150000,145000,60000
+818,Lexus,RZ 450e,AWD EV,2025,SUV,Electric,Automatic,110.0,0.0,0,5,28000,10,Yes,Yes,Yes,Yes,Yes,5,10,0.88,85000,65000,130000,125000,52000
+819,Genesis,GV60,Performance EV,2025,SUV,Electric,Automatic,95.0,0.0,0,5,26000,10,Yes,Yes,Yes,Yes,Yes,5,9,0.84,80000,60000,120000,115000,48000
+820,Genesis,G80 Electrified,EV,2025,Sedan,Electric,Automatic,135.0,0.0,0,5,32000,10,Yes,Yes,Yes,Yes,Yes,5,9,0.86,95000,75000,150000,145000,60000
+821,Genesis,GV70 Electrified,AWD EV,2025,SUV,Electric,Automatic,125.0,0.0,0,5,30000,10,Yes,Yes,Yes,Yes,Yes,5,9,0.85,90000,70000,140000,135000,56000
+822,Lucid,Air,Grand Touring,2025,Sedan,Electric,Automatic,210.0,0.0,0,5,40000,10,Yes,Yes,Yes,Yes,Yes,5,9,0.95,130000,100000,200000,195000,85000
+823,Rivian,R1S,Adventure EV,2025,SUV,Electric,Automatic,180.0,0.0,0,7,38000,10,Yes,Yes,Yes,Yes,Yes,5,9,0.90,120000,95000,185000,180000,76000
+824,Rivian,R1T,Adventure EV,2025,Pickup,Electric,Automatic,170.0,0.0,0,5,37000,10,Yes,Yes,Yes,Yes,Yes,5,9,0.90,115000,90000,175000,170000,72000
+825,Fisker,Ocean,Extreme EV,2025,SUV,Electric,Automatic,85.0,0.0,0,5,24000,8,Yes,Yes,Yes,Yes,Yes,5,8,0.82,70000,52000,105000,100000,42000
+826,BYD,Yangwang U9,Electric Hypercar,2025,Coupe,Electric,Automatic,250.0,0.0,0,2,45000,10,Yes,Yes,Yes,Yes,Yes,5,9,0.96,150000,120000,220000,215000,95000
+827,BYD,Yangwang U8,EV SUV,2025,SUV,Electric,Automatic,180.0,0.0,0,5,38000,10,Yes,Yes,Yes,Yes,Yes,5,9,0.90,120000,95000,185000,180000,76000
+828,XPeng,G9,Performance EV,2025,SUV,Electric,Automatic,90.0,0.0,0,5,25000,8,Yes,Yes,Yes,Yes,Yes,5,8,0.82,72000,54000,108000,102000,43000
+829,NIO,ET7,Performance EV,2025,Sedan,Electric,Automatic,110.0,0.0,0,5,28000,10,Yes,Yes,Yes,Yes,Yes,5,9,0.87,85000,65000,130000,125000,52000
+830,NIO,ES8,Signature EV,2025,SUV,Electric,Automatic,125.0,0.0,0,6,30000,10,Yes,Yes,Yes,Yes,Yes,5,9,0.88,90000,70000,140000,135000,56000
+831,Rolls-Royce,Spectre,EV,2025,Coupe,Electric,Automatic,750.0,0.0,0,4,100000,10,Yes,Yes,Yes,Yes,Yes,5,10,0.99,350000,280000,500000,490000,220000
+832,Bentley,Bentayga EWB,Hybrid EV,2025,SUV,Hybrid,Automatic,420.0,12.0,2995,5,65000,10,Yes,Yes,Yes,Yes,Yes,5,10,0.98,200000,160000,300000,290000,130000
+833,Bentley,Continental GT Speed,Hybrid,2025,Coupe,Hybrid,Automatic,450.0,10.0,3996,4,70000,10,Yes,Yes,Yes,Yes,Yes,5,10,0.98,220000,180000,350000,340000,150000
+834,Lamborghini,Revuelto,Hybrid V12,2025,Coupe,Hybrid,Automatic,880.0,6.5,6498,2,120000,10,Yes,Yes,Yes,Yes,Yes,5,10,0.99,400000,320000,600000,580000,260000
+835,Ferrari,296 GTB,Hybrid,2025,Coupe,Hybrid,Automatic,540.0,8.0,2992,2,90000,10,Yes,Yes,Yes,Yes,Yes,5,10,0.99,300000,240000,450000,440000,200000
+836,Ferrari,Purosangue,V12 AWD,2025,SUV,Petrol,Automatic,1050.0,6.0,6496,4,150000,10,Yes,Yes,Yes,Yes,Yes,5,10,0.99,450000,360000,700000,680000,300000
+837,Aston Martin,DBX707,AWD,2025,SUV,Petrol,Automatic,480.0,7.5,3982,5,80000,10,Yes,Yes,Yes,Yes,Yes,5,10,0.97,250000,200000,380000,370000,160000
+838,Aston Martin,Valhalla,Hybrid Hypercar,2025,Coupe,Hybrid,Automatic,1200.0,5.0,3982,2,180000,10,Yes,Yes,Yes,Yes,Yes,5,10,0.99,500000,420000,800000,780000,350000
+839,McLaren,Artura,Hybrid,2025,Coupe,Hybrid,Automatic,550.0,7.0,2993,2,95000,10,Yes,Yes,Yes,Yes,Yes,5,10,0.99,300000,240000,450000,440000,200000
+840,McLaren,GT,Petrol AT,2025,Coupe,Petrol,Automatic,480.0,8.0,3994,2,90000,10,Yes,Yes,Yes,Yes,Yes,5,10,0.98,280000,220000,420000,410000,180000
+841,Lotus,Eletre,R EV,2025,SUV,Electric,Automatic,160.0,0.0,0,5,34000,10,Yes,Yes,Yes,Yes,Yes,5,9,0.92,120000,95000,185000,180000,76000
+842,Lotus,Emeya,EV Sedan,2025,Sedan,Electric,Automatic,150.0,0.0,0,5,33000,10,Yes,Yes,Yes,Yes,Yes,5,9,0.91,115000,90000,175000,170000,72000
+843,Polestar,3,Performance EV,2025,SUV,Electric,Automatic,90.0,0.0,0,5,26000,8,Yes,Yes,Yes,Yes,Yes,5,8,0.83,72000,54000,108000,102000,43000
+844,Polestar,4,Coupe EV,2025,SUV,Electric,Automatic,85.0,0.0,0,5,25000,8,Yes,Yes,Yes,Yes,Yes,5,8,0.82,70000,52000,105000,100000,42000
+845,Faraday Future,FF 91,Futurist EV,2025,SUV,Electric,Automatic,200.0,0.0,0,5,38000,10,Yes,Yes,Yes,Yes,Yes,5,9,0.90,130000,100000,200000,195000,85000
+846,Zeekr,001,Performance EV,2025,Wagon,Electric,Automatic,85.0,0.0,0,5,24000,8,Yes,Yes,Yes,Yes,Yes,5,8,0.83,70000,52000,105000,100000,42000
+847,Zeekr,009,EV MPV,2025,MPV,Electric,Automatic,110.0,0.0,0,6,28000,10,Yes,Yes,Yes,Yes,Yes,5,8,0.85,85000,65000,130000,125000,52000
+848,Hongqi,E-HS9,Exclusive EV,2025,SUV,Electric,Automatic,120.0,0.0,0,6,30000,10,Yes,Yes,Yes,Yes,Yes,5,8,0.84,90000,70000,140000,135000,56000
+849,Sony,Honda Afeela,Prototype EV,2025,Sedan,Electric,Automatic,90.0,0.0,0,5,26000,8,Yes,Yes,Yes,Yes,Yes,5,8,0.82,72000,54000,108000,102000,43000
+850,Xiaomi,SU7 Max,EV AWD,2025,Sedan,Electric,Automatic,75.0,0.0,0,5,23000,8,Yes,Yes,Yes,Yes,Yes,5,8,0.81,68000,50000,100000,95000,40000
+851,Tata Motors,Tiago EV,LR XT,2025,Hatchback,Electric,Automatic,11.5,0.0,0,5,5200,4,Yes,Yes,Yes,Yes,No,4,7,0.60,12000,8000,18000,17000,6500
+852,Tata Motors,Tigor EV,ZX Plus,2025,Sedan,Electric,Automatic,12.5,0.0,0,5,5600,4,Yes,Yes,Yes,Yes,No,4,7,0.61,14000,9500,21000,19500,7500
+853,Maruti Suzuki,WagonR,CNG ZXi MT,2025,Hatchback,CNG,Manual,7.2,26.6,998,5,4800,2,Yes,Yes,Yes,No,No,2,8,0.58,7500,5000,11000,10000,3800
+854,Maruti Suzuki,Ertiga,CNG VXi MT,2025,MPV,CNG,Manual,11.2,26.1,1462,7,6200,4,Yes,Yes,Yes,Yes,No,4,8,0.62,13500,9500,21000,19500,7500
+855,Hyundai,Aura,CNG S MT,2025,Sedan,CNG,Manual,8.5,28.0,1197,5,5600,2,Yes,Yes,Yes,No,No,3,8,0.60,11000,7500,16500,15500,5800
+856,Tata Motors,Altroz,CNG XM MT,2025,Hatchback,CNG,Manual,8.9,26.2,1199,5,5800,4,Yes,Yes,Yes,No,No,5,7,0.59,12000,8200,18000,17000,6400
+857,Maruti Suzuki,Brezza,CNG VXi MT,2025,SUV,CNG,Manual,11.5,25.5,1462,5,6800,4,Yes,Yes,Yes,Yes,No,4,8,0.63,15500,10800,23000,21500,8200
+858,Toyota,Rumion,CNG G MT,2025,MPV,CNG,Manual,11.8,26.1,1462,7,6500,4,Yes,Yes,Yes,Yes,No,4,9,0.70,16000,11000,24000,22500,8500
+859,Hyundai,Exter,CNG SX MT,2025,SUV,CNG,Manual,9.5,26.0,1197,5,6200,4,Yes,Yes,Yes,No,No,4,8,0.62,12000,8200,18000,17000,6400
+860,Kia,Syros,EV Concept Prod,2026,SUV,Electric,Automatic,30.0,0.0,0,5,12000,6,Yes,Yes,Yes,Yes,Yes,5,8,0.70,26000,18000,39000,37000,15000
+861,Hyundai,Inster EV,Base,2026,Hatchback,Electric,Automatic,15.0,0.0,0,4,7000,4,Yes,Yes,Yes,Yes,No,4,8,0.65,15000,10500,22500,21000,8000
+862,Maruti Suzuki,eVX,Electric SUV Base,2026,SUV,Electric,Automatic,22.0,0.0,0,5,9500,6,Yes,Yes,Yes,Yes,Yes,5,8,0.68,20000,14000,30000,28500,10500
+863,Toyota,Urban SUV EV,Base,2026,SUV,Electric,Automatic,25.0,0.0,0,5,10500,6,Yes,Yes,Yes,Yes,Yes,5,9,0.74,22000,15000,32000,30000,12000
+864,Mahindra,XUV.e4,EV AWD,2026,SUV,Electric,Automatic,30.0,0.0,0,5,12500,6,Yes,Yes,Yes,Yes,Yes,5,8,0.66,24000,17000,36000,34000,13500
+865,Mahindra,Thar.e,EV AWD,2026,SUV,Electric,Automatic,28.0,0.0,0,4,12000,6,Yes,Yes,Yes,Yes,No,5,8,0.67,26000,18000,39000,37000,15000
+866,Tata Motors,Punch EV,Long Range,2025,SUV,Electric,Automatic,13.8,0.0,0,5,6000,6,Yes,Yes,Yes,Yes,No,5,7,0.63,15000,10500,22500,21000,8000
+867,Tata Motors,Harrier,Petrol MT,2025,SUV,Petrol,Manual,22.0,14.0,1998,5,10500,6,Yes,Yes,Yes,Yes,Yes,5,7,0.61,22000,15000,32000,30000,12000
+868,Hyundai,Creta N Line,Turbo AT,2025,SUV,Petrol,Automatic,20.0,18.0,1482,5,9500,6,Yes,Yes,Yes,Yes,Yes,5,8,0.67,18500,13000,27500,26000,9800
+869,Kia,Seltos,X-Line AT,2025,SUV,Petrol,Automatic,20.5,18.0,1482,5,9800,6,Yes,Yes,Yes,Yes,Yes,5,8,0.66,19000,13500,28500,27000,10000
+870,Skoda,Slavia,Monte Carlo AT,2025,Sedan,Petrol,Automatic,17.8,19.3,1498,5,10000,6,Yes,Yes,Yes,Yes,Yes,5,7,0.56,18500,13000,27500,26000,9800
+871,Volkswagen,Virtus,GT Plus AT,2025,Sedan,Petrol,Automatic,18.9,19.4,1498,5,10200,6,Yes,Yes,Yes,Yes,Yes,5,7,0.55,19500,14000,30000,28000,11000
+872,Honda,City,Hybrid ZX,2025,Sedan,Hybrid,Automatic,20.8,26.5,1498,5,9200,6,Yes,Yes,Yes,Yes,Yes,5,8,0.74,18000,12500,27000,25500,9500
+873,Toyota,Corolla Altis,Hybrid,2025,Sedan,Hybrid,Automatic,24.5,23.0,1798,5,9800,7,Yes,Yes,Yes,Yes,Yes,5,9,0.76,21000,14500,30000,28500,10500
+874,Hyundai,Tucson,N Line Diesel AT,2025,SUV,Diesel,Automatic,35.0,16.4,1999,5,13000,6,Yes,Yes,Yes,Yes,Yes,5,8,0.71,30000,20000,45000,42000,17000
+875,Kia,Sportage,GT Line Diesel AT,2025,SUV,Diesel,Automatic,38.0,17.0,1998,5,13500,6,Yes,Yes,Yes,Yes,Yes,5,8,0.72,32000,22000,48000,45000,19000
+876,MG,Hector,Hybrid AT,2025,SUV,Hybrid,Automatic,22.5,19.0,1498,5,10000,6,Yes,Yes,Yes,Yes,Yes,4,7,0.69,22000,15000,32000,30000,12000
+877,MG,Gloster,Hybrid AT,2025,SUV,Hybrid,Automatic,42.0,14.0,1998,7,15500,6,Yes,Yes,Yes,Yes,Yes,5,7,0.71,35000,25000,52000,49000,21000
+878,Jeep,Compass,Trailhawk Diesel AT,2025,SUV,Diesel,Automatic,42.5,16.2,1956,5,14000,6,Yes,Yes,Yes,Yes,Yes,5,8,0.73,28000,19000,42000,39500,16500
+879,Isuzu,V-Cross,Hi-Lander MT,2025,Pickup,Diesel,Manual,22.0,12.4,1898,5,12000,2,Yes,Yes,Yes,Yes,No,4,6,0.50,26000,18000,39000,37000,15000
+880,Toyota,Hilux,4x4 Diesel AT,2025,Pickup,Diesel,Automatic,37.5,10.0,2755,5,15500,7,Yes,Yes,Yes,Yes,Yes,5,9,0.78,38000,26000,56000,53000,23000
+881,Force Motors,Trax Cruiser,Diesel MT,2025,MPV,Diesel,Manual,14.5,13.5,2596,10,9000,2,Yes,Yes,Yes,No,No,3,6,0.48,20000,14000,30000,28000,11000
+882,Tata Motors,Winger Cargo,Diesel MT,2025,Van,Diesel,Manual,12.5,13.8,2199,2,8500,2,Yes,Yes,No,No,No,3,6,0.45,18000,12500,27000,25500,9500
+883,Ashok Leyland,Bada Dost,Diesel MT,2025,Pickup,Diesel,Manual,10.5,13.0,1478,3,8000,2,Yes,Yes,No,No,No,3,5,0.40,15000,10500,22500,21000,8000
+884,Hyundai,Stargazer,Hybrid AT,2026,MPV,Hybrid,Automatic,18.5,20.0,1598,7,9000,6,Yes,Yes,Yes,Yes,Yes,4,8,0.68,18000,12500,27000,25500,9500
+885,Kia,Carens EV,Base,2026,MPV,Electric,Automatic,25.0,0.0,0,7,11000,6,Yes,Yes,Yes,Yes,Yes,5,8,0.70,24000,17000,36000,34000,13500
+886,Toyota,Innova Hycross,Hybrid GX,2025,MPV,Hybrid,Automatic,24.5,23.5,1987,7,9800,7,Yes,Yes,Yes,Yes,Yes,5,9,0.77,22000,15000,32000,30000,12000
+887,Hyundai,Alcazar,Hybrid AT,2026,SUV,Hybrid,Automatic,23.5,20.0,1598,6,9500,6,Yes,Yes,Yes,Yes,Yes,5,8,0.69,20000,14000,30000,28500,10500
+888,Maruti Suzuki,Invicto,Hybrid AT,2025,MPV,Hybrid,Automatic,25.0,23.0,1987,7,9800,7,Yes,Yes,Yes,Yes,Yes,5,8,0.73,22000,15000,32000,30000,12000
+889,Tata Motors,Curvv EV,Sport,2026,SUV,Electric,Automatic,30.0,0.0,0,5,12500,8,Yes,Yes,Yes,Yes,Yes,5,7,0.66,26000,18000,39000,37000,15000
+890,Mahindra,BE.09,EV Coupe,2026,SUV,Electric,Automatic,36.0,0.0,0,5,14000,8,Yes,Yes,Yes,Yes,Yes,5,8,0.68,30000,22000,48000,45000,19000
+891,Hyundai,IONIQ 5,Long Range,2025,SUV,Electric,Automatic,49.0,0.0,0,5,14500,6,Yes,Yes,Yes,Yes,Yes,5,9,0.76,30000,21000,46000,44000,18000
+892,Kia,EV9,GT Line AWD,2025,SUV,Electric,Automatic,75.0,0.0,0,7,18000,8,Yes,Yes,Yes,Yes,Yes,5,9,0.78,38000,27000,58000,55000,23000
+893,BYD,Seal U,EV AWD,2025,SUV,Electric,Automatic,45.0,0.0,0,5,14000,8,Yes,Yes,Yes,Yes,Yes,5,8,0.72,30000,22000,48000,45000,19000
+894,BYD,Song L,EV Coupe,2025,SUV,Electric,Automatic,42.0,0.0,0,5,13500,8,Yes,Yes,Yes,Yes,Yes,5,8,0.71,28000,20000,45000,42000,17000
+895,XPeng,G7,EV AWD,2025,SUV,Electric,Automatic,55.0,0.0,0,5,16500,8,Yes,Yes,Yes,Yes,Yes,5,8,0.73,34000,25000,52000,49000,21000
+896,NIO,EC7,EV Coupe SUV,2025,SUV,Electric,Automatic,120.0,0.0,0,5,30000,10,Yes,Yes,Yes,Yes,Yes,5,9,0.88,90000,70000,140000,135000,56000
+897,Zeekr,X,Performance EV,2025,SUV,Electric,Automatic,60.0,0.0,0,5,18000,8,Yes,Yes,Yes,Yes,Yes,5,8,0.82,36000,26000,54000,51000,22000
+898,Hongqi,H9,Hybrid AT,2025,Sedan,Hybrid,Automatic,55.0,18.0,1987,5,16000,8,Yes,Yes,Yes,Yes,Yes,5,8,0.80,38000,27000,56000,53000,23000
+899,Changan,UNI-K,Hybrid AT,2025,SUV,Hybrid,Automatic,35.0,19.0,1998,5,12500,6,Yes,Yes,Yes,Yes,Yes,5,7,0.65,26000,18000,39000,37000,15000
+900,Geely,Monjaro,Hybrid AWD,2025,SUV,Hybrid,Automatic,40.0,18.5,1998,5,13500,6,Yes,Yes,Yes,Yes,Yes,5,7,0.66,28000,20000,45000,42000,17000
+901,Maruti Suzuki,Swift,CNG VXi MT,2025,Hatchback,CNG,Manual,8.4,30.5,1197,5,5200,2,Yes,Yes,Yes,No,No,3,8,0.60,9000,6000,14000,13000,5000
+902,Maruti Suzuki,Dzire,VXi CNG MT,2025,Sedan,CNG,Manual,9.6,31.1,1197,5,5600,2,Yes,Yes,Yes,No,No,3,8,0.61,11000,7500,16500,15500,5800
+903,Hyundai,Grand i10 Nios,CNG Sportz MT,2025,Hatchback,CNG,Manual,8.9,26.2,1197,5,5800,2,Yes,Yes,Yes,No,No,3,8,0.62,10000,7000,16000,15000,5500
+904,Tata Motors,Tigor,CNG XZ MT,2025,Sedan,CNG,Manual,9.8,26.5,1199,5,6000,4,Yes,Yes,Yes,No,No,4,7,0.59,12000,8200,18000,17000,6400
+905,Renault,Kwid,CNG MT,2025,Hatchback,CNG,Manual,6.2,32.0,999,5,4500,2,Yes,Yes,Yes,No,No,2,6,0.42,5200,3500,7200,6200,2600
+906,Nissan,Magnite,CNG MT,2025,SUV,CNG,Manual,9.2,26.5,999,5,5200,2,Yes,Yes,Yes,No,No,4,6,0.46,9000,6000,14000,13000,5000
+907,Maruti Suzuki,XL6,Hybrid AT,2025,MPV,Hybrid,Automatic,14.8,20.0,1462,6,7000,4,Yes,Yes,Yes,Yes,No,4,8,0.62,16000,11000,24000,22500,8500
+908,Hyundai,Stargazer,Petrol AT,2025,MPV,Petrol,Automatic,15.2,18.0,1497,7,8200,6,Yes,Yes,Yes,Yes,No,4,8,0.66,18000,12500,27000,25500,9500
+909,Kia,Sonet,CNG HTK MT,2025,SUV,CNG,Manual,10.2,26.5,1197,5,6200,4,Yes,Yes,Yes,No,No,4,8,0.64,13500,9500,21000,19500,7500
+910,Toyota,Corolla Cross,Hybrid GX AT,2025,SUV,Hybrid,Automatic,32.0,22.0,1798,5,12000,6,Yes,Yes,Yes,Yes,Yes,5,9,0.78,26000,18000,39000,37000,15000
+911,Honda,BR-V,Petrol CVT,2025,MPV,Petrol,Automatic,14.5,16.0,1498,7,7800,4,Yes,Yes,Yes,Yes,No,4,8,0.70,16000,11000,24000,22500,8500
+912,Tata Motors,Nexon,CNG Creative MT,2025,SUV,CNG,Manual,11.8,24.0,1199,5,6800,4,Yes,Yes,Yes,Yes,No,5,7,0.61,14500,10000,21500,20000,7800
+913,MG,Comet EV,Play,2025,Hatchback,Electric,Automatic,8.5,0.0,0,4,4200,2,Yes,Yes,Yes,Yes,No,3,7,0.60,12000,8000,18000,17000,6500
+914,MG,4 EV,Standard,2026,Hatchback,Electric,Automatic,22.0,0.0,0,5,9000,6,Yes,Yes,Yes,Yes,No,5,7,0.68,20000,14000,30000,28500,10500
+915,Hyundai,Ioniq 6,Standard Range,2025,Sedan,Electric,Automatic,39.0,0.0,0,5,13500,6,Yes,Yes,Yes,Yes,Yes,5,9,0.75,28000,19000,42000,40000,16500
+916,Kia,EV3,EV Base,2026,SUV,Electric,Automatic,28.0,0.0,0,5,11500,6,Yes,Yes,Yes,Yes,Yes,5,8,0.70,24000,17000,36000,34000,13500
+917,Tata Motors,Avinya,Concept EV Base,2026,SUV,Electric,Automatic,40.0,0.0,0,5,15000,8,Yes,Yes,Yes,Yes,Yes,5,7,0.66,32000,23000,50000,47000,20000
+918,Mahindra,Scorpio Classic,S Diesel MT,2025,SUV,Diesel,Manual,14.5,15.0,2184,7,9000,2,Yes,Yes,Yes,No,No,4,7,0.55,18000,12500,27000,25500,9500
+919,Force Motors,Urbania,Diesel MT,2025,Van,Diesel,Manual,30.0,11.0,2596,12,12000,2,Yes,Yes,Yes,No,No,3,6,0.50,26000,18000,39000,37000,15000
+920,Isuzu,D-Max S-Cab,Diesel MT,2025,Pickup,Diesel,Manual,12.5,14.0,1898,2,8500,2,Yes,Yes,No,No,No,3,6,0.48,18000,12500,27000,25500,9500
+921,Toyota,Land Cruiser 300,Diesel AT,2025,SUV,Diesel,Automatic,210.0,11.0,3346,7,38000,10,Yes,Yes,Yes,Yes,Yes,5,9,0.90,120000,95000,185000,180000,76000
+922,Lexus,LX 500d,Diesel AT,2025,SUV,Diesel,Automatic,265.0,11.0,3346,7,42000,10,Yes,Yes,Yes,Yes,Yes,5,10,0.92,150000,120000,220000,215000,95000
+923,Mercedes-Benz,G-Class,G 400d AT,2025,SUV,Diesel,Automatic,255.0,9.0,2925,5,45000,10,Yes,Yes,Yes,Yes,Yes,5,9,0.93,160000,130000,240000,235000,105000
+924,BMW,XM,Label Red,2025,SUV,Hybrid,Automatic,260.0,10.0,4395,5,48000,10,Yes,Yes,Yes,Yes,Yes,5,9,0.94,170000,140000,260000,255000,115000
+925,Audi,RS e-tron GT,Performance,2025,Sedan,Electric,Automatic,205.0,0.0,0,4,38000,10,Yes,Yes,Yes,Yes,Yes,5,9,0.94,125000,98000,190000,185000,80000
+926,Porsche,Macan EV,Turbo,2026,SUV,Electric,Automatic,125.0,0.0,0,5,30000,8,Yes,Yes,Yes,Yes,Yes,5,9,0.92,90000,70000,140000,135000,56000
+927,Volkswagen,ID.3,Pro EV,2026,Hatchback,Electric,Automatic,32.0,0.0,0,5,12000,6,Yes,Yes,Yes,Yes,No,5,8,0.68,24000,17000,36000,34000,13500
+928,Skoda,Elroq,EV,2026,SUV,Electric,Automatic,38.0,0.0,0,5,13500,6,Yes,Yes,Yes,Yes,Yes,5,8,0.69,28000,20000,45000,42000,17000
+929,Hyundai,Bayon Hybrid,Hybrid AT,2026,SUV,Hybrid,Automatic,16.5,22.0,1498,5,8200,6,Yes,Yes,Yes,Yes,No,4,8,0.66,16000,11000,24000,22500,8500
+930,Kia,Stonic Hybrid,Hybrid AT,2026,SUV,Hybrid,Automatic,17.2,23.0,1498,5,8500,6,Yes,Yes,Yes,Yes,No,4,8,0.67,16500,11500,25000,23500,9000
+931,Toyota,Yaris Cross,Hybrid AT,2026,SUV,Hybrid,Automatic,18.5,27.0,1490,5,8800,6,Yes,Yes,Yes,Yes,Yes,5,9,0.75,18000,12500,27000,25500,9500
+932,Honda,ZR-V,Hybrid AT,2026,SUV,Hybrid,Automatic,24.0,25.0,1993,5,11000,6,Yes,Yes,Yes,Yes,Yes,5,8,0.72,22000,15000,32000,30000,12000
+933,MG,HS,Hybrid AT,2026,SUV,Hybrid,Automatic,26.5,22.0,1498,5,11500,6,Yes,Yes,Yes,Yes,Yes,5,7,0.69,24000,17000,36000,34000,13500
+934,Chery,Omoda E5,EV,2026,SUV,Electric,Automatic,30.0,0.0,0,5,12000,6,Yes,Yes,Yes,Yes,Yes,5,7,0.61,26000,18000,39000,37000,15000
+935,Great Wall,Haval Jolion,Hybrid AT,2026,SUV,Hybrid,Automatic,22.0,21.0,1499,5,9500,6,Yes,Yes,Yes,Yes,Yes,5,7,0.62,20000,14000,30000,28500,10500
+936,Peugeot,2008,Hybrid AT,2026,SUV,Hybrid,Automatic,24.5,20.0,1199,5,10500,6,Yes,Yes,Yes,Yes,Yes,5,7,0.63,22000,15000,32000,30000,12000
+937,Peugeot,e-208,EV,2026,Hatchback,Electric,Automatic,28.0,0.0,0,5,11000,6,Yes,Yes,Yes,Yes,No,5,7,0.64,24000,17000,36000,34000,13500
+938,Citroen,e-C3,EV,2026,Hatchback,Electric,Automatic,12.0,0.0,0,5,5200,2,Yes,Yes,Yes,Yes,No,3,6,0.52,15000,10500,22500,21000,8000
+939,Citroen,C4 X,Hybrid AT,2026,Sedan,Hybrid,Automatic,22.5,21.0,1498,5,9800,6,Yes,Yes,Yes,Yes,Yes,5,6,0.55,22000,15000,32000,30000,12000
+940,Renault,Arkana,Hybrid AT,2026,SUV,Hybrid,Automatic,24.0,22.0,1332,5,10000,6,Yes,Yes,Yes,Yes,Yes,5,6,0.56,23000,16000,34000,32000,12500
+941,Nissan,X-Trail,e-Power AT,2026,SUV,Hybrid,Automatic,35.0,19.0,1498,7,12500,6,Yes,Yes,Yes,Yes,Yes,5,6,0.58,30000,20000,45000,42000,17000
+942,Mitsubishi,Outlander,PHEV AT,2026,SUV,Hybrid,Automatic,45.0,20.0,2360,5,15000,8,Yes,Yes,Yes,Yes,Yes,5,7,0.65,35000,25000,52000,49000,21000
+943,Suzuki,Across,PHEV AT,2026,SUV,Hybrid,Automatic,42.0,22.0,2487,5,14500,8,Yes,Yes,Yes,Yes,Yes,5,8,0.70,34000,24000,50000,47000,20000
+944,Hyundai,Santa Fe,Hybrid AT,2026,SUV,Hybrid,Automatic,38.0,18.0,1598,7,13500,8,Yes,Yes,Yes,Yes,Yes,5,8,0.69,32000,22000,48000,45000,19000
+945,Kia,Sorento,Hybrid AT,2026,SUV,Hybrid,Automatic,40.0,18.5,1598,7,14000,8,Yes,Yes,Yes,Yes,Yes,5,8,0.70,33000,23000,50000,47000,20000
+946,Toyota,Alphard,Hybrid AT,2025,MPV,Hybrid,Automatic,120.0,16.0,2487,7,30000,10,Yes,Yes,Yes,Yes,Yes,5,9,0.85,95000,75000,150000,145000,60000
+947,Lexus,LM 350h,Hybrid AT,2025,MPV,Hybrid,Automatic,210.0,15.0,2487,4,38000,10,Yes,Yes,Yes,Yes,Yes,5,10,0.90,130000,100000,200000,195000,85000
+948,Volvo,EX30,EV,2026,SUV,Electric,Automatic,35.0,0.0,0,5,12000,6,Yes,Yes,Yes,Yes,Yes,5,8,0.80,26000,18000,39000,37000,15000
+949,BMW,iX2,EV,2026,SUV,Electric,Automatic,55.0,0.0,0,5,17000,8,Yes,Yes,Yes,Yes,Yes,5,9,0.86,38000,26000,58000,55000,23000
+950,Audi,A3 Sportback,Hybrid AT,2026,Hatchback,Hybrid,Automatic,45.0,20.0,1498,5,15000,8,Yes,Yes,Yes,Yes,Yes,5,9,0.83,42000,30000,65000,60000,26000
+951,Land Rover,Defender 90,Petrol AT,2025,SUV,Petrol,Automatic,95.0,9.5,1997,5,28000,10,Yes,Yes,Yes,Yes,Yes,5,9,0.88,75000,58000,115000,110000,46000
+952,Land Rover,Defender 110,Diesel AT,2025,SUV,Diesel,Automatic,105.0,10.5,2997,7,30000,10,Yes,Yes,Yes,Yes,Yes,5,9,0.89,80000,62000,120000,115000,48000
+953,Land Rover,Range Rover Velar,Dynamic HSE AT,2025,SUV,Petrol,Automatic,92.0,13.1,1997,5,28000,10,Yes,Yes,Yes,Yes,Yes,5,9,0.88,75000,58000,115000,110000,46000
+954,Land Rover,Range Rover Sport,Dynamic SE Diesel AT,2025,SUV,Diesel,Automatic,140.0,12.0,2997,5,33000,10,Yes,Yes,Yes,Yes,Yes,5,9,0.92,98000,76000,150000,145000,60000
+955,Land Rover,Range Rover Vogue,SE AT,2025,SUV,Petrol,Automatic,240.0,9.0,2997,5,42000,10,Yes,Yes,Yes,Yes,Yes,5,9,0.94,150000,120000,220000,215000,95000
+956,Land Rover,Range Rover Autobiography,P530 AT,2025,SUV,Petrol,Automatic,310.0,8.0,4395,5,50000,10,Yes,Yes,Yes,Yes,Yes,5,9,0.96,180000,145000,260000,255000,115000
+957,Audi,Q7,Premium Plus AT,2025,SUV,Petrol,Automatic,88.0,11.2,2995,7,27000,10,Yes,Yes,Yes,Yes,Yes,5,9,0.89,78000,60000,120000,115000,48000
+958,Audi,Q8,Technology AT,2025,SUV,Petrol,Automatic,112.0,10.5,2995,5,30000,10,Yes,Yes,Yes,Yes,Yes,5,9,0.91,85000,65000,130000,125000,52000
+959,BMW,X5,xDrive30d AT,2025,SUV,Diesel,Automatic,105.0,12.0,2993,5,30000,10,Yes,Yes,Yes,Yes,Yes,5,9,0.91,85000,65000,130000,125000,52000
+960,BMW,X6,xDrive40i AT,2025,SUV,Petrol,Automatic,115.0,11.5,2998,5,32000,10,Yes,Yes,Yes,Yes,Yes,5,9,0.92,90000,70000,140000,135000,56000
+961,BMW,X7,xDrive40d AT,2025,SUV,Diesel,Automatic,135.0,11.0,2993,7,34000,10,Yes,Yes,Yes,Yes,Yes,5,9,0.93,95000,72000,150000,145000,60000
+962,Mercedes-Benz,GLE,300d AT,2025,SUV,Diesel,Automatic,95.0,14.0,1950,5,29000,10,Yes,Yes,Yes,Yes,Yes,5,9,0.90,85000,65000,130000,125000,52000
+963,Mercedes-Benz,GLS,450 AT,2025,SUV,Petrol,Automatic,135.0,11.0,2999,7,34000,10,Yes,Yes,Yes,Yes,Yes,5,9,0.93,95000,72000,150000,145000,60000
+964,Mercedes-Benz,G-Class,G 63 AMG,2025,SUV,Petrol,Automatic,330.0,6.5,3982,5,60000,10,Yes,Yes,Yes,Yes,Yes,5,9,0.97,200000,160000,300000,295000,130000
+965,Lexus,RX 350h,Luxury AT,2025,SUV,Hybrid,Automatic,95.0,18.0,2487,5,22000,10,Yes,Yes,Yes,Yes,Yes,5,10,0.88,65000,50000,98000,92000,40000
+966,Lexus,TX 500h+,AWD AT,2025,SUV,Hybrid,Automatic,120.0,17.0,2393,7,26000,10,Yes,Yes,Yes,Yes,Yes,5,10,0.90,78000,60000,120000,115000,48000
+967,Jeep,Wrangler Rubicon,Petrol AT,2025,SUV,Petrol,Automatic,75.0,11.4,1995,5,18000,8,Yes,Yes,Yes,Yes,Yes,5,8,0.74,42000,30000,65000,60000,26000
+968,Jeep,Grand Wagoneer,Petrol AT,2025,SUV,Petrol,Automatic,210.0,7.0,6199,7,42000,10,Yes,Yes,Yes,Yes,Yes,5,8,0.90,150000,120000,220000,215000,95000
+969,Toyota,Land Cruiser Prado,Diesel AT,2025,SUV,Diesel,Automatic,150.0,11.0,2755,7,28000,10,Yes,Yes,Yes,Yes,Yes,5,9,0.88,98000,76000,150000,145000,60000
+970,Toyota,Sequoia,Hybrid AT,2025,SUV,Hybrid,Automatic,180.0,9.0,3445,7,32000,10,Yes,Yes,Yes,Yes,Yes,5,9,0.90,120000,95000,185000,180000,76000
+971,Ford,Endeavour,Platinum Diesel AT,2025,SUV,Diesel,Automatic,55.0,13.9,1996,7,15000,6,Yes,Yes,Yes,Yes,Yes,5,8,0.75,42000,30000,65000,60000,26000
+972,Ford,Bronco,Badlands AT,2025,SUV,Petrol,Automatic,75.0,10.0,2694,5,18000,8,Yes,Yes,Yes,Yes,Yes,5,8,0.76,52000,38000,78000,74000,32000
+973,Volkswagen,Touareg,R-Line AT,2025,SUV,Petrol,Automatic,95.0,11.8,2995,5,26000,8,Yes,Yes,Yes,Yes,Yes,5,8,0.82,70000,54000,108000,102000,43000
+974,Skoda,Kodiaq,RS AT,2025,SUV,Petrol,Automatic,52.0,13.0,1984,7,15500,8,Yes,Yes,Yes,Yes,Yes,5,8,0.67,34000,24000,50000,47000,20000
+975,Volvo,XC90,B6 Ultimate AT,2025,SUV,Petrol,Automatic,100.0,14.0,1969,7,28000,10,Yes,Yes,Yes,Yes,Yes,5,8,0.86,78000,60000,120000,115000,48000
+976,Volvo,EX90,Performance EV,2025,SUV,Electric,Automatic,140.0,0.0,0,7,33000,10,Yes,Yes,Yes,Yes,Yes,5,8,0.87,98000,76000,150000,145000,60000
+977,Porsche,Cayenne,E-Hybrid AT,2025,SUV,Hybrid,Automatic,165.0,18.0,2995,5,35000,10,Yes,Yes,Yes,Yes,Yes,5,9,0.93,95000,72000,150000,145000,60000
+978,Porsche,Macan,Turbo AT,2025,SUV,Petrol,Automatic,125.0,11.0,2894,5,26000,8,Yes,Yes,Yes,Yes,Yes,5,9,0.92,90000,70000,140000,135000,56000
+979,Aston Martin,DBX,707 AT,2025,SUV,Petrol,Automatic,480.0,7.5,3982,5,80000,10,Yes,Yes,Yes,Yes,Yes,5,10,0.97,250000,200000,380000,370000,160000
+980,Bentley,Bentayga,Hybrid AT,2025,SUV,Hybrid,Automatic,420.0,12.0,2995,5,65000,10,Yes,Yes,Yes,Yes,Yes,5,10,0.98,200000,160000,300000,290000,130000
+981,Rolls-Royce,Cullinan,Series II AT,2025,SUV,Petrol,Automatic,695.0,6.0,6750,5,90000,10,Yes,Yes,Yes,Yes,Yes,5,10,0.99,300000,240000,450000,440000,200000
+982,Lamborghini,Urus Performante,AT,2025,SUV,Petrol,Automatic,410.0,7.8,3996,5,80000,10,Yes,Yes,Yes,Yes,Yes,5,10,0.99,220000,180000,350000,340000,150000
+983,Ferrari,Purosangue,V12 AT,2025,SUV,Petrol,Automatic,1050.0,6.0,6496,4,150000,10,Yes,Yes,Yes,Yes,Yes,5,10,0.99,450000,360000,700000,680000,300000
+984,Maserati,Grecale,Trofeo AT,2025,SUV,Petrol,Automatic,125.0,11.5,2992,5,35000,10,Yes,Yes,Yes,Yes,Yes,5,9,0.90,95000,72000,150000,145000,60000
+985,Genesis,GV80,Petrol AT,2025,SUV,Petrol,Automatic,120.0,10.5,2497,7,30000,10,Yes,Yes,Yes,Yes,Yes,5,9,0.86,90000,70000,140000,135000,56000
+986,Genesis,G90,Petrol AT,2025,Sedan,Petrol,Automatic,150.0,9.5,3470,5,34000,10,Yes,Yes,Yes,Yes,Yes,5,9,0.88,110000,85000,170000,165000,70000
+987,Hongqi,HS9,EV AWD,2025,SUV,Electric,Automatic,135.0,0.0,0,6,32000,10,Yes,Yes,Yes,Yes,Yes,5,8,0.85,95000,75000,150000,145000,60000
+988,Zeekr,009 Grand,EV,2025,MPV,Electric,Automatic,140.0,0.0,0,6,33000,10,Yes,Yes,Yes,Yes,Yes,5,8,0.86,98000,76000,150000,145000,60000
+989,NIO,EL8,Signature EV,2025,SUV,Electric,Automatic,135.0,0.0,0,7,32000,10,Yes,Yes,Yes,Yes,Yes,5,9,0.88,95000,75000,150000,145000,60000
+990,XPeng,X9,EV MPV,2025,MPV,Electric,Automatic,120.0,0.0,0,7,30000,10,Yes,Yes,Yes,Yes,Yes,5,8,0.85,90000,70000,140000,135000,56000
+991,Hyundai,IONIQ 7,AWD EV,2026,SUV,Electric,Automatic,75.0,0.0,0,7,19000,10,Yes,Yes,Yes,Yes,Yes,5,9,0.80,38000,28000,58000,55000,23000
+992,Kia,EV9,Earth AWD,2025,SUV,Electric,Automatic,68.0,0.0,0,7,17500,8,Yes,Yes,Yes,Yes,Yes,5,9,0.79,36000,26000,54000,51000,22000
+993,Toyota,bZ4X,AWD EV,2025,SUV,Electric,Automatic,48.0,0.0,0,5,14500,8,Yes,Yes,Yes,Yes,Yes,5,9,0.78,29000,20000,45000,42000,17000
+994,Hyundai,Palisaade,Calligraphy AT,2025,SUV,Diesel,Automatic,52.0,14.0,2199,7,16000,8,Yes,Yes,Yes,Yes,Yes,5,8,0.71,36000,26000,54000,51000,22000
+995,Kia,Telluride,AWD AT,2025,SUV,Petrol,Automatic,55.0,12.0,3778,7,17000,8,Yes,Yes,Yes,Yes,Yes,5,8,0.72,38000,28000,58000,55000,23000
+996,MG,Gloster,Blackstorm AT,2025,SUV,Diesel,Automatic,41.5,12.0,1996,7,15000,6,Yes,Yes,Yes,Yes,Yes,5,7,0.71,35000,25000,52000,49000,21000
+997,Isuzu,Mu-X,Premium AT,2025,SUV,Diesel,Automatic,37.0,12.3,1898,7,14500,6,Yes,Yes,Yes,Yes,Yes,4,7,0.55,32000,22000,48000,45000,19000
+998,Ford,Mustang Mach-E,GT EV,2025,SUV,Electric,Automatic,85.0,0.0,0,5,24000,8,Yes,Yes,Yes,Yes,Yes,5,9,0.88,70000,52000,105000,100000,42000
+999,Cadillac,Lyriq,AWD EV,2025,SUV,Electric,Automatic,95.0,0.0,0,5,26000,8,Yes,Yes,Yes,Yes,Yes,5,9,0.89,80000,60000,120000,115000,48000
+1000,Land Rover,Range Rover Electric,AWD EV,2026,SUV,Electric,Automatic,180.0,0.0,0,5,35000,10,Yes,Yes,Yes,Yes,Yes,5,9,0.95,120000,95000,185000,180000,76000

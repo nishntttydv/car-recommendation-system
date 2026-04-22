@@ -53,6 +53,13 @@ Your tasks:
    - "EV"/"bijli ki gaadi"/"electric" → Electric fuel
    - "diesel"/"petrol"/"CNG"/"gas" → respective fuel_type
    - "SUV"/"hatchback"/"sedan"/"MPV"/"crossover" → body_type
+   - "mujhe ek comfortable family car chahiye" → comfortable family-oriented car, likely 5+ seats, comfort/family intent
+   - "mujhe ek mazeddar chalne wali gadi dikhao" → fun to drive / sporty / engaging driving intent
+   - "sheher ke liye gaadi" / "city ke liye car" → city-friendly intent
+   - "gaon ya kharab road ke liye" → rough-road / higher-ground-clearance intent
+   - "maintenance kam ho" / "service sasti ho" → low-maintenance intent
+   - "lambi drive ke liye" / "highway pe acchi ho" → highway / long-drive intent
+   - "ghar ke liye safe car" → family + safety intent
 
 2. Extract structured filters from the query.
 

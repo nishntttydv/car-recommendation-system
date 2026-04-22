@@ -1,5 +1,6 @@
 import { Router, type IRouter } from "express";
 import { loadCars, computeScore } from "../lib/csv-loader";
+import { getCarImageUrl } from "../lib/image-url";
 import { CompareCarsBody } from "@workspace/api-zod";
 
 const router: IRouter = Router();
@@ -21,7 +22,7 @@ router.post("/compare", async (req, res): Promise<void> => {
       return {
         ...car,
         score: computeScore(car),
-        image_url: `/api/images/${car.car_id}`,
+        image_url: getCarImageUrl(car.brand, car.model),
       };
     })
     .filter(Boolean);

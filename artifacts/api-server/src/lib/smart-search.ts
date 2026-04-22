@@ -22,6 +22,16 @@ export interface SmartFilters {
   feature_cruise_control?: boolean;
   feature_rear_camera?: boolean;
   safety_min?: number;
+  family_friendly?: boolean;
+  comfort_priority?: boolean;
+  fun_to_drive?: boolean;
+  city_friendly?: boolean;
+  highway_friendly?: boolean;
+  low_maintenance?: boolean;
+  rough_road_ready?: boolean;
+  premium_preference?: boolean;
+  mileage_priority?: boolean;
+  first_car?: boolean;
 }
 
 // Brand aliases (handles slang, misspellings, partial names)
@@ -140,9 +150,69 @@ const FEATURE_PATTERNS: Array<{ patterns: string[]; filter: keyof SmartFilters }
 const HINDI_MAPPINGS: Array<{ patterns: string[]; action: (f: SmartFilters) => void }> = [
   { patterns: ["sasta", "budget", "affordable", "cheap", "economy", "economic", "kam budget"], action: (f) => { f.budget_max = 8; } },
   { patterns: ["mehanga", "luxury", "premium", "high end", "costly", "expensive"], action: (f) => { f.budget_min = 20; } },
-  { patterns: ["family", "parivar", "family car", "family gaadi", "7 seater", "7seater", "saat seat", "7seat"], action: (f) => { f.seating_capacity = 7; } },
+  { patterns: ["family", "parivar", "family car", "family gaadi", "ghar ke liye", "baccho ke liye", "7 seater", "7seater", "saat seat", "7seat"], action: (f) => { f.family_friendly = true; if (!f.seating_capacity) f.seating_capacity = 5; } },
   { patterns: ["safe", "safety", "suraksha", "5 star", "5star", "ncap"], action: (f) => { f.safety_min = 4; } },
-  { patterns: ["first car", "pehli gaadi", "new driver", "beginner"], action: (f) => { f.transmission = "Automatic"; } },
+  { patterns: ["first car", "pehli gaadi", "new driver", "beginner", "seekhne ke liye", "new learner"], action: (f) => { f.first_car = true; if (!f.transmission) f.transmission = "Automatic"; } },
+];
+
+const INTENT_MAPPINGS: Array<{ patterns: string[]; action: (f: SmartFilters) => void }> = [
+  {
+    patterns: [
+      "comfortable", "comfort", "comfy", "aaramdayak", "aaraamdayak", "aaram", "smooth",
+      "soft suspension", "relaxed", "family comfort", "long drive comfort", "thakaan kam",
+    ],
+    action: (f) => { f.comfort_priority = true; },
+  },
+  {
+    patterns: [
+      "fun to drive", "mazedar", "mazeddar", "majedar", "mast", "jhakkas", "dhasu",
+      "chalane mein maza", "chalne wali gadi", "driver car", "enthusiast", "sporty",
+      "performance", "quick", "pickup achha", "powerful", "tez", "fast", "punchy",
+    ],
+    action: (f) => { f.fun_to_drive = true; },
+  },
+  {
+    patterns: [
+      "city", "city drive", "daily commute", "daily use", "office jaane", "traffic", "bheed",
+      "compact", "parking easy", "easy to drive", "choti gadi", "urban",
+    ],
+    action: (f) => { f.city_friendly = true; },
+  },
+  {
+    patterns: [
+      "highway", "long drive", "touring", "road trip", "expressway", "stable", "high speed",
+      "cruise", "long route",
+    ],
+    action: (f) => { f.highway_friendly = true; },
+  },
+  {
+    patterns: [
+      "maintenance kam", "kam maintenance", "maintenance bhi kam", "low maintenance",
+      "reliable", "bharosemand", "tension free", "service sasta", "service bhi sasta",
+      "parts cheap", "maintenance cheap", "ownership cost low", "pocket friendly maintenance",
+    ],
+    action: (f) => { f.low_maintenance = true; },
+  },
+  {
+    patterns: [
+      "bad road", "rough road", "gaon", "village road", "ground clearance", "kharab road",
+      "speed breaker", "pothole", "tooti sadak", "off road", "offroad",
+    ],
+    action: (f) => { f.rough_road_ready = true; if (!f.body_type) f.body_type = "SUV"; },
+  },
+  {
+    patterns: [
+      "premium", "luxury", "mehangi", "mehangi wali", "top model", "rich feel", "posh",
+    ],
+    action: (f) => { f.premium_preference = true; if (!f.budget_min) f.budget_min = 15; },
+  },
+  {
+    patterns: [
+      "mileage", "milage", "milege", "fuel efficient", "fuel efficiency", "kam kharch",
+      "petrol bachaye", "zyada mileage", "running cost kam", "economical running",
+    ],
+    action: (f) => { f.mileage_priority = true; },
+  },
 ];
 
 function levenshtein(a: string, b: string): number {
@@ -160,7 +230,15 @@ function levenshtein(a: string, b: string): number {
 }
 
 function normalizeToken(s: string): string {
-  return s.toLowerCase().replace(/[^a-z0-9\s]/g, "").trim();
+  return s
+    .toLowerCase()
+    .replace(/[^\p{L}\p{N}\s]/gu, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+function normalizeForCompare(s: string): string {
+  return normalizeToken(s).replace(/\s+/g, "");
 }
 
 /** Resolve a partial/fuzzy input against a list of known values */
@@ -203,7 +281,7 @@ function fuzzyResolve(input: string, known: string[]): string | null {
  */
 export function buildSmartFilters(query: string): SmartFilters {
   const filters: SmartFilters = {};
-  const q = query.toLowerCase();
+  const q = normalizeToken(query);
 
   // --- Budget patterns ---
   const budgetUnder = q.match(/(?:under|below|less than|max|upto|up to|within)\s*(?:rs\.?\s*)?(\d+(?:\.\d+)?)\s*(?:lakh|l\b)/i);
@@ -272,6 +350,18 @@ export function buildSmartFilters(query: string): SmartFilters {
     }
   }
 
+  // --- Broader intent mappings ---
+  for (const { patterns, action } of INTENT_MAPPINGS) {
+    if (patterns.some((p) => q.includes(normalizeToken(p)))) {
+      action(filters);
+    }
+  }
+
+  // Family implies comfort unless user explicitly asks for sporty feel
+  if (filters.family_friendly && !filters.fun_to_drive) {
+    filters.comfort_priority = true;
+  }
+
   return filters;
 }
 
@@ -338,6 +428,177 @@ export function fuzzyTextSearch(
       });
     });
   });
+}
+
+function safeNumber(v: unknown, fallback = 0): number {
+  return typeof v === "number" && Number.isFinite(v) ? v : fallback;
+}
+
+function yes(v: unknown): boolean {
+  return String(v).toLowerCase() === "yes";
+}
+
+function hasKnownValue<T extends string>(value: string, allowed: T[]): boolean {
+  return allowed.includes(value as T);
+}
+
+function scoreDataQuality(car: Record<string, unknown>): number {
+  let score = 0;
+
+  const bodyType = String(car.body_type ?? "");
+  const fuelType = String(car.fuel_type ?? "");
+  const transmission = String(car.transmission ?? "");
+  const seating = safeNumber(car.seating_capacity);
+  const price = safeNumber(car.price_lakh);
+  const mileage = safeNumber(car.mileage_kmpl);
+  const safety = safeNumber(car.safety_rating);
+  const service = safeNumber(car.service_cost_inr);
+  const sentiment = safeNumber(car.sentiment_score);
+
+  if (hasKnownValue(bodyType, ["Hatchback", "Sedan", "SUV", "MPV", "Coupe", "Convertible", "Pickup", "Wagon"])) score += 2;
+  else score -= 10;
+
+  if (hasKnownValue(fuelType, ["Petrol", "Diesel", "Electric", "CNG", "Hybrid"])) score += 2;
+  else score -= 10;
+
+  if (hasKnownValue(transmission, ["Manual", "Automatic"])) score += 2;
+  else score -= 10;
+
+  if (seating >= 2 && seating <= 9) score += 2;
+  else score -= 12;
+
+  if (price >= 2 && price <= 100) score += 2;
+  else score -= 8;
+
+  if (mileage >= 0 && mileage <= 60) score += 1;
+  else score -= 6;
+
+  if (safety >= 0 && safety <= 5) score += 1;
+  else score -= 6;
+
+  if (service >= 0 && service <= 50000) score += 1;
+  else score -= 6;
+
+  if (sentiment >= 0 && sentiment <= 1) score += 1;
+  else score -= 6;
+
+  return score;
+}
+
+export function scoreSmartMatch(
+  car: Record<string, unknown>,
+  filters: SmartFilters,
+  rawQuery: string,
+): number {
+  let score = scoreDataQuality(car);
+
+  const searchable = [
+    car.brand,
+    car.model,
+    car.variant_name,
+    car.body_type,
+    car.fuel_type,
+    car.transmission,
+  ]
+    .map((v) => normalizeToken(String(v)))
+    .join(" ");
+
+  const compactSearchable = normalizeForCompare(searchable);
+  const tokens = normalizeToken(rawQuery).split(/\s+/).filter((t) => t.length >= 2);
+
+  for (const token of tokens) {
+    const compactToken = normalizeForCompare(token);
+    if (searchable.includes(token)) score += 5;
+    else if (compactToken && compactSearchable.includes(compactToken)) score += 4;
+  }
+
+  const bodyType = String(car.body_type ?? "");
+  const fuelType = String(car.fuel_type ?? "");
+  const transmission = String(car.transmission ?? "");
+  const seating = safeNumber(car.seating_capacity);
+  const mileage = safeNumber(car.mileage_kmpl);
+  const service = safeNumber(car.service_cost_inr, 999999);
+  const safety = safeNumber(car.safety_rating);
+  const engine = safeNumber(car.engine_cc);
+  const price = safeNumber(car.price_lakh);
+  const sentiment = safeNumber(car.sentiment_score);
+  const brandScore = safeNumber(car.brand_image_score);
+
+  if (filters.family_friendly) {
+    if (seating >= 7) score += 12;
+    else if (seating >= 5) score += 7;
+    if (bodyType === "SUV" || bodyType === "MPV") score += 6;
+    if (safety >= 4) score += 5;
+    if (yes(car.rear_camera)) score += 2;
+  }
+
+  if (filters.comfort_priority) {
+    if (bodyType === "SUV" || bodyType === "Sedan" || bodyType === "MPV") score += 5;
+    if (transmission === "Automatic") score += 4;
+    if (yes(car.cruise_control)) score += 3;
+    if (yes(car.sunroof)) score += 1;
+    if (seating >= 5) score += 2;
+  }
+
+  if (filters.fun_to_drive) {
+    if (engine >= 1400) score += 6;
+    if (bodyType === "Sedan" || bodyType === "SUV") score += 3;
+    if (transmission === "Automatic") score += 2;
+    if (brandScore >= 8) score += 2;
+    if (sentiment >= 0.8) score += 2;
+  }
+
+  if (filters.city_friendly) {
+    if (bodyType === "Hatchback") score += 8;
+    if (bodyType === "Sedan") score += 3;
+    if (price <= 12) score += 4;
+    if (transmission === "Automatic") score += 3;
+    if (service <= 7000) score += 4;
+  }
+
+  if (filters.highway_friendly) {
+    if (bodyType === "SUV" || bodyType === "Sedan") score += 5;
+    if (transmission === "Automatic") score += 3;
+    if (yes(car.cruise_control)) score += 4;
+    if (safety >= 4) score += 4;
+    if (engine >= 1400 || fuelType === "Electric") score += 3;
+  }
+
+  if (filters.low_maintenance) {
+    if (service <= 6000) score += 8;
+    else if (service <= 9000) score += 4;
+    if (price <= 15) score += 3;
+    if (brandScore >= 7) score += 2;
+  }
+
+  if (filters.rough_road_ready) {
+    if (bodyType === "SUV") score += 10;
+    if (seating >= 5) score += 2;
+  }
+
+  if (filters.premium_preference) {
+    if (price >= 20) score += 6;
+    if (brandScore >= 8) score += 4;
+    if (yes(car.sunroof)) score += 2;
+    if (yes(car.touchscreen)) score += 2;
+  }
+
+  if (filters.mileage_priority) {
+    if (fuelType === "Electric") score += 8;
+    else if (fuelType === "CNG") score += 7;
+    else if (fuelType === "Hybrid") score += 6;
+    else score += Math.min(6, mileage / 5);
+  }
+
+  if (filters.first_car) {
+    if (price <= 12) score += 6;
+    if (transmission === "Automatic") score += 4;
+    if (bodyType === "Hatchback" || bodyType === "Sedan") score += 3;
+    if (safety >= 4) score += 3;
+    if (service <= 7000) score += 3;
+  }
+
+  return score;
 }
 
 export { fuzzyResolve };

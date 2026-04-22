@@ -53,6 +53,19 @@ export function Navbar() {
           <div className="flex items-center gap-3">
             {user ? (
               <div className="flex items-center gap-3">
+                <Link href="/profile">
+                  <motion.span
+                    className={`px-3 py-1.5 rounded text-sm cursor-pointer transition-colors ${
+                      location === "/profile"
+                        ? "text-primary bg-primary/10"
+                        : "text-muted-foreground hover:text-foreground hover:bg-white/5"
+                    }`}
+                    whileHover={{ scale: 1.03 }}
+                    whileTap={{ scale: 0.97 }}
+                  >
+                    Profile
+                  </motion.span>
+                </Link>
                 <span className="text-sm text-muted-foreground hidden sm:block">
                   Welcome, <span className="text-foreground font-medium">{user.name.split(" ")[0]}</span>
                 </span>

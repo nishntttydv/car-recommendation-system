@@ -2,6 +2,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { useGetRecommendations } from "@workspace/api-client-react";
 import { CarCard } from "@/components/CarCard";
+import { trackProfileEvent } from "@/lib/profile-api";
 
 const PRIORITIES = [
   { value: "mileage", label: "Best Mileage" },
@@ -215,7 +216,21 @@ export default function Recommend() {
                           Best Match
                         </div>
                       )}
-                      <CarCard car={car} index={i} />
+                      <CarCard
+                        car={car}
+                        index={i}
+                        onOpen={(openedCar) => {
+                          trackProfileEvent({
+                            event_type: "recommendation_clicked",
+                            car_id: openedCar.car_id,
+                            metadata: {
+                              source: "recommend_page",
+                              brand: openedCar.brand,
+                              model: openedCar.model,
+                            },
+                          });
+                        }}
+                      />
                     </div>
                   ))}
                 </div>

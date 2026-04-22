@@ -14,6 +14,7 @@ import Recommend from "@/pages/recommend";
 import Compare from "@/pages/compare";
 import Insights from "@/pages/insights";
 import News from "@/pages/news";
+import ProfilePage from "@/pages/profile";
 
 const queryClient = new QueryClient({
   defaultOptions: {
@@ -38,6 +39,7 @@ function Router() {
         <Route path="/compare" component={Compare} />
         <Route path="/insights" component={Insights} />
         <Route path="/news" component={News} />
+        <Route path="/profile" component={ProfilePage} />
         <Route component={NotFound} />
       </Switch>
     </>

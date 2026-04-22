@@ -1,5 +1,6 @@
 import { Router, type IRouter } from "express";
 import { loadCars, computeScore, fuzzyMatchBrand, fuzzyMatchModel } from "../lib/csv-loader";
+import { getCarImageUrl } from "../lib/image-url";
 import { GetCarsQueryParams, GetCarByIdParams } from "@workspace/api-zod";
 
 const router: IRouter = Router();
@@ -91,7 +92,7 @@ router.get("/cars", async (req, res): Promise<void> => {
   const carsWithScore = cars.map((c) => ({
     ...c,
     score: computeScore(c),
-    image_url: `/api/images/${c.car_id}`,
+    image_url: getCarImageUrl(c.brand, c.model),
   }));
 
   const total = carsWithScore.length;
@@ -168,7 +169,7 @@ router.get("/cars/:carId", async (req, res): Promise<void> => {
   res.json({
     ...car,
     score: computeScore(car),
-    image_url: `/api/images/${car.car_id}`,
+    image_url: getCarImageUrl(car.brand, car.model),
   });
 });
 
